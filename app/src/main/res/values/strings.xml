@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name" translatable="false">AAD</string>
+
+    <string name="main_toolbar_title" translation_description="Title for the 'Main' screen where user can see the different tabs">AA Certification</string>
+
+    <!-- Tab Titles -->
+    <string name="tab_title_android_core" translatable="false">CORE</string>
+    <string name="tab_title_user_interface" translatable="false">UI</string>
+    <string name="tab_title_data_management" translatable="false">DATA</string>
+    <string name="tab_title_debugging" translatable="false">DEBUG</string>
+    <string name="tab_title_testing" translatable="false">TEST</string>
+
+    <!-- Android Core Tab -->
+    <string name="android_core_header_label" translation_description="">Android Core</string>
+    <string name="android_ui_header_label" translation_description="">Android User Interface</string>
+    <string name="android_data_header_label" translation_description="">Android Data Management</string>
+    <string name="android_debugging_header_label" translation_description="">Android Debugging</string>
+    <string name="android_test_header_label" translation_description="">Android Test</string>
+
+</resources>

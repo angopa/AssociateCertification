@@ -1,0 +1,22 @@
+[
+  {
+    "tabId": "android_core",
+    "description": "<p>Android is an operating system based on Linux and designed primarily for mobile devices. Android applications can be multitasking and are  written in Java, Kotlin or C++.</p><br><p>To prepare for the AAD certification exam, Android developers should:</p><br><ul><li>Understand the architecture of the Android system</li><br<li>Be able to describe the basic building blocks of an Android app</li><li>Know how to build and run an Android app</li><li>Display simple messages in a popup using a Toast or a Snackbar</li><li>Be able to display a message outside your app\\'s UI using Notifications</li><li>Understand how to localize an app</li><li>Be able to schedule a background task using JobScheduler</li></ul>"
+  },
+  {
+    "tabId": "android_ui",
+    "description": "<p>The Android framework enables developers to create useful apps with effectiveuser interfaces. Developers need to understandAndroid’s activities, views and layouts to create attractive UIs that maximizeusability and the overall user experience.</p><br><p>To prepare for the AAD certification exam, Android developers should:</p><br><ul><li>Understand the Android activity lifecycle</li><li>Be able to create an Activity that displays a Layout</li><li>Be able to construct a UI with ConstraintLayout</li><li>Understand how to create a custom View class and add it to a Layout</li><li>Know how to implement a custom app theme</li><li>Be able to add accessibility hooks to a custom View</li><li>Know how to apply content descriptions to views for accessibility</li><li>Understand how to display items in a RecyclerView</li><li>Be able to bind local data to a RecyclerView list using the Paging library</li><li>Know how to implement menu-based navigation</li><li>Understand how to implement drawer navigation</li></ul>"
+  },
+  {
+    "tabId": "android_data",
+    "description": "<p>Many Android apps store and retrieve user information that persists beyond the life of the app.</p><br><p>To prepare for the AAD certification exam, Android developers should:</p><br><ul><li>Understand how to define data using Room entities</li><li>Be able to access Room database with data access object (DAO)</li><li>Know how to observe and respond to changing data using LiveData</li><li>Understand how to use a Repository to mediate data operations</li><li>Be able to read and parse raw resources or asset files</li><li>Be able to create persistent Preference data from user input</li><li>Understand how to change the behavior of the app based on user preferences</li></ul>"
+  },
+  {
+    "tabId": "android_debug",
+    "description": "<p>Debugging is the process of isolating and removing defects in software code.By understanding the debugging tools in Android Studio, Android developers can create reliable and robust applications.</p><br><p>To prepare for the AAD certification exam, Android developers should:</p><br><ul><li>Understand the basic debugging techniques available in Android Studio</li><li>Know how to debug and fix issues with an app\\'s functional behavior and usability</li><li>Be able to use the System Log to output debug information</li><li>Understand how to use breakpoints in Android Studio</li><li>Know how to inspect variables using Android Studio</li></ul>"
+  },
+  {
+    "tabId": "android_test",
+    "description": "<p>Software testing is the process of executing a program with the intent of finding errors and abnormal or unexpected behavior. Testing and test-driven development (TDD) is a critically important step of the software development process for all Android developers.  It helps to reduce defect rates in commercial and enterprise software.</p><br><p>To prepare for the AAD certification exam, Android developers should:</p><br><ul><li>Thoroughly understand the fundamentals of testing</li><li>Be able to write useful local JUnit tests</li><li>Understand the Espresso UI test framework</li><li>Know how to write useful automated Android tests</li></ul>"
+  }
+]

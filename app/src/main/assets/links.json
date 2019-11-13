@@ -1,0 +1,262 @@
+[
+  {
+    "tabId": "android_core",
+    "topic": "Android Developers -> Toasts",
+    "linkUri": "https://developer.android.com/guide/topics/ui/notifiers/toasts"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Android Developers -> Snackbar",
+    "linkUri": "https://developer.android.com/reference/android/support/design/widget/Snackbar"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Android Developers -> Localize your app",
+    "linkUri": "https://developer.android.com/guide/topics/resources/localization"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Android Developers -> Application fundamentals",
+    "linkUri": "https://developer.android.com/guide/components/fundamentals"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Android Developers -> Create a notification",
+    "linkUri": "https://developer.android.com/training/notify-user/build-notification"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Android Developers -> AndroidX overview",
+    "linkUri": "https://developer.android.com/jetpack/androidx"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Android Developers -> Getting started with Jetpack",
+    "linkUri": "https://developer.android.com/jetpack/docs/getting-started"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Android Developers -> Android KTX (Kotlin)",
+    "linkUri": "https://developer.android.com/kotlin/ktx"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Codelabs -> Notifications",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-notifications/index.html#0"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Codelabs -> JobScheduler",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-job-scheduler/index.html#0"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Codelabs -> WorkManager (Java)",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-workmanager/index.html#0"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Codelabs -> WorkManager (Kotlin)",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-workmanager-kt/index.html#0"
+  },
+  {
+    "tabId": "android_core",
+    "topic": "Codelabs -> WorkManager (Kotlin)",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-workmanager-kt/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Android Developers -> Build a responsive UI with ConstraintLayout",
+    "linkUri": "https://developer.android.com/training/constraint-layout/"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Android Developers -> Create a list with RecyclerView",
+    "linkUri": "https://developer.android.com/guide/topics/ui/layout/recyclerview"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Android Developers -> Create a navigation drawer",
+    "linkUri": "https://developer.android.com/training/implementing-navigation/nav-drawer"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Android Developers -> Custom view components",
+    "linkUri": "https://developer.android.com/guide/topics/ui/custom-components"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Android Developers -> Build more accessible custom views",
+    "linkUri": "https://developer.android.com/guide/topics/ui/accessibility/custom-views"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Android Developers -> Styles and themes",
+    "linkUri": "https://developer.android.com/guide/topics/ui/look-and-feel/themes"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Android Developers -> setContentDescription()",
+    "linkUri": "https://developer.android.com/reference/android/view/View#setContentDescription(java.lang.CharSequence)"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Android Developers -> Adding accessibility features to apps for blind and visually-impaired users",
+    "linkUri": "https://www.youtube.com/watch?v=1by5J7c5Vz4"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Android Tool Time -> Building interfaces with ConstraintLayout in AS",
+    "linkUri": "https://www.youtube.com/watch?v=XamMbnzI5vE"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> Activities and intents",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-create-an-activity/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> Your first interactive UI",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-layout-editor-part-a/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> Themes and final touches",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-drawables-styles-and-themes/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> RecyclerView",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-create-recycler-view/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> Menus and pickers",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-menus-and-pickers/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> User navigation",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-provide-user-navigation/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> Material Components (Java)",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/mdc-101-java/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> Material Components (Kotlin)",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/mdc-101-kotlin/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> Lifecycles",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/kotlin-android-training-lifecycles-logging/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -&gt; Add user interactivity",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/kotlin-android-training-constraint-layout/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> Constraint layout using the Layout Editor",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/kotlin-android-training-interactivity/index.html#0"
+  },
+  {
+    "tabId": "android_ui",
+    "topic": "Codelabs -> RecyclerView fundamentals (Kotlin)",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/kotlin-android-training-recyclerview-fundamentals/index.html#0"
+  },
+  {
+    "tabId": "android_data",
+    "topic": "Android Developers -> Shared preferences",
+    "linkUri": "https://developer.android.com/training/data-storage/shared-preferences"
+  },
+  {
+    "tabId": "android_data",
+    "topic": "Codelabs -> Room, LiveData and ViewModel",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-livedata-viewmodel/index.html#0"
+  },
+  {
+    "tabId": "android_data",
+    "topic": "Codelabs -> Repository",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-livedata-viewmodel/index.html#0"
+  },
+  {
+    "tabId": "android_data",
+    "topic": "Codelabs -> Drawables, styles, and themes",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-drawables-styles-and-themes/index.html#0"
+  },
+  {
+    "tabId": "android_data",
+    "topic": "Codelabs -> Shared preferences",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-shared-preferences/index.html#0"
+  },
+  {
+    "tabId": "android_data",
+    "topic": "Codelabs -> App settings",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-adding-settings-to-app/index.html#0"
+  },
+  {
+    "tabId": "android_data",
+    "topic": "Codelabs -> ViewModel and ViewModelFactory",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/kotlin-android-training-view-model/index.html#0"
+  },
+  {
+    "tabId": "android_data",
+    "topic": "Codelabs -> Room with a View (Java)",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-room-with-a-view/index.html#0"
+  },
+  {
+    "tabId": "android_data",
+    "topic": "Codelabs -> Room with a View (Kotlin)",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-room-with-a-view-kotlin/index.html#0"
+  },
+  {
+    "tabId": "android_debug",
+    "topic": "Android Developers -> Debug your app",
+    "linkUri": "https://developer.android.com/studio/debug/"
+  },
+  {
+    "tabId": "android_debug",
+    "topic": "Android Dev Fundamentals -> Write and view logs with Logcat",
+    "linkUri": "https://developer.android.com/studio/debug/am-logcat"
+  },
+  {
+    "tabId": "android_debug",
+    "topic": "Codelabs -> Android Studio debugger",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-using-debugger/index.html#0"
+  },
+  {
+    "tabId": "android_debug",
+    "topic": "Codelabs -> Add log statements to your app",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-hello-world/index.html#7"
+  },
+  {
+    "tabId": "android_test",
+    "topic": "Android Developers -> Fundamentals of testing",
+    "linkUri": "https://developer.android.com/training/testing/fundamentals"
+  },
+  {
+    "tabId": "android_test",
+    "topic": "Android Dev Fundamentals -> Automate UI tests",
+    "linkUri": "https://developer.android.com/training/testing/ui-testing/"
+  },
+  {
+    "tabId": "android_test",
+    "topic": "Codelabs -> Unit tests",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-unit-tests/index.html#0"
+  },
+  {
+    "tabId": "android_test",
+    "topic": "Codelabs -> Android Testing -&gt; Unit testing with JUnit and Mockito",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-testing/index.html#0"
+  },
+  {
+    "tabId": "android_test",
+    "topic": "Codelabs -> Android Testing -&gt; Espresso for UI testing",
+    "linkUri": "https://codelabs.developers.google.com/codelabs/android-training-espresso-for-ui-testing/index.html#0"
+  }
+]

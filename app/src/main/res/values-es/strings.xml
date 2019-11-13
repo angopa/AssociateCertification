@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_toolbar_title">AA Certificacion</string>
+
+    <!-- Tab Titles -->
+    <string name="tab_title_android_core">Core</string>
+    <string name="tab_title_user_interface">UI</string>
+    <string name="tab_title_data_management">Data</string>
+    <string name="tab_title_debugging">Debugging</string>
+    <string name="tab_title_testing">Testing</string>
+
+    <!-- Android Core Tab -->
+    <string name="android_core_header_label">Android Core</string>
+    <string name="android_ui_header_label">Android User Interface</string>
+    <string name="android_data_header_label">Android Data Management</string>
+    <string name="android_debugging_header_label">Android Debugging</string>
+    <string name="android_test_header_label">Android Test</string>
+
+</resources>
