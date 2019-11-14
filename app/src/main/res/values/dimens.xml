@@ -5,4 +5,13 @@
 
     <!-- Minimum height of description so that the collapsing toolbar can be shown on every page -->
     <dimen name="plant_description_min_height">300dp</dimen>
+
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    
+    <dimen name="default_elevation">1dp</dimen>
+
+    <dimen name="default_corner_radius">10dp</dimen>
+
+    <dimen name="appbar_padding">16dp</dimen>
 </resources>

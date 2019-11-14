@@ -10,11 +10,21 @@
     <string name="tab_title_debugging" translatable="false">DEBUG</string>
     <string name="tab_title_testing" translatable="false">TEST</string>
 
+    <!-- Generic  -->
+    <string name="label_header_codelabs">CodeLabs</string>
+
     <!-- Android Core Tab -->
     <string name="android_core_header_label" translation_description="">Android Core</string>
     <string name="android_ui_header_label" translation_description="">Android User Interface</string>
     <string name="android_data_header_label" translation_description="">Android Data Management</string>
     <string name="android_debugging_header_label" translation_description="">Android Debugging</string>
     <string name="android_test_header_label" translation_description="">Android Test</string>
+
+    <!-- Toast Activity -->
+    <string name="label_toast_screen_title" translation_description="">Toast Message</string>
+    <string name="label_button_normal_toast_message" translation_description="">Normal Toast Message</string>
+    <string name="label_button_positioning_toast_message" translation_description="">Positioning Toast Message</string>
+    <string name="label_button_custom_toast_message" translation_description="">Custom Toast Message</string>
+    <string name="label_toast_message" translation_description="">Toast Message</string>
 
 </resources>

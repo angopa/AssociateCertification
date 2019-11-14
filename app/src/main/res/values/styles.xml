@@ -17,8 +17,20 @@
 
     <style name="Theme.AAD.AppbarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
+    <style name="Theme.AAD.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <style name="TextAppearance.AAD.Toolbar.Text" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
+
+    <style name="Theme.AAD.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:paddingTop">@dimen/padding_small</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:backgroundTint">@color/indigo50</item>
+        <item name="cardElevation">@dimen/default_elevation</item>
+        <item name="cardCornerRadius">@dimen/default_corner_radius</item>
+    </style>
+
+
 
 </resources>
