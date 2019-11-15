@@ -70,10 +70,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/label_header_codelabs"
-                android:textAppearance="?attr/textAppearanceHeadline5"
                 android:layout_margin="@dimen/margin_normal"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="@string/label_header_codelabs"
+                android:textAppearance="?attr/textAppearanceHeadline5" />
 
             <androidx.cardview.widget.CardView
                 style="@style/Theme.AAD.CardView"
@@ -85,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:focusable="true"
-                    android:onClick="@{() -> callback.onToastContainerTapped()}"
+                    android:onClick="@{() -> callback.toastContainerTapped()}"
                     android:padding="16dp">
 
                     <TextView
@@ -98,12 +98,46 @@
 
                     <ImageView
                         android:id="@+id/toast_message_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
                         android:src="@drawable/toast_image" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/Theme.AAD.CardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="@{() -> callback.snackbarContainerTapped()}"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/label_snack_bar"
+                        android:textAppearance="?attr/textAppearanceBody1" />
+
+                    <ImageView
+                        android:id="@+id/snackbar_image"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/snackbar_image" />
 
                 </RelativeLayout>
 

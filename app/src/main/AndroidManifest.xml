@@ -26,6 +26,9 @@
         <activity android:name=".codelabs.toast.ToastActivity"
             android:parentActivityName=".MainActivity"/>
 
+        <activity android:name=".codelabs.snackbar.SnackbarActivity"
+            android:parentActivityName=".MainActivity"/>
+
     </application>
 
 </manifest>

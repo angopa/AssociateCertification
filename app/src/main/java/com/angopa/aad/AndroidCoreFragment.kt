@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.angopa.aad.adapters.LinkAdapter
+import com.angopa.aad.codelabs.snackbar.SnackbarActivity
 import com.angopa.aad.codelabs.toast.ToastActivity
 import com.angopa.aad.databinding.FragmentAndroidCoreBinding
 import com.angopa.aad.utilities.InjectorUtils
@@ -40,8 +41,12 @@ class AndroidCoreFragment : Fragment() {
             subscribeUi(adapter)
 
             callback = object : Callback {
-                override fun onToastContainerTapped() {
+                override fun toastContainerTapped() {
                     startActivity(Intent(requireContext(), ToastActivity::class.java))
+                }
+
+                override fun snackbarContainerTapped() {
+                    startActivity(Intent(requireContext(), SnackbarActivity::class.java))
                 }
             }
         }
@@ -56,6 +61,7 @@ class AndroidCoreFragment : Fragment() {
     }
 
     interface Callback {
-        fun onToastContainerTapped()
+        fun toastContainerTapped()
+        fun snackbarContainerTapped()
     }
 }

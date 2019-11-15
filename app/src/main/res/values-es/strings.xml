@@ -10,14 +10,14 @@
     <string name="tab_title_testing">Testing</string>
 
     <!-- Generic  -->
-    <string name="label_header_codelabs">CodeLabs</string>
+    <string name="label_header_codelabs">Ejemplos</string>
 
     <!-- Android Core Tab -->
-    <string name="android_core_header_label">Android Core</string>
-    <string name="android_ui_header_label">Android User Interface</string>
-    <string name="android_data_header_label">Android Data Management</string>
-    <string name="android_debugging_header_label">Android Debugging</string>
-    <string name="android_test_header_label">Android Test</string>
+    <string name="android_core_header_label">Basico</string>
+    <string name="android_ui_header_label">Interfaz de Usuario</string>
+    <string name="android_data_header_label">Manejo de Datos</string>
+    <string name="android_debugging_header_label">Depuracion</string>
+    <string name="android_test_header_label">Pruebas</string>
 
     <!-- Toast Activity -->
     <string name="label_toast_screen_title" translation_description="">Toast Message</string>
@@ -26,5 +26,11 @@
     <string name="label_button_custom_toast_message">Custom Toast Message</string>
     <string name="label_toast_message">Toast Message</string>
 
+    <!-- SnackBar Activity -->
+    <string name="label_snack_bar">Snackbar</string>
+    <string name="label_snack_bar_screen_title">Snackbar</string>
+    <string name="label_button_normal_snack_bar">Default Snackbar</string>
+    <string name="label_button_action_call_snack_bar">Action call Snackbar</string>
+    <string name="label_button_custom_view_snack_bar">Custom view Snackbar</string>
 
 </resources>
