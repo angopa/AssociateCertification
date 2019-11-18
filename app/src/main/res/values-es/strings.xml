@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="main_toolbar_title">AA Certificacion</string>
+    <string name="main_toolbar_title">Android Certificacion</string>
 
     <!-- Tab Titles -->
     <string name="tab_title_android_core">Core</string>
@@ -11,6 +11,11 @@
 
     <!-- Generic  -->
     <string name="label_header_codelabs">Ejemplos</string>
+    <string name="generic_label_undo">UNDO</string>
+    <string name="generic_label_reset">RESET</string>
+    <string name="generic_label_delete">DELETE</string>
+    <string name="generic_label_save">SAVE</string>
+    <string name="generic_do_something_message">Do something</string>
 
     <!-- Android Core Tab -->
     <string name="android_core_header_label">Basico</string>
@@ -20,17 +25,24 @@
     <string name="android_test_header_label">Pruebas</string>
 
     <!-- Toast Activity -->
-    <string name="label_toast_screen_title" translation_description="">Toast Message</string>
-    <string name="label_button_normal_toast_message">Normal Toast Message</string>
-    <string name="label_button_positioning_toast_message">Positioning Toast Message</string>
-    <string name="label_button_custom_toast_message">Custom Toast Message</string>
+    <string name="label_toast_screen_title">Mensaje Toast</string>
+    <string name="label_button_normal_toast_message">Simple Mensage</string>
+    <string name="label_button_positioning_toast_message">Toast en Diferente Posicion</string>
+    <string name="label_button_custom_toast_message">Toast Personalizado</string>
     <string name="label_toast_message">Toast Message</string>
+    <string name="toast_simple_message">Simple mensaje Toast</string>
+    <string name="toast_over_here_message">Hey por aqui!</string>
+    <string name="toast_custom_message">Este es un mensage personalizado</string>
 
     <!-- SnackBar Activity -->
     <string name="label_snack_bar">Snackbar</string>
     <string name="label_snack_bar_screen_title">Snackbar</string>
-    <string name="label_button_normal_snack_bar">Default Snackbar</string>
-    <string name="label_button_action_call_snack_bar">Action call Snackbar</string>
-    <string name="label_button_custom_view_snack_bar">Custom view Snackbar</string>
+    <string name="label_button_normal_snack_bar">Normal Snackbar</string>
+    <string name="label_button_action_call_snack_bar">Snackbar con Accion</string>
+    <string name="label_button_custom_view_snack_bar">Snackbar personalizado</string>
+    <string name="snack_bar_simple_message">Nomal Snackbar Mensage</string>
+    <string name="snack_bar_delete_dummy">Item Eliminado</string>
+    <string name="snack_bar_restore_dummy">Item Restaurado</string>
+    <string name="snack_bar_custom_message">Snackbar Personalizado</string>
 
 </resources>

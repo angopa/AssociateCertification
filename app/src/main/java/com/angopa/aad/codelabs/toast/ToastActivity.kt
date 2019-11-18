@@ -3,7 +3,6 @@ package com.angopa.aad.codelabs.toast
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
-import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -29,11 +28,11 @@ class ToastActivity : AppCompatActivity() {
         ).apply {
             callback = object : Callback {
                 override fun normalToast() {
-                    Toast.makeText(this@ToastActivity, "My Simple Toast Message", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ToastActivity, getString(R.string.toast_simple_message), Toast.LENGTH_SHORT).show()
                 }
 
                 override fun positioningToast() {
-                    val toast = Toast.makeText(this@ToastActivity, "Over Here!", Toast.LENGTH_SHORT)
+                    val toast = Toast.makeText(this@ToastActivity, getString(R.string.toast_over_here_message), Toast.LENGTH_SHORT)
                     toast.setGravity(Gravity.TOP, 0, 0)
                     toast.show()
                 }
@@ -42,7 +41,7 @@ class ToastActivity : AppCompatActivity() {
                     val inflater = layoutInflater
                     val layout: View = inflater.inflate(R.layout.custom_toast, findViewById(R.id.custom_toast_container))
                     val text: TextView = layout.findViewById(R.id.text)
-                    text.text = "This is a custom toast"
+                    text.text = getString(R.string.toast_custom_message)
                     with(Toast(applicationContext)) {
                         setGravity(Gravity.CENTER_VERTICAL, 0, 0)
                         duration = Toast.LENGTH_LONG

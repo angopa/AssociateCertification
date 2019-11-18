@@ -11,7 +11,12 @@
     <string name="tab_title_testing" translatable="false">TEST</string>
 
     <!-- Generic  -->
-    <string name="label_header_codelabs">CodeLabs</string>
+    <string name="label_header_codelabs" translation_description="">CodeLabs</string>
+    <string name="generic_label_undo" translation_description="">UNDO</string>
+    <string name="generic_label_reset" translation_description="">RESET</string>
+    <string name="generic_label_delete" translation_description="">DELETE</string>
+    <string name="generic_label_save" translation_description="">SAVE</string>
+    <string name="generic_do_something_message" translation_description="">Do something</string>
 
     <!-- Android Core Tab -->
     <string name="android_core_header_label" translation_description="">Core</string>
@@ -26,7 +31,9 @@
     <string name="label_button_positioning_toast_message" translation_description="">Positioning Toast Message</string>
     <string name="label_button_custom_toast_message" translation_description="">Custom Toast Message</string>
     <string name="label_toast_message" translation_description="">Toast Message</string>
-
+    <string name="toast_simple_message" translation_description="">My Simple Toast Message</string>
+    <string name="toast_over_here_message" translation_description="">Over Here!</string>
+    <string name="toast_custom_message" translation_description="">This is a custom toast</string>
 
     <!-- SnackBar Activity -->
     <string name="label_snack_bar" translation_description="">Snackbar</string>
@@ -34,6 +41,9 @@
     <string name="label_button_normal_snack_bar" translation_description="">Default Snackbar</string>
     <string name="label_button_action_call_snack_bar" translation_description="">Action call Snackbar</string>
     <string name="label_button_custom_view_snack_bar" translation_description="">Custom view Snackbar</string>
-
+    <string name="snack_bar_simple_message" translation_description="">Default Snackbar</string>
+    <string name="snack_bar_delete_dummy" translation_description="">Message is Deleted</string>
+    <string name="snack_bar_restore_dummy" translation_description="">Message is restored</string>
+    <string name="snack_bar_custom_message" translation_description="">Custom Snackbar</string>
 
 </resources>

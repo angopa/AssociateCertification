@@ -28,24 +28,24 @@ class SnackbarActivity : AppCompatActivity() {
         ).apply {
             callback = object : Callback {
                 override fun onNormalSnackBarClick() {
-                    Snackbar.make(root, "Default Snackbar", Snackbar.LENGTH_INDEFINITE).show()
+                    Snackbar.make(root, getString(R.string.snack_bar_simple_message), Snackbar.LENGTH_INDEFINITE).show()
                 }
 
                 override fun onActionCallClick() {
-                    Snackbar.make(root, "Message is Deleted", Snackbar.LENGTH_SHORT)
-                        .setAction("UNDO") {
-                            Snackbar.make(root, "Message is restored", Snackbar.LENGTH_SHORT)
+                    Snackbar.make(root, getString(R.string.snack_bar_delete_dummy), Snackbar.LENGTH_SHORT)
+                        .setAction(getString(R.string.generic_label_undo)) {
+                            Snackbar.make(root, getString(R.string.snack_bar_restore_dummy), Snackbar.LENGTH_SHORT)
                                 .show()
                         }
                         .show()
                 }
 
                 override fun onCustomViewClick() {
-                    Snackbar.make(root, "Custom Snackbar", Snackbar.LENGTH_SHORT)
-                        .setAction("RESET") {
+                    Snackbar.make(root, getString(R.string.snack_bar_custom_message), Snackbar.LENGTH_SHORT)
+                        .setAction(getString(R.string.generic_label_reset)) {
                             val toast = Toast.makeText(
                                 this@SnackbarActivity,
-                                "Do something",
+                                getString(R.string.generic_do_something_message),
                                 Toast.LENGTH_LONG
                             )
                             toast.setGravity(Gravity.CENTER, 0, 0)
