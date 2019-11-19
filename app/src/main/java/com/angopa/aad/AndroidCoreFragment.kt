@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.angopa.aad.adapters.LinkAdapter
+import com.angopa.aad.codelabs.localization.LocalizationActivity
 import com.angopa.aad.codelabs.snackbar.SnackbarActivity
 import com.angopa.aad.codelabs.toast.ToastActivity
 import com.angopa.aad.databinding.FragmentAndroidCoreBinding
@@ -48,6 +49,10 @@ class AndroidCoreFragment : Fragment() {
                 override fun snackbarContainerTapped() {
                     startActivity(Intent(requireContext(), SnackbarActivity::class.java))
                 }
+
+                override fun localizationContainerTapped() {
+                    startActivity(Intent(requireContext(), LocalizationActivity::class.java))
+                }
             }
         }
 
@@ -63,5 +68,6 @@ class AndroidCoreFragment : Fragment() {
     interface Callback {
         fun toastContainerTapped()
         fun snackbarContainerTapped()
+        fun localizationContainerTapped()
     }
 }

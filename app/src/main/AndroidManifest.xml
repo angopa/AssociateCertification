@@ -29,6 +29,9 @@
         <activity android:name=".codelabs.snackbar.SnackbarActivity"
             android:parentActivityName=".MainActivity"/>
 
+        <activity android:name=".codelabs.localization.LocalizationActivity"
+            android:parentActivityName=".MainActivity"/>
+
     </application>
 
 </manifest>

@@ -1,4 +1,6 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <string name="app_name" translatable="false">AAD</string>
 
     <string name="main_toolbar_title" translation_description="Title for the 'Main' screen where user can see the different tabs">AA Certification</string>
@@ -17,6 +19,7 @@
     <string name="generic_label_delete" translation_description="">DELETE</string>
     <string name="generic_label_save" translation_description="">SAVE</string>
     <string name="generic_do_something_message" translation_description="">Do something</string>
+    <string name="activity_restarted_message" translation_description="">Activity restarted</string>
 
     <!-- Android Core Tab -->
     <string name="android_core_header_label" translation_description="">Core</string>
@@ -45,5 +48,16 @@
     <string name="snack_bar_delete_dummy" translation_description="">Message is Deleted</string>
     <string name="snack_bar_restore_dummy" translation_description="">Message is restored</string>
     <string name="snack_bar_custom_message" translation_description="">Custom Snackbar</string>
+
+    <!-- Location Activity -->
+    <string name="localization_screen_title" translation_description="">Localization</string>
+    <string name="label_locale_language" translation_description="">Locale language:
+        <xliff:g id="def_language"  >%s</xliff:g>
+    </string>
+    <string name="label_localization_card" translation_description="">Localize your app</string>
+    <string name="label_locale_date" translation_description="">Date: %s</string>
+    <string name="label_language_english_button">Language English</string>
+    <string name="label_language_spanish_button">Language Spanish</string>
+
 
 </resources>

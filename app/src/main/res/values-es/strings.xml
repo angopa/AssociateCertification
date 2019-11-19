@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="main_toolbar_title">Android Certificacion</string>
+    <string name="main_toolbar_title">Certificacion Android</string>
 
     <!-- Tab Titles -->
     <string name="tab_title_android_core">Core</string>
@@ -16,6 +16,7 @@
     <string name="generic_label_delete">DELETE</string>
     <string name="generic_label_save">SAVE</string>
     <string name="generic_do_something_message">Do something</string>
+    <string name="activity_restarted_message">Activity Reiniciada</string>
 
     <!-- Android Core Tab -->
     <string name="android_core_header_label">Basico</string>
@@ -44,5 +45,13 @@
     <string name="snack_bar_delete_dummy">Item Eliminado</string>
     <string name="snack_bar_restore_dummy">Item Restaurado</string>
     <string name="snack_bar_custom_message">Snackbar Personalizado</string>
+
+    <!-- Location Activity -->
+    <string name="localization_screen_title">Localizacion</string>
+    <string name="label_locale_language" translation_description="">Idioma establecido en: %s</string>
+    <string name="label_localization_card">Localize tu applicacion</string>
+    <string name="label_locale_date">Fecha: %s</string>
+    <string name="label_language_english_button">Idioma Ingles</string>
+    <string name="label_language_spanish_button">Idioma Espanol</string>
 
 </resources>
