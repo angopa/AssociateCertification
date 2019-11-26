@@ -2,46 +2,59 @@ package com.angopa.aad.codelabs.snackbar
 
 import android.graphics.Color.RED
 import android.graphics.Color.YELLOW
-import android.os.Bundle
 import android.view.Gravity
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
 import com.angopa.aad.databinding.ActivitySnackbarBinding
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.activity_snackbar.*
 
 /**
  * Example class for Snackbar providing different examples of it use.
  *
  * Implement binding approach to handle click events on the view.
  */
-class SnackbarActivity : AppCompatActivity() {
+class SnackbarActivity : BaseActivity() {
 
     private lateinit var binding: ActivitySnackbarBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun getBindingComponent() {
         binding = DataBindingUtil.setContentView<ActivitySnackbarBinding>(
             this@SnackbarActivity, R.layout.activity_snackbar
         ).apply {
             callback = object : Callback {
                 override fun onNormalSnackBarClick() {
-                    Snackbar.make(root, getString(R.string.snack_bar_simple_message), Snackbar.LENGTH_INDEFINITE).show()
+                    Snackbar.make(
+                        root,
+                        getString(R.string.snack_bar_simple_message),
+                        Snackbar.LENGTH_INDEFINITE
+                    ).show()
                 }
 
                 override fun onActionCallClick() {
-                    Snackbar.make(root, getString(R.string.snack_bar_delete_dummy), Snackbar.LENGTH_SHORT)
+                    Snackbar.make(
+                        root,
+                        getString(R.string.snack_bar_delete_dummy),
+                        Snackbar.LENGTH_SHORT
+                    )
                         .setAction(getString(R.string.generic_label_undo)) {
-                            Snackbar.make(root, getString(R.string.snack_bar_restore_dummy), Snackbar.LENGTH_SHORT)
+                            Snackbar.make(
+                                root,
+                                getString(R.string.snack_bar_restore_dummy),
+                                Snackbar.LENGTH_SHORT
+                            )
                                 .show()
                         }
                         .show()
                 }
 
                 override fun onCustomViewClick() {
-                    Snackbar.make(root, getString(R.string.snack_bar_custom_message), Snackbar.LENGTH_SHORT)
+                    Snackbar.make(
+                        root,
+                        getString(R.string.snack_bar_custom_message),
+                        Snackbar.LENGTH_SHORT
+                    )
                         .setAction(getString(R.string.generic_label_reset)) {
                             val toast = Toast.makeText(
                                 this@SnackbarActivity,
@@ -56,12 +69,9 @@ class SnackbarActivity : AppCompatActivity() {
                 }
             }
         }
-
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowHomeEnabled(true)
-        supportActionBar?.setTitle(R.string.label_snack_bar_screen_title)
     }
+
+    override fun getScreenTitle(): Int = R.string.label_snack_bar_screen_title
 
     interface Callback {
         fun onNormalSnackBarClick()

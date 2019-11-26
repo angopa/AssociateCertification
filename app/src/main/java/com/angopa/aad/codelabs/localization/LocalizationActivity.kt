@@ -1,7 +1,6 @@
 package com.angopa.aad.codelabs.localization
 
 import android.content.Intent
-import android.os.Bundle
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.angopa.aad.BaseActivity
@@ -18,7 +17,7 @@ class LocalizationActivity : BaseActivity() {
 
     private lateinit var binding: ActivityLocalizationBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun getBindingComponent() {
         binding = DataBindingUtil.setContentView<ActivityLocalizationBinding>(
             this@LocalizationActivity, R.layout.activity_localization
         ).apply {
@@ -38,9 +37,6 @@ class LocalizationActivity : BaseActivity() {
             en.setOnClickListener { setNewLocale(LANGUAGE_ENGLISH) }
             es.setOnClickListener { setNewLocale(LANGUAGE_SPANISH) }
         }
-
-        //Call supper after binding layout to obtain toolbar component
-        super.onCreate(savedInstanceState)
     }
 
     private fun setNewLocale(language: String) {
@@ -53,7 +49,5 @@ class LocalizationActivity : BaseActivity() {
             .show()
     }
 
-    override fun getScreenTitle(): Int {
-        return R.string.localization_screen_title
-    }
+    override fun getScreenTitle(): Int = R.string.localization_screen_title
 }

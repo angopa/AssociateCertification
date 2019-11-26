@@ -1,13 +1,16 @@
 package com.angopa.aad
 
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_localization.*
+import kotlinx.android.synthetic.main.include_toolbar.*
 
-open abstract class BaseActivity : AppCompatActivity() {
+abstract class BaseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        getBindingComponent()
 
         setSupportActionBar(toolbar)
         supportActionBar?.setTitle(getScreenTitle())
@@ -21,4 +24,10 @@ open abstract class BaseActivity : AppCompatActivity() {
     }
 
     abstract fun getScreenTitle(): Int
+
+    abstract fun getBindingComponent()
+
+    fun showAlertDialog(dialog: AlertDialog) {
+        dialog.show()
+    }
 }

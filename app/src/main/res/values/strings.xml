@@ -20,6 +20,8 @@
     <string name="generic_label_save" translation_description="">SAVE</string>
     <string name="generic_do_something_message" translation_description="">Do something</string>
     <string name="activity_restarted_message" translation_description="">Activity restarted</string>
+    <string name="dialog_label_ok" translation_description="">Ok</string>
+    <string name="dialog_label_cancel">Cancel</string>
 
     <!-- Android Core Tab -->
     <string name="android_core_header_label" translation_description="">Core</string>
@@ -29,7 +31,7 @@
     <string name="android_test_header_label" translation_description="">Test</string>
 
     <!-- Toast Activity -->
-    <string name="label_toast_screen_title" translation_description="">Toast Message</string>
+    <string name="label_toast_screen_title" translation_description="">Toast Message Codelab</string>
     <string name="label_button_normal_toast_message" translation_description="">Normal Toast Message</string>
     <string name="label_button_positioning_toast_message" translation_description="">Positioning Toast Message</string>
     <string name="label_button_custom_toast_message" translation_description="">Custom Toast Message</string>
@@ -40,7 +42,7 @@
 
     <!-- SnackBar Activity -->
     <string name="label_snack_bar" translation_description="">Snackbar</string>
-    <string name="label_snack_bar_screen_title" translation_description="">Snackbar</string>
+    <string name="label_snack_bar_screen_title" translation_description="">Snackbar Codelab</string>
     <string name="label_button_normal_snack_bar" translation_description="">Default Snackbar</string>
     <string name="label_button_action_call_snack_bar" translation_description="">Action call Snackbar</string>
     <string name="label_button_custom_view_snack_bar" translation_description="">Custom view Snackbar</string>
@@ -50,14 +52,37 @@
     <string name="snack_bar_custom_message" translation_description="">Custom Snackbar</string>
 
     <!-- Location Activity -->
-    <string name="localization_screen_title" translation_description="">Localization</string>
+    <string name="localization_screen_title" translation_description="">Localization Codelab</string>
     <string name="label_locale_language" translation_description="">Locale language:
         <xliff:g id="def_language"  >%s</xliff:g>
     </string>
     <string name="label_localization_card" translation_description="">Localize your app</string>
     <string name="label_locale_date" translation_description="">Date: %s</string>
-    <string name="label_language_english_button">Language English</string>
-    <string name="label_language_spanish_button">Language Spanish</string>
+    <string name="label_language_english_button" translation_description="">Language English</string>
+    <string name="label_language_spanish_button" translation_description="">Language Spanish</string>
+
+    <!-- Activity -->
+    <string name="label_activity_codelab" translation_description="">Activity Codelab</string>
+    <string name="label_activity_card" translation_description="">Activity Component</string>
+    <string name="label_button_start_activity_contact" translation_description="">Start Activity For Result - Contact</string>
+    <string name="label_button_start_activity_image" translation_description="">Start Activity For Result - Image</string>
+    <string name="label_launch_calendar_button" translation_description="">Launch Calendar</string>
+    <string name="label_save_preferences" translation_description="">Save preferences</string>
+    <string name="intent_filter_screen_label" translation_description="">Intent Filter Example</string>
+    <string name="label_intent_filter_text_view" translation_description="">Intent Filte name: SEND, category: DEFAULT, data: */*</string>
+    <string name="label_send_email_with_explicit_activity" translation_description="">Send With Gmail</string>
+    <string name="label_send_email_implicit_activity" translation_description="">Send Email</string>
+    <string name="dialog_label_selected_date" translation_description="">Selected Date</string>
+    <string name="label_custom_activity_for_result" translation_description="">Open Option List</string>
+
+    <!-- Option List Activity   -->
+    <string name="label_option_4" translation_description="">Option 4</string>
+    <string name="label_option_3" translation_description="">Option 3</string>
+    <string name="label_option_2" translation_description="">Option 2</string>
+    <string name="label_option_1" translation_description="">Option 1</string>
+    <string name="label_cancel_button" translation_description="">Cancel</string>
+    <string name="label_select_button" translation_description="">Select</string>
+
 
 
 </resources>

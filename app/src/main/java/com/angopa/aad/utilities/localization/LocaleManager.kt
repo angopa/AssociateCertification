@@ -172,7 +172,7 @@ class LocaleManager private constructor(
             application: Application,
             defaultLocale: Locale = Locale.getDefault()
         ): LocaleManager {
-            return init(application, Storage(application))
+            return init(application, Storage.getInstance(application))
         }
 
         /**

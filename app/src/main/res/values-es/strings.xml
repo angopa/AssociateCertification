@@ -26,7 +26,7 @@
     <string name="android_test_header_label">Pruebas</string>
 
     <!-- Toast Activity -->
-    <string name="label_toast_screen_title">Mensaje Toast</string>
+    <string name="label_toast_screen_title">Ejemplo Mensaje Toast</string>
     <string name="label_button_normal_toast_message">Simple Mensage</string>
     <string name="label_button_positioning_toast_message">Toast en Diferente Posicion</string>
     <string name="label_button_custom_toast_message">Toast Personalizado</string>
@@ -37,7 +37,7 @@
 
     <!-- SnackBar Activity -->
     <string name="label_snack_bar">Snackbar</string>
-    <string name="label_snack_bar_screen_title">Snackbar</string>
+    <string name="label_snack_bar_screen_title">Ejemplo Snackbar</string>
     <string name="label_button_normal_snack_bar">Normal Snackbar</string>
     <string name="label_button_action_call_snack_bar">Snackbar con Accion</string>
     <string name="label_button_custom_view_snack_bar">Snackbar personalizado</string>
@@ -47,11 +47,35 @@
     <string name="snack_bar_custom_message">Snackbar Personalizado</string>
 
     <!-- Location Activity -->
-    <string name="localization_screen_title">Localizacion</string>
+    <string name="localization_screen_title">Ejemplo Localizacion</string>
     <string name="label_locale_language" translation_description="">Idioma establecido en: %s</string>
     <string name="label_localization_card">Localize tu applicacion</string>
     <string name="label_locale_date">Fecha: %s</string>
     <string name="label_language_english_button">Idioma Ingles</string>
     <string name="label_language_spanish_button">Idioma Espanol</string>
+
+    <!-- Activity -->
+    <string name="label_activity_codelab">Ejemplo Activity</string>
+    <string name="label_activity_card">Componente Activity</string>
+    <string name="label_button_start_activity_contact">Lanzar Activity - Seleccionar Contacto</string>
+    <string name="label_button_start_activity_image">Lanzar Activity - Seleccionar Imagen</string>
+    <string name="label_launch_calendar_button">Launch Calendar</string>
+    <string name="dialog_label_ok">Ok</string>
+    <string name="label_save_preferences">Save preferences</string>
+    <string name="intent_filter_screen_label">Intent Filter Example</string>
+    <string name="label_intent_filter_text_view">Intent Filte name: SEND, category: DEFAULT, data: */*</string>
+    <string name="label_send_email_with_explicit_activity">Send With Gmail</string>
+    <string name="label_send_email_implicit_activity">Send Email</string>
+    <string name="label_custom_activity_for_result">Open Option List</string>
+    <string name="dialog_label_selected_date">Selected Date</string>
+
+    <!-- Option List Activity   -->
+    <string name="label_option_4">Option 4</string>
+    <string name="label_option_3">Option 3</string>
+    <string name="label_option_2">Option 2</string>
+    <string name="label_option_1">Option 1</string>
+    <string name="label_cancel_button">Cancel</string>
+    <string name="label_select_button">Select</string>
+    <string name="dialog_label_cancel">Cancel</string>
 
 </resources>

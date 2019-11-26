@@ -1,5 +1,7 @@
 package com.angopa.aad
 
+import android.net.Uri
+import com.angopa.aad.codelabs.fundamentals.activity.ActivityModel
 import java.util.*
 
 /**
@@ -8,4 +10,6 @@ import java.util.*
 interface IStorage {
     fun getLocale(): Locale
     fun persistLocale(locale: Locale)
+    fun getMultipleOptions(): ActivityModel
+    fun persistMultipleOptions(activityModel: ActivityModel)
 }

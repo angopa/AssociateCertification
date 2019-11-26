@@ -1,15 +1,17 @@
 package com.angopa.aad
 
 import android.content.Context
+import com.angopa.aad.codelabs.fundamentals.activity.ActivityModel
 import org.json.JSONObject
 import java.util.*
 
 /**
  * Default implementation of [Storage] using [SharedPreferences].
  */
-class Storage @JvmOverloads constructor(
+class Storage private constructor(
     context: Context,
     private val defaultLocale: Locale = Locale.getDefault(),
+    private val defaultActivityModel: ActivityModel = ActivityModel("", ""),
     preferenceName: String = DEFAULT_PREFERENCE_NAME
 ) : IStorage {
 
@@ -38,12 +40,43 @@ class Storage @JvmOverloads constructor(
         prefs.edit().putString(LANGUAGE_KEY, json.toString()).apply()
     }
 
+    override fun getMultipleOptions(): ActivityModel {
+        return if (!prefs.getString(MULTIPLE_OPTIONS_KEY, null).isNullOrBlank()) {
+            val json = JSONObject(prefs.getString(MULTIPLE_OPTIONS_KEY, null)!!)
+            val contactUri = json.getString(CONTACT_URI_KEY).replace("\\/", "/")
+            val imageUri = json.getString(IMAGE_URI_KEY).replace("\\/", "/")
+            ActivityModel(contactUri, imageUri)
+        } else {
+            defaultActivityModel
+        }
+    }
+
+    override fun persistMultipleOptions(
+        activityModel: ActivityModel
+    ) {
+        val json = JSONObject().apply {
+            put(CONTACT_URI_KEY, activityModel.contactUri)
+            put(IMAGE_URI_KEY, activityModel.imageUri)
+        }
+        prefs.edit().putString(MULTIPLE_OPTIONS_KEY, json.toString()).apply()
+    }
+
     companion object {
         private const val DEFAULT_PREFERENCE_NAME = "aad_preference"
         private const val LANGUAGE_KEY = "language_key"
         private const val LANGUAGE_JSON_KEY = "language"
         private const val COUNTRY_JSON_KEY = "country"
         private const val VARIANT_JSON_KEY = "variant"
+        private const val CONTACT_URI_KEY = "contact_uri"
+        private const val IMAGE_URI_KEY = "image_uri"
+        private const val MULTIPLE_OPTIONS_KEY = "view_mode"
+
+        @Volatile
+        private var instance: Storage? = null
+
+        fun getInstance(context: Context) = instance ?: synchronized(this) {
+            instance ?: Storage(context).also { instance = it }
+        }
     }
 }
 

@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.angopa.aad.adapters.LinkAdapter
+import com.angopa.aad.codelabs.fundamentals.activity.MultiplePurposeActivity
 import com.angopa.aad.codelabs.localization.LocalizationActivity
 import com.angopa.aad.codelabs.snackbar.SnackbarActivity
 import com.angopa.aad.codelabs.toast.ToastActivity
@@ -37,22 +38,15 @@ class AndroidCoreFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
 
             val adapter = LinkAdapter()
-            linkList.adapter = adapter
+            linksRecyclerView.adapter = adapter
 
             subscribeUi(adapter)
 
             callback = object : Callback {
-                override fun toastContainerTapped() {
-                    startActivity(Intent(requireContext(), ToastActivity::class.java))
-                }
-
-                override fun snackbarContainerTapped() {
-                    startActivity(Intent(requireContext(), SnackbarActivity::class.java))
-                }
-
-                override fun localizationContainerTapped() {
-                    startActivity(Intent(requireContext(), LocalizationActivity::class.java))
-                }
+                override fun toastCodelabTapped() = startActivity(Intent(requireContext(), ToastActivity::class.java))
+                override fun snackbarCodelabTapped() = startActivity(Intent(requireContext(), SnackbarActivity::class.java))
+                override fun localizationCodelabTapped() = startActivity(Intent(requireContext(), LocalizationActivity::class.java))
+                override fun activityCodelabTapped() = startActivity(Intent(requireContext(), MultiplePurposeActivity::class.java))
             }
         }
 
@@ -66,8 +60,9 @@ class AndroidCoreFragment : Fragment() {
     }
 
     interface Callback {
-        fun toastContainerTapped()
-        fun snackbarContainerTapped()
-        fun localizationContainerTapped()
+        fun toastCodelabTapped()
+        fun snackbarCodelabTapped()
+        fun localizationCodelabTapped()
+        fun activityCodelabTapped()
     }
 }

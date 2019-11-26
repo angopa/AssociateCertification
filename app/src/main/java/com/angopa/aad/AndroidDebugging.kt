@@ -33,7 +33,7 @@ class AndroidDebugging : Fragment() {
             lifecycleOwner = viewLifecycleOwner
 
             val adapter = LinkAdapter()
-            linkList.adapter = adapter
+            linksRecyclerView.adapter = adapter
 
             subscribeUi(adapter)
         }

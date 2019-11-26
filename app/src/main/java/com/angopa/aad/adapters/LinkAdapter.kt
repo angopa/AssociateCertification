@@ -19,12 +19,14 @@ class LinkAdapter :
         LinkDiffCallback()
     ) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(DataBindingUtil.inflate(
-            LayoutInflater.from(parent.context),
-            R.layout.list_item_link,
-            parent,
-            false
-        ))
+        return ViewHolder(
+            DataBindingUtil.inflate(
+                LayoutInflater.from(parent.context),
+                R.layout.list_item_link,
+                parent,
+                false
+            )
+        )
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {

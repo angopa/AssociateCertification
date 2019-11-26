@@ -33,7 +33,7 @@ class AndroidDataManagementFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
 
             val adapter = LinkAdapter()
-            linkList.adapter = adapter
+            linksRecyclerView.adapter = adapter
 
             subscribeUi(adapter)
         }
@@ -42,7 +42,7 @@ class AndroidDataManagementFragment : Fragment() {
     }
 
     private fun subscribeUi(adapter: LinkAdapter) {
-        androidDataManagementViewModel.links.observe(viewLifecycleOwner) {result ->
+        androidDataManagementViewModel.links.observe(viewLifecycleOwner) { result ->
             adapter.submitList(result)
         }
     }

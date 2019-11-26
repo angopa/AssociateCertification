@@ -23,7 +23,7 @@ abstract class CoreApplication : Application() {
 
     @Suppress("UNUSED_VARIABLE")
     private fun configureDefaultLocale() {
-        val storage = Storage(this)
+        val storage = Storage.getInstance(this)
         val localeMainActivity = LocaleManager.init(this, storage)
     }
 }
