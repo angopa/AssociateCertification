@@ -82,7 +82,7 @@
     <string name="label_option_1" translation_description="">Option 1</string>
     <string name="label_cancel_button" translation_description="">Cancel</string>
     <string name="label_select_button" translation_description="">Select</string>
-
+    <string name="label_test_intent">Test Intent</string>
 
 
 </resources>

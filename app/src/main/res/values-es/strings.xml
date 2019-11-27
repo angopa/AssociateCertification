@@ -77,5 +77,6 @@
     <string name="label_cancel_button">Cancel</string>
     <string name="label_select_button">Select</string>
     <string name="dialog_label_cancel">Cancel</string>
+    <string name="label_test_intent">Test Intent</string>
 
 </resources>

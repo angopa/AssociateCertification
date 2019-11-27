@@ -205,6 +205,14 @@
                 </androidx.cardview.widget.CardView>
 
                 <Button
+                    android:id="@+id/test_intent_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="@{() -> callback.launchTestIntent()}"
+                    android:text="@string/label_test_intent" />
+
+                <Button
                     android:id="@+id/save_pref_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

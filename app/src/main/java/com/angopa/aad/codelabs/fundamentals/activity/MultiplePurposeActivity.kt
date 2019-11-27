@@ -4,6 +4,7 @@ import android.Manifest.permission.READ_CONTACTS
 import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.app.Activity
 import android.content.Intent
+import android.content.Intent.*
 import android.content.res.Configuration
 import android.graphics.Bitmap
 import android.net.Uri
@@ -55,6 +56,7 @@ class MultiplePurposeActivity : BaseActivity() {
                 override fun sendEmailWithGmail() = onSendEmailWithGmail()
                 override fun sendEmailWithImplicitActivity() = openSelectActivityBar()
                 override fun launchSelectOptionActivity() = onLaunchSelectOptionActivity()
+                override fun launchTestIntent() = testIntentCapabilities()
             }
         }
 
@@ -204,7 +206,7 @@ class MultiplePurposeActivity : BaseActivity() {
 
             PERMISSIONS_REQUEST_ACCESS_MEDIA -> {
                 accessMediaPermissionState = getAccessMediaPermission()
-
+                notifyAccessMediaPermissionRequestResolved()
             }
         }
     }
@@ -232,7 +234,6 @@ class MultiplePurposeActivity : BaseActivity() {
         val intent = Intent().apply {
             action = Intent.ACTION_VIEW
             type = "text/plain"
-            data = Uri.parse("myemail@domain.com")
             setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail")
             putExtra(Intent.EXTRA_EMAIL, "text@doamin.com")
             putExtra(Intent.EXTRA_SUBJECT, "Test")
@@ -342,6 +343,7 @@ class MultiplePurposeActivity : BaseActivity() {
         fun sendEmailWithGmail()
         fun sendEmailWithImplicitActivity()
         fun launchSelectOptionActivity()
+        fun launchTestIntent()
     }
 
     interface SelectDateListener {
@@ -352,10 +354,29 @@ class MultiplePurposeActivity : BaseActivity() {
         private const val PICK_CONTACT_REQUEST = 0
         private const val PICK_IMAGE_REQUEST = 1
         private const val PICK_OPTION_FROM_LIST_REQUEST = 2
+
         private const val PERMISSIONS_REQUEST_READ_CONTACTS = 9
         private const val PERMISSIONS_REQUEST_ACCESS_MEDIA = 8
 
         private const val BUNDLE_EXTRA_MESSAGE = "MultiplePurposeActivity.BUNDLE_EXTRA_MESSAGE"
-        private const val BUNDLE_EXTRA_SELECTED_OPTION = "MultiplePurposeActivity.BUNDLE_EXTRA_SELECTED_OPTION"
+        private const val BUNDLE_EXTRA_SELECTED_OPTION =
+            "MultiplePurposeActivity.BUNDLE_EXTRA_SELECTED_OPTION"
+    }
+
+    private fun testIntentCapabilities() {
+        val sendIntent = Intent().apply {
+            action = ACTION_SEND
+            putExtra(EXTRA_TEXT, "This is a extra message")
+            type = "text/plain"
+        }
+
+        // Always open the selector bottom bar, the user has to select the app that will open the
+        // Intent every time this option is launch
+        val chooser = createChooser(sendIntent, "Share info with")
+
+        // Verify that the intent will resolve to an activity
+        if (sendIntent.resolveActivity(packageManager) != null) {
+            startActivity(chooser)
+        }
     }
 }
