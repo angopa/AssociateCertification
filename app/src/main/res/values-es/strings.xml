@@ -79,4 +79,23 @@
     <string name="dialog_label_cancel">Cancel</string>
     <string name="label_test_intent">Test Intent</string>
 
+    <!-- Service Activity -->
+    <string name="label_service_card">Services</string>
+    <string name="service_screen_title">Services</string>
+    <string name="service_description">This is a example description for the ExampleService</string>
+    <string name="intent_service_description">This is a example description for the ExampleIntentService</string>
+    <string name="foreground_service_description">This is a example description for the ForegroundService</string>
+    <string name="bound_service_description">This is a example description for the BoundService</string>
+    <string name="messenger_bound_service_description">This is a example description for the Bound Service - Messenger implementation</string>
+    <string name="label_button_launch_simple_service">Simple Service</string>
+    <string name="label_button_launch_simple_intent_service">Simple Intent Service</string>
+    <string name="label_button_launch_foreground_service">Foreground Service</string>
+    <string name="label_button_launch_bound_service">Bound Service</string>
+    <string name="label_button_obtain_random_number">Obtain Random Number: %s</string>
+    <string name="notification_ticker">Ticker text</string>
+    <string name="downloading_notification_title">Foreground Notification</string>
+    <string name="downloading_notification_description">Fake downloading&#8230; last for 15 seconds</string>
+    <string name="download_complete_notification_title">Download Complete</string>
+    <string name="download_complete_notification_description">Open Activity to check your downloaded file.</string>
+
 </resources>

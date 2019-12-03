@@ -11,6 +11,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.angopa.aad.adapters.LinkAdapter
 import com.angopa.aad.codelabs.fundamentals.activity.MultiplePurposeActivity
+import com.angopa.aad.codelabs.fundamentals.service.ServiceActivity
 import com.angopa.aad.codelabs.localization.LocalizationActivity
 import com.angopa.aad.codelabs.snackbar.SnackbarActivity
 import com.angopa.aad.codelabs.toast.ToastActivity
@@ -47,6 +48,7 @@ class AndroidCoreFragment : Fragment() {
                 override fun snackbarCodelabTapped() = startActivity(Intent(requireContext(), SnackbarActivity::class.java))
                 override fun localizationCodelabTapped() = startActivity(Intent(requireContext(), LocalizationActivity::class.java))
                 override fun activityCodelabTapped() = startActivity(Intent(requireContext(), MultiplePurposeActivity::class.java))
+                override fun serviceCodelabTapped() = startActivity(Intent(requireContext(), ServiceActivity::class.java))
             }
         }
 
@@ -64,5 +66,6 @@ class AndroidCoreFragment : Fragment() {
         fun snackbarCodelabTapped()
         fun localizationCodelabTapped()
         fun activityCodelabTapped()
+        fun serviceCodelabTapped()
     }
 }

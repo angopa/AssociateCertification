@@ -82,7 +82,28 @@
     <string name="label_option_1" translation_description="">Option 1</string>
     <string name="label_cancel_button" translation_description="">Cancel</string>
     <string name="label_select_button" translation_description="">Select</string>
-    <string name="label_test_intent">Test Intent</string>
+    <string name="label_test_intent" translation_description="">Test Intent</string>
+
+    <!-- Service Activity -->
+    <string name="label_service_card" translation_description="">Services</string>
+    <string name="service_screen_title" translation_description="">Services</string>
+    <string name="service_description" translation_description="">This is a example description for the ExampleService</string>
+    <string name="intent_service_description" translation_description="">This is a example description for the ExampleIntentService</string>
+    <string name="foreground_service_description" translation_description="">This is a example description for the ForegroundService</string>
+    <string name="bound_service_description" translation_description="">This is a example description for the BoundService</string>
+    <string name="messenger_bound_service_description" translation_description="">This is a example description for the Bound Service - Messenger implementation</string>
+    <string name="label_button_launch_simple_service" translation_description="">Simple Service</string>
+    <string name="label_button_launch_simple_intent_service" translation_description="">Simple Intent Service</string>
+    <string name="label_button_launch_foreground_service" translation_description="">Foreground Service</string>
+    <string name="label_button_launch_bound_service" translation_description="">Bound Service</string>
+    <string name="label_button_obtain_random_number" translation_description="">Obtain Random Number: %s</string>
+    <string name="notification_ticker" translation_description="">Ticker text</string>
+    <string name="downloading_notification_title" translation_description="">Foreground Notification</string>
+    <string name="downloading_notification_description" translation_description="">Fake downloading&#8230; last for 15 seconds</string>
+    <string name="download_complete_notification_title" translation_description="">Download Complete</string>
+    <string name="download_complete_notification_description" translation_description="">Open Activity to check your downloaded file.</string>
+
+
 
 
 </resources>
