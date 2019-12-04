@@ -58,14 +58,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Bound Service"
+                        android:text="@string/label_bound_service"
                         android:textAppearance="?attr/textAppearanceHeadline5"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Extending the Binder class"
+                        android:text="@string/label_extend_binder"
                         android:textAppearance="?attr/textAppearanceHeadline6"/>
 
                     <Button
@@ -97,7 +97,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Messenger Bound Implementation"
+                        android:text="@string/label_messenger_bound_service"
                         android:textAppearance="?attr/textAppearanceHeadline6"/>
 
                     <Button
@@ -115,7 +115,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="@dimen/margin_normal"
                         android:onClick="sayHello"
-                        android:text="Say Hello Service!"
+                        android:text="@string/label_messenger_hello_button"
                         android:textAppearance="?attr/textAppearanceBody2" />
 
                 </LinearLayout>

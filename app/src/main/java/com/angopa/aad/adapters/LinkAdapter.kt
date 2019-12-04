@@ -12,7 +12,6 @@ import com.angopa.aad.HomeViewPagerFragmentDirections
 import com.angopa.aad.R
 import com.angopa.aad.data.Link
 import com.angopa.aad.databinding.ListItemLinkBinding
-import com.angopa.aad.viewmodel.AndroidCoreViewModel
 
 class LinkAdapter :
     ListAdapter<Link, LinkAdapter.ViewHolder>(
@@ -46,7 +45,7 @@ class LinkAdapter :
 
         fun navigateToDetail(linkUri: String, view: View) {
             val direction = HomeViewPagerFragmentDirections
-                .actionAndroidCoreToToastMessage(linkUri)
+                .actionAndroidCoreToDetail(linkUri)
             view.findNavController().navigate(direction)
         }
 

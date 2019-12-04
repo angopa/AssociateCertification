@@ -97,5 +97,17 @@
     <string name="downloading_notification_description">Fake downloading&#8230; last for 15 seconds</string>
     <string name="download_complete_notification_title">Download Complete</string>
     <string name="download_complete_notification_description">Open Activity to check your downloaded file.</string>
+    <string name="label_messenger_bound_service">Messenger Bound Implementation</string>
+    <string name="label_bound_service">Bound Service</string>
+    <string name="label_extend_binder">Extending the Binder class</string>
+    <string name="label_messenger_hello_button">Say Hello Service!</string>
+
+    <!-- Threads -->
+    <string name="label_thread_card">Threads</string>
+    <string name="thread_screen_title">Threads</string>
+    <string name="header_simple_runnable">This is a simple Runnable</string>
+    <string name="body_simple_runnable">Simple Example of Runnable Class.</string>
+    <string name="label_threads_running">Running...</string>
+    <string name="label_thread_hello_message">Hello From Runnable</string>
 
 </resources>

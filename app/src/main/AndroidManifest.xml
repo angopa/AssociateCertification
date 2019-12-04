@@ -30,10 +30,7 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
         <activity
@@ -50,12 +47,7 @@
 
         <activity
             android:name=".codelabs.fundamentals.activity.MultiplePurposeActivity"
-            android:configChanges="orientation">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:configChanges="orientation"/>
 
         <activity
             android:name=".codelabs.fundamentals.activity.OptionListExample"
@@ -82,25 +74,38 @@
             android:configChanges="orientation"
             android:exported="false" />
 
+        <activity
+            android:name=".codelabs.fundamentals.threads.ThreadsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
         <!-- SERVICES -->
         <service
             android:name=".codelabs.fundamentals.service.ExampleService"
             android:description="@string/service_description"
             android:exported="false" />
 
-        <service android:name=".codelabs.fundamentals.service.ExampleIntentService"
+        <service
+            android:name=".codelabs.fundamentals.service.ExampleIntentService"
             android:description="@string/intent_service_description"
-            android:exported="false"/>
+            android:exported="false" />
 
-        <service android:name=".codelabs.fundamentals.service.ForegroundService"
+        <service
+            android:name=".codelabs.fundamentals.service.ForegroundService"
             android:description="@string/foreground_service_description"
             android:exported="false" />
 
-        <service android:name=".codelabs.fundamentals.service.BoundService"
+        <service
+            android:name=".codelabs.fundamentals.service.BoundService"
             android:description="@string/bound_service_description"
             android:exported="false" />
 
-        <service android:name=".codelabs.fundamentals.service.MessengerBoundService"
+        <service
+            android:name=".codelabs.fundamentals.service.MessengerBoundService"
             android:description="@string/messenger_bound_service_description"
             android:exported="false" />
 

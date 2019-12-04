@@ -102,8 +102,18 @@
     <string name="downloading_notification_description" translation_description="">Fake downloading&#8230; last for 15 seconds</string>
     <string name="download_complete_notification_title" translation_description="">Download Complete</string>
     <string name="download_complete_notification_description" translation_description="">Open Activity to check your downloaded file.</string>
+    <string name="label_messenger_bound_service" translation_description="">Messenger Bound Implementation</string>
+    <string name="label_bound_service" translation_description="">Bound Service</string>
+    <string name="label_extend_binder" translation_description="">Extending the Binder class</string>
+    <string name="label_messenger_hello_button" translation_description="">Say Hello Service!</string>
 
-
+    <!-- Threads -->
+    <string name="label_thread_card" translation_description="">Threads</string>
+    <string name="thread_screen_title" translation_description="">Threads</string>
+    <string name="header_simple_runnable">This is a simple Runnable</string>
+    <string name="body_simple_runnable">Simple Example of Runnable Class. Runnable changes the index every second only when the screen is in foreground. Runnable is working in the main UI thread.</string>
+    <string name="label_threads_running">Running...</string>
+    <string name="label_thread_hello_message">Hello From Runnable</string>
 
 
 </resources>

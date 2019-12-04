@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.angopa.aad.databinding.FragmentDetailBinding
+import kotlinx.android.synthetic.main.include_fragment_toolbar.*
 import timber.log.Timber
 
 

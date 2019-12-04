@@ -10,13 +10,13 @@
         tools:layout="@layout/fragment_view_pager">
 
         <action
-            android:id="@+id/action_android_core_to_toast_message"
-            app:destination="@+id/toast_message_fragment"/>
+            android:id="@+id/action_android_core_to_detail"
+            app:destination="@+id/detail_fragment"/>
 
     </fragment>
 
     <fragment
-        android:id="@+id/toast_message_fragment"
+        android:id="@+id/detail_fragment"
         android:name="com.angopa.aad.DetailFragment"
         android:label="Toast Message"
         tools:layout="@layout/fragment_detail">
