@@ -7,7 +7,8 @@
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_normal">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -19,33 +20,39 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_normal"
-                    android:gravity="center"
-                    android:text="@string/header_simple_runnable"
+                    android:layout_gravity="center"
+                    android:text="@string/label_thread_pool_executor"
                     android:textAppearance="?attr/textAppearanceHeadline5" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_normal"
-                    android:gravity="center"
-                    android:text="@string/body_simple_runnable"
-                    android:textAppearance="?attr/textAppearanceBody1" />
-
                 <Button
-                    android:id="@+id/launch_runnable_button"
+                    android:id="@+id/launch_fixed_thread_pool_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/label_thread_launch_runnable" />
+                    android:text="@string/label_hread_fixed_pool_button" />
 
                 <Button
+                    android:id="@+id/launch_cached_thread_pool_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/label_test_button" />
+                    android:text="@string/label_thread_schedule_pool_button" />
+
+                <Button
+                    android:id="@+id/launch_custom_thread_pool_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_thread_custom_pool" />
+
+                <Button
+                    android:id="@+id/launch_progress_bar_example"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_thread_progress_bar_example" />
 
             </LinearLayout>
 
@@ -58,7 +65,6 @@
                     android:id="@+id/nav_control_back_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_normal"
                     android:text="@string/label_return" />
 
             </LinearLayout>

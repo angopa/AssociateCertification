@@ -21,7 +21,9 @@
     <string name="generic_do_something_message" translation_description="">Do something</string>
     <string name="activity_restarted_message" translation_description="">Activity restarted</string>
     <string name="dialog_label_ok" translation_description="">Ok</string>
-    <string name="dialog_label_cancel">Cancel</string>
+    <string name="dialog_label_cancel" translation_description="">Cancel</string>
+    <string name="label_test_button" translation_description="">Test Button</string>
+    <string name="label_return" translation_description="">Return</string>
 
     <!-- Android Core Tab -->
     <string name="android_core_header_label" translation_description="">Core</string>
@@ -110,10 +112,28 @@
     <!-- Threads -->
     <string name="label_thread_card" translation_description="">Threads</string>
     <string name="thread_screen_title" translation_description="">Threads</string>
-    <string name="header_simple_runnable">This is a simple Runnable</string>
-    <string name="body_simple_runnable">Simple Example of Runnable Class. Runnable changes the index every second only when the screen is in foreground. Runnable is working in the main UI thread.</string>
-    <string name="label_threads_running">Running...</string>
-    <string name="label_thread_hello_message">Hello From Runnable</string>
+    <string name="header_simple_runnable" translation_description="">This is a simple Runnable</string>
+    <string name="header_recurrent_runnable" translation_description="">This is a recurrent Runnable</string>
+    <string name="body_recurrent_runnable" translation_description="">Simple Example of Runnable Class. Runnable changes the index every second only when the screen is in foreground. Runnable is working in the main UI thread.</string>
+    <string name="body_simple_runnable" translation_description="">Simple Example of Runnable Class. Runnable sleep for 5 seconds in the background. Runnable is working in its oun UI thread. Main UI Thread is not blocked by the Runnable. Runnable class is launched when the activity start and from Launch Runnable button, Test Button is just to demonstrate that main UI is not blocked. Check the Log to validate behavior.</string>
+    <string name="label_threads_running" translation_description="">Running&#8230;</string>
+    <string name="label_thread_hello_message" translation_description="">Hello From Runnable</string>
+    <string name="label_thread_recursive_example" translation_description="">Recursive Runnable Class</string>
+    <string name="label_thread_launch_runnable" translation_description="">Launch Runnable</string>
+    <string name="label_thread_simple_runnable">Simple Runnable Class</string>
+    <string name="label_thread_pool_example">Thread Pool Class</string>
+    <string name="label_thread_fixed_thread_pool">Fixed Thread Pool</string>
+    <string name="label_thread_fixed_pool_description">Creates a thread pool that reuses a fixed number of threads to execute any number of tasks. If additional tasks are submitted when all threads are active, they will wait in the queue until a thread is available. It is best fit for most off the real-life usecases. Check Log to see behavior.</string>
+    <string name="label_thread_custom_executor">Custom Thread Pool Executor</string>
+    <string name="label_thread_custom_pool_description">We create a custom Thread Pool, using LinkedBlockingDeque, Check the Log to see behavior and Check the code to see how it was implemented.</string>
+    <string name="label_thread_pool_executor">Thread Pool Executor</string>
+    <string name="label_hread_fixed_pool_button">Fixed Thread Pool</string>
+    <string name="label_thread_schedule_pool_button">Schedule Thread Pool</string>
+    <string name="label_thread_custom_pool">Custom Thread Pool</string>
+    <string name="label_thread_schedule_pool_title">Schedule Thread Pool</string>
+    <string name="label_thread_schedule_pool_description">Creates a thread pool that can schedule commands to run after a given delay, or to execute periodically. Check Log to validate behavior.</string>
+    <string name="label_thread_progress_bar_example">Progress Bar Example</string>
+    <string name="label_thread_counter">Count: %s</string>
 
 
 </resources>

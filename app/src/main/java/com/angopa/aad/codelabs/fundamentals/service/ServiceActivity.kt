@@ -12,6 +12,7 @@ import androidx.databinding.DataBindingUtil
 import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
 import com.angopa.aad.databinding.ActivityServiceBinding
+import kotlinx.android.synthetic.main.include_toolbar.*
 import timber.log.Timber
 
 /** Command to the service to display a message */

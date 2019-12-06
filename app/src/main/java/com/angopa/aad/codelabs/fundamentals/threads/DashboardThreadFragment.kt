@@ -26,6 +26,16 @@ class DashboardThreadFragment : Fragment() {
                 val direction = DashboardThreadFragmentDirections.actionDashboardToSimpleThread()
                 view.findNavController().navigate(direction)
             }
+
+            launchRecurrentRunnableButton.setOnClickListener { view ->
+                val direction = DashboardThreadFragmentDirections.actionDashboardToRecurrentThread()
+                view.findNavController().navigate(direction)
+            }
+
+            launchThreadPoolButton.setOnClickListener { view ->
+                val direction = DashboardThreadFragmentDirections.actionDashboardToThreadPool()
+                view.findNavController().navigate(direction)
+            }
         }
 
         return binding.root

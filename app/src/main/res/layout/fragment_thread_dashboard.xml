@@ -18,7 +18,22 @@
                 android:id="@+id/launch_simple_runnable_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Simple Runnable Class"/>
+                android:layout_gravity="center"
+                android:text="@string/label_thread_simple_runnable"/>
+
+            <Button
+                android:id="@+id/launch_recurrent_runnable_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/label_thread_recursive_example"/>
+
+            <Button
+                android:id="@+id/launch_thread_pool_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/label_thread_pool_example"/>
 
         </LinearLayout>
 

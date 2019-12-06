@@ -7,7 +7,8 @@
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_normal">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -19,33 +20,18 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_normal"
-                    android:gravity="center"
-                    android:text="@string/header_simple_runnable"
+                    android:layout_gravity="center"
+                    android:text="@string/label_thread_custom_executor"
                     android:textAppearance="?attr/textAppearanceHeadline5" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_normal"
-                    android:gravity="center"
-                    android:text="@string/body_simple_runnable"
+                    android:layout_gravity="center"
+                    android:text="@string/label_thread_custom_pool_description"
                     android:textAppearance="?attr/textAppearanceBody1" />
-
-                <Button
-                    android:id="@+id/launch_runnable_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/label_thread_launch_runnable" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/label_test_button" />
 
             </LinearLayout>
 
@@ -58,7 +44,6 @@
                     android:id="@+id/nav_control_back_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_normal"
                     android:text="@string/label_return" />
 
             </LinearLayout>

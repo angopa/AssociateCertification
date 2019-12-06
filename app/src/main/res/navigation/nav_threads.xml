@@ -12,15 +12,69 @@
 
         <action
             android:id="@+id/action_dashboard_to_simple_thread"
-            app:destination="@+id/simple_runnable_fragment"/>
+            app:destination="@+id/simple_runnable_fragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_recurrent_thread"
+            app:destination="@+id/recurrent_runnable_fragment" />
+
+        <action
+            android:id="@+id/action_dashboard_to_thread_pool"
+            app:destination="@+id/thread_pool_executor" />
 
     </fragment>
 
     <fragment
         android:id="@+id/simple_runnable_fragment"
         android:name="com.angopa.aad.codelabs.fundamentals.threads.SimpleRunnableFragment"
-        tools:layout="@layout/fragment_simple_runnable">
+        tools:layout="@layout/fragment_simple_runnable" />
+
+    <fragment
+        android:id="@+id/recurrent_runnable_fragment"
+        android:name="com.angopa.aad.codelabs.fundamentals.threads.RecurrentRunnableFragment"
+        tools:layout="@layout/fragment_recurrent_runnable" />
+
+    <fragment
+        android:id="@+id/thread_pool_executor"
+        android:name="com.angopa.aad.codelabs.fundamentals.threads.ThreadPoolExecutorFragment"
+        tools:layout="@layout/fragment_thread_pool_executor">
+
+        <action
+            android:id="@+id/action_thread_pool_executor_to_fixed_thread_pool"
+            app:destination="@+id/fixed_thread_pool_fragment" />
+
+        <action
+            android:id="@+id/action_thread_pool_executor_to_cached_thread_pool"
+            app:destination="@+id/scheduled_thread_pool_fragment" />
+
+        <action
+            android:id="@+id/action_thread_pool_executor_to_custom_thread_pool"
+            app:destination="@+id/custom_thread_pool_fragment" />
+
+        <action
+            android:id="@+id/action_thread_pool_executor_to_progress_bar_example"
+            app:destination="@+id/thread_progress_bar"/>
 
     </fragment>
+
+    <fragment
+        android:id="@+id/fixed_thread_pool_fragment"
+        android:name="com.angopa.aad.codelabs.fundamentals.threads.FixedThreadPoolFragment"
+        tools:layout="@layout/fragment_thread_fixed_pool" />
+
+    <fragment
+        android:id="@+id/scheduled_thread_pool_fragment"
+        android:name="com.angopa.aad.codelabs.fundamentals.threads.ScheduledThreadPoolFragment"
+        tools:layout="@layout/fragment_thread_scheduled_pool" />
+
+    <fragment
+        android:id="@+id/custom_thread_pool_fragment"
+        android:name="com.angopa.aad.codelabs.fundamentals.threads.CustomThreadPoolFragment"
+        tools:layout="@layout/fragment_thread_custom_pool" />
+
+    <fragment
+        android:id="@+id/thread_progress_bar"
+        android:name="com.angopa.aad.codelabs.fundamentals.threads.ProgressBarExampleThreadFragment"
+        tools:layout="@layout/fragment_thread_progress_bar" />
 
 </navigation>

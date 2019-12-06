@@ -8,31 +8,25 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.angopa.aad.R
-import com.angopa.aad.databinding.FragmentSimpleRunnableBinding
+import com.angopa.aad.databinding.FragmentThreadCustomPoolBinding
 
-class SimpleRunnableFragment : Fragment() {
-    private lateinit var binding: FragmentSimpleRunnableBinding
-
-    private lateinit var runnable: Runnable
+class CustomThreadPoolFragment : Fragment() {
+    private lateinit var binding: FragmentThreadCustomPoolBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate<FragmentSimpleRunnableBinding>(
-            inflater, R.layout.fragment_simple_runnable, container, false
+        binding = DataBindingUtil.inflate<FragmentThreadCustomPoolBinding>(
+            inflater, R.layout.fragment_thread_custom_pool, container, false
         ).apply {
-            launchRunnableButton.setOnClickListener {
-                Thread(runnable).start()
-            }
-
             navControlBackButton.setOnClickListener { view ->
                 view.findNavController().navigateUp()
             }
         }
 
-        runnable = SimpleRunnable(this.javaClass.simpleName)
+        CustomThreadPool.doSomething(SimpleRunnable(this.javaClass.simpleName))
 
         return binding.root
     }

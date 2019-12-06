@@ -7,45 +7,38 @@
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_normal">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_normal"
-                    android:gravity="center"
-                    android:text="@string/header_simple_runnable"
-                    android:textAppearance="?attr/textAppearanceHeadline5" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_normal"
-                    android:gravity="center"
-                    android:text="@string/body_simple_runnable"
-                    android:textAppearance="?attr/textAppearanceBody1" />
-
                 <Button
-                    android:id="@+id/launch_runnable_button"
+                    android:id="@+id/start_thread_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/label_thread_launch_runnable" />
+                    android:text="Start Thread" />
 
-                <Button
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/counter_text_view"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/label_test_button" />
+                    android:text="Count 1"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
 
             </LinearLayout>
 
@@ -58,7 +51,6 @@
                     android:id="@+id/nav_control_back_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_normal"
                     android:text="@string/label_return" />
 
             </LinearLayout>

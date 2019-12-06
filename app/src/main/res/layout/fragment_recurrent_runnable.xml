@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -11,7 +12,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -23,7 +25,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_normal"
                     android:gravity="center"
-                    android:text="@string/header_simple_runnable"
+                    android:text="@string/header_recurrent_runnable"
                     android:textAppearance="?attr/textAppearanceHeadline5" />
 
                 <TextView
@@ -31,21 +33,15 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_normal"
                     android:gravity="center"
-                    android:text="@string/body_simple_runnable"
+                    android:text="@string/body_recurrent_runnable"
                     android:textAppearance="?attr/textAppearanceBody1" />
 
-                <Button
-                    android:id="@+id/launch_runnable_button"
+                <TextView
+                    android:id="@+id/say_hello_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/label_thread_launch_runnable" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/label_test_button" />
+                    android:text="@string/label_threads_running" />
 
             </LinearLayout>
 
