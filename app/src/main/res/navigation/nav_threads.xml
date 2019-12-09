@@ -12,15 +12,43 @@
 
         <action
             android:id="@+id/action_dashboard_to_simple_thread"
-            app:destination="@+id/simple_runnable_fragment" />
+            app:destination="@+id/simple_runnable_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
         <action
             android:id="@+id/action_dashboard_to_recurrent_thread"
-            app:destination="@+id/recurrent_runnable_fragment" />
+            app:destination="@+id/recurrent_runnable_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
         <action
             android:id="@+id/action_dashboard_to_thread_pool"
-            app:destination="@+id/thread_pool_executor" />
+            app:destination="@+id/thread_pool_executor"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_dashboard_to_async_task"
+            app:destination="@+id/async_task_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_dashboard_to_loader"
+            app:destination="@+id/loader_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
     </fragment>
 
@@ -35,25 +63,51 @@
         tools:layout="@layout/fragment_recurrent_runnable" />
 
     <fragment
+        android:id="@+id/async_task_fragment"
+        android:name="com.angopa.aad.codelabs.fundamentals.threads.AsyncTaskFragment"
+        tools:layout="@layout/fragment_thread_async_task" />
+
+    <fragment
+        android:id="@+id/loader_fragment"
+        android:name="com.angopa.aad.codelabs.fundamentals.threads.LoaderFragment"
+        tools:layout="@layout/fragment_thread_loader" />
+
+    <fragment
         android:id="@+id/thread_pool_executor"
         android:name="com.angopa.aad.codelabs.fundamentals.threads.ThreadPoolExecutorFragment"
         tools:layout="@layout/fragment_thread_pool_executor">
 
         <action
             android:id="@+id/action_thread_pool_executor_to_fixed_thread_pool"
-            app:destination="@+id/fixed_thread_pool_fragment" />
+            app:destination="@+id/fixed_thread_pool_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
         <action
             android:id="@+id/action_thread_pool_executor_to_cached_thread_pool"
-            app:destination="@+id/scheduled_thread_pool_fragment" />
+            app:destination="@+id/scheduled_thread_pool_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
         <action
             android:id="@+id/action_thread_pool_executor_to_custom_thread_pool"
-            app:destination="@+id/custom_thread_pool_fragment" />
+            app:destination="@+id/custom_thread_pool_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
         <action
             android:id="@+id/action_thread_pool_executor_to_progress_bar_example"
-            app:destination="@+id/thread_progress_bar"/>
+            app:destination="@+id/thread_progress_bar"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
     </fragment>
 

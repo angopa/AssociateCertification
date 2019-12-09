@@ -19,21 +19,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/label_thread_simple_runnable"/>
+                android:text="@string/label_thread_simple_runnable" />
 
             <Button
                 android:id="@+id/launch_recurrent_runnable_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/label_thread_recursive_example"/>
+                android:text="@string/label_thread_recursive_example" />
 
             <Button
                 android:id="@+id/launch_thread_pool_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/label_thread_pool_example"/>
+                android:text="@string/label_thread_pool_example" />
+
+            <Button
+                android:id="@+id/launch_async_task_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/label_thread_async_task" />
+
+            <Button
+                android:id="@+id/launch_loader_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/label_thread_loader_class" />
 
         </LinearLayout>
 

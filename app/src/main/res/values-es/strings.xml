@@ -129,5 +129,11 @@
     <string name="label_thread_schedule_pool_description">Creates a thread pool that can schedule commands to run after a given delay, or to execute periodically. Check Log to validate behavior.</string>
     <string name="label_thread_progress_bar_example">Progress Bar Example</string>
     <string name="label_thread_counter">Count: %s</string>
+    <string name="label_thread_async_task">Async Task Class</string>
+    <string name="label_progress">Progress: %s / %s</string>
+    <string name="label_thread_async_task_title">Async Task</string>
+    <string name="label_thread_async_task_description">Simple Async Task example simulating downloading files, will display some fake progress and alert the user when all the fake files were downloaded.</string>
+    <string name="label_thread_launch_async_task">Launch Async Task</string>
+    <string name="label_thread_loader_class">Loader Class</string>
 
 </resources>

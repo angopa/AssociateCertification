@@ -36,6 +36,16 @@ class DashboardThreadFragment : Fragment() {
                 val direction = DashboardThreadFragmentDirections.actionDashboardToThreadPool()
                 view.findNavController().navigate(direction)
             }
+
+            launchAsyncTaskButton.setOnClickListener { view ->
+                val direction = DashboardThreadFragmentDirections.actionDashboardToAsyncTask()
+                view.findNavController().navigate(direction)
+            }
+
+            launchLoaderButton.setOnClickListener {view ->
+                val direction = DashboardThreadFragmentDirections.actionDashboardToLoader()
+                view.findNavController().navigate(direction)
+            }
         }
 
         return binding.root

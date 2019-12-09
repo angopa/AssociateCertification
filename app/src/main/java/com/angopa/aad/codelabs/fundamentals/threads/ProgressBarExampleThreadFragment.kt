@@ -50,11 +50,14 @@ class ProgressBarExampleThreadFragment : Fragment() {
                 super.handleMessage(msg)
                 when (msg.what) {
                     START_PROCESS -> thread.start()
-                    UPDATE_COUNT -> binding.counterTextView.text =
-                        String.format(
-                            getString(R.string.label_thread_counter),
-                            msg.arg1
-                        )
+                    UPDATE_COUNT -> {
+                        if (view == null) return
+                        binding.counterTextView.text =
+                            String.format(
+                                getString(R.string.label_thread_counter),
+                                msg.arg1
+                            )
+                    }
                 }
             }
         }
