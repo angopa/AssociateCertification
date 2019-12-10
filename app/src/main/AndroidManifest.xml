@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-feature
         android:name="android.hardware.Sensor"
@@ -30,7 +31,10 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name=".MainActivity">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity
@@ -74,13 +78,13 @@
             android:configChanges="orientation"
             android:exported="false" />
 
-        <activity android:name=".codelabs.fundamentals.threads.ThreadsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity
+            android:name=".codelabs.fundamentals.threads.ThreadsActivity"
+            android:parentActivityName=".MainActivity" />
 
+        <activity
+            android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverActivity"
+            android:parentActivityName=".MainActivity" />
 
         <!-- SERVICES -->
         <service
@@ -111,6 +115,15 @@
         <service
             android:name=".codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <!-- This Broadcast Receiver won't work for API 26+       -->
+        <receiver android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverPlaneMode"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
 
     </application>
 

@@ -31,13 +31,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Start Thread" />
+                    android:text="@string/label_thread_start_thread" />
 
                 <TextView
                     android:id="@+id/counter_text_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Count 1"
                     android:textAppearance="?attr/textAppearanceBody1"/>
 
             </LinearLayout>

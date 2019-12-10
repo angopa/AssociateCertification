@@ -18,6 +18,8 @@
     <string name="generic_label_reset" translation_description="">RESET</string>
     <string name="generic_label_delete" translation_description="">DELETE</string>
     <string name="generic_label_save" translation_description="">SAVE</string>
+    <string name="generic_label_start" translation_description="">Start</string>
+    <string name="generic_label_stop" translation_description="">Stop</string>
     <string name="generic_do_something_message" translation_description="">Do something</string>
     <string name="activity_restarted_message" translation_description="">Activity restarted</string>
     <string name="dialog_label_ok" translation_description="">Ok</string>
@@ -158,6 +160,18 @@
     <string name="label_thread_job_scheduler_description">JobScheduler has the advantage of conserving battery by optimally scheduling jobs to reduce power consumption, and by working with the Doze API.</string>
     <string name="label_thread_override_deadline">Override Deadline:</string>
     <string name="label_thread_no_set">Not Set</string>
+    <string name="label_thread_start_thread">Start Thread</string>
 
+    <!-- Broadcast Receiver -->
+    <string name="label_broadcast_receiver_card">Broadcast Receiver</string>
+    <string name="label_broadcast_receiver_toolbar_title">Broadcast Receiver</string>
+    <string name="label_broadcast_receiver_header">Broadcast Receiver</string>
+    <string name="label_broadcast_receiver_description">If your device API level is 26 or higher, you cannot see the broadcast receiver trigger by AIRPLANE_MODE_CHANGED action declared in the Android manifest. API 26+ impose restrictions when declaring implicit broadcasts (broadcasts that do not target your app specifically). Try it if your device API is 26 or lower.</string>
+    <string name="notification_broadcast_receiver_plane_mode_title">PLANE MODE</string>
+    <string name="notification_broadcast_receiver_plane_mode_body">The phone is un plane mode app will not display web links.</string>
+    <string name="label_broadcast_api_26_header">Implementation for API 26+</string>
+    <string name="label_broadcast_receiver_api_26_description">Test Context-Register receivers - Start button launch a broadcast receiver for Battery Saver action. Stop Button Remove the broadcast receiver from context and broadcast reciever is remove when the activity is destroy.</string>
+    <string name="label_broadcast_receiver_stop_message">Broadcast Stop</string>
+    <string name="label_broadcast_receiver_start_message">Broadcast Start</string>
 
 </resources>

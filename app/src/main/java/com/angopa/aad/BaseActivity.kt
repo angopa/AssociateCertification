@@ -1,6 +1,7 @@
 package com.angopa.aad
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.include_toolbar.*
@@ -29,5 +30,9 @@ abstract class BaseActivity : AppCompatActivity() {
 
     fun showAlertDialog(dialog: AlertDialog) {
         dialog.show()
+    }
+
+    fun <T: String> displayToastMessage(message: T) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }

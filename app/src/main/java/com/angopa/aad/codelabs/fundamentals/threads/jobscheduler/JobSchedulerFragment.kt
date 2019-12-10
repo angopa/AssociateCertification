@@ -77,7 +77,7 @@ class JobSchedulerFragment : Fragment() {
                 R.id.wifi_network -> JobInfo.NETWORK_TYPE_UNMETERED
                 else -> JobInfo.NETWORK_TYPE_NONE
             }
-        
+
         jobScheduler = activity?.getSystemService(JOB_SCHEDULER_SERVICE) as JobScheduler
 
         val componentName = ComponentName(requireContext(), NotificationJobService::class.java)

@@ -24,7 +24,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/label_thread_pool_executor"
-                    android:textAppearance="?attr/textAppearanceHeadline5" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
                 <Button
                     android:id="@+id/launch_fixed_thread_pool_button"

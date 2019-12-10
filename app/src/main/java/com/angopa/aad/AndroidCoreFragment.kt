@@ -1,16 +1,19 @@
 package com.angopa.aad
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.angopa.aad.adapters.LinkAdapter
 import com.angopa.aad.codelabs.fundamentals.activity.MultiplePurposeActivity
+import com.angopa.aad.codelabs.fundamentals.broadcast.BroadcastReceiverActivity
 import com.angopa.aad.codelabs.fundamentals.service.ServiceActivity
 import com.angopa.aad.codelabs.fundamentals.threads.ThreadsActivity
 import com.angopa.aad.codelabs.localization.LocalizationActivity
@@ -45,16 +48,21 @@ class AndroidCoreFragment : Fragment() {
             subscribeUi(adapter)
 
             callback = object : Callback {
-                override fun toastCodelabTapped() = startActivity(Intent(requireContext(), ToastActivity::class.java))
-                override fun snackbarCodelabTapped() = startActivity(Intent(requireContext(), SnackbarActivity::class.java))
-                override fun localizationCodelabTapped() = startActivity(Intent(requireContext(), LocalizationActivity::class.java))
-                override fun activityCodelabTapped() = startActivity(Intent(requireContext(), MultiplePurposeActivity::class.java))
-                override fun serviceCodelabTapped() = startActivity(Intent(requireContext(), ServiceActivity::class.java))
-                override fun threadsCodelabTapped() = startActivity(Intent(requireContext(), ThreadsActivity::class.java))
+                override fun toastCodelabTapped() = startNewActivity(ToastActivity::class.java)
+                override fun snackbarCodelabTapped() = startNewActivity(SnackbarActivity::class.java)
+                override fun localizationCodelabTapped() = startNewActivity(LocalizationActivity::class.java)
+                override fun activityCodelabTapped() = startNewActivity(MultiplePurposeActivity::class.java)
+                override fun serviceCodelabTapped() = startNewActivity(ServiceActivity::class.java)
+                override fun threadsCodelabTapped() = startNewActivity(ThreadsActivity::class.java)
+                override fun broadcastCodelabTapped() = startNewActivity(BroadcastReceiverActivity::class.java)
             }
         }
 
         return binding.root
+    }
+
+    private fun <T: Activity> startNewActivity(activity: Class<T>) {
+        startActivity(Intent(requireContext(), activity))
     }
 
     private fun subscribeUi(adapter: LinkAdapter) {
@@ -70,5 +78,6 @@ class AndroidCoreFragment : Fragment() {
         fun activityCodelabTapped()
         fun serviceCodelabTapped()
         fun threadsCodelabTapped()
+        fun broadcastCodelabTapped()
     }
 }
