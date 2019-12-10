@@ -8,10 +8,7 @@ import android.content.Context
 import android.graphics.Color
 import android.os.Build
 import androidx.annotation.RequiresApi
-import com.angopa.aad.utilities.AppConfiguration
-import com.angopa.aad.utilities.FOREGROUND_NOTIFICATION_CHANNEL_ID
-import com.angopa.aad.utilities.IMPORTANT_NOTIFICATION_CHANNEL_ID
-import com.angopa.aad.utilities.REGULAR_NOTIFICATION_CHANNEL_ID
+import com.angopa.aad.utilities.*
 import com.angopa.aad.utilities.localization.LocaleManager
 import timber.log.Timber
 
@@ -54,6 +51,12 @@ abstract class CoreApplication : Application() {
         service.createNotificationChannel(channel)
 
         channel = NotificationChannel(IMPORTANT_NOTIFICATION_CHANNEL_ID, "Important Notifications", NotificationManager.IMPORTANCE_HIGH)
+        service.createNotificationChannel(channel)
+
+        channel = NotificationChannel(PRIMARY_CHANNEL_ID, "Job Service notification", NotificationManager.IMPORTANCE_HIGH)
+        channel.enableLights(true)
+        channel.lightColor = Color.RED
+        channel.enableVibration(true)
         service.createNotificationChannel(channel)
     }
 

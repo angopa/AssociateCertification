@@ -140,6 +140,24 @@
     <string name="label_thread_async_task_description" translation_description="">Simple Async Task example simulating downloading files, will display some fake progress and alert the user when all the fake files were downloaded.</string>
     <string name="label_thread_launch_async_task" translation_description="">Launch Async Task</string>
     <string name="label_thread_loader_class">Loader Class</string>
+    <string name="label_thread_job_scheduler">Job Scheduler Class</string>
+    <string name="label_thread_network_type_required">Network Type Required:</string>
+    <string name="label_thread_none">None</string>
+    <string name="label_thread_any">Any</string>
+    <string name="label_thread_wifi">Wifi</string>
+    <string name="label_thread_schedule_job_button">Schedule Job</string>
+    <string name="label_thread_cancel_job_button">Cancel Job</string>
+    <string name="notification_title_job_scheduler">Job Scheduler</string>
+    <string name="notification_body_job_scheduler">Job Scheduler reach the conditions to run the job.</string>
+    <string name="toast_message_job_schdeuler_started">Job Scheduled, job will run when the constraints are met.</string>
+    <string name="toast_message_job_scheduler_cancelled">Jobs Cancelled</string>
+    <string name="label_thread_requires">Requires:</string>
+    <string name="label_device_idle_switch">Device Idle</string>
+    <string name="label_device_charging_switch">Device Charging</string>
+    <string name="label_thread_job_scheduler_title">Job Scheduler</string>
+    <string name="label_thread_job_scheduler_description">JobScheduler has the advantage of conserving battery by optimally scheduling jobs to reduce power consumption, and by working with the Doze API.</string>
+    <string name="label_thread_override_deadline">Override Deadline:</string>
+    <string name="label_thread_no_set">Not Set</string>
 
 
 </resources>

@@ -47,7 +47,7 @@
 
         <activity
             android:name=".codelabs.fundamentals.activity.MultiplePurposeActivity"
-            android:configChanges="orientation"/>
+            android:configChanges="orientation" />
 
         <activity
             android:name=".codelabs.fundamentals.activity.OptionListExample"
@@ -74,8 +74,7 @@
             android:configChanges="orientation"
             android:exported="false" />
 
-        <activity
-            android:name=".codelabs.fundamentals.threads.ThreadsActivity">
+        <activity android:name=".codelabs.fundamentals.threads.ThreadsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -108,6 +107,10 @@
             android:name=".codelabs.fundamentals.service.MessengerBoundService"
             android:description="@string/messenger_bound_service_description"
             android:exported="false" />
+
+        <service
+            android:name=".codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
     </application>
 

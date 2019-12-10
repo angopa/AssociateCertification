@@ -46,6 +46,11 @@ class DashboardThreadFragment : Fragment() {
                 val direction = DashboardThreadFragmentDirections.actionDashboardToLoader()
                 view.findNavController().navigate(direction)
             }
+
+            launchJobSchedulerButton.setOnClickListener { view ->
+                val direction = DashboardThreadFragmentDirections.actionDashboardToJobScheduler()
+                view.findNavController().navigate(direction)
+            }
         }
 
         return binding.root
