@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.angopa.aad">
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
@@ -15,7 +16,6 @@
     <uses-feature
         android:name="android.hardware.Sensor"
         android:required="false" />
-
     <uses-feature
         android:name="android.hardware.biometrics.BiometricManager"
         android:required="true" />
@@ -29,36 +29,33 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.AAD"
         tools:ignore="GoogleAppIndexingWarning">
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".codelabs.toast.ToastActivity"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".codelabs.snackbar.SnackbarActivity"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".codelabs.localization.LocalizationActivity"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".codelabs.fundamentals.activity.MultiplePurposeActivity"
             android:configChanges="orientation" />
-
         <activity
             android:name=".codelabs.fundamentals.activity.OptionListExample"
             android:configChanges="orientation">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
             <intent-filter>
@@ -72,16 +69,13 @@
                 <data android:mimeType="video/*" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".codelabs.fundamentals.service.ServiceActivity"
             android:configChanges="orientation"
             android:exported="false" />
-
         <activity
             android:name=".codelabs.fundamentals.threads.ThreadsActivity"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverActivity"
             android:parentActivityName=".MainActivity" />
@@ -91,40 +85,36 @@
             android:name=".codelabs.fundamentals.service.ExampleService"
             android:description="@string/service_description"
             android:exported="false" />
-
         <service
             android:name=".codelabs.fundamentals.service.ExampleIntentService"
             android:description="@string/intent_service_description"
             android:exported="false" />
-
         <service
             android:name=".codelabs.fundamentals.service.ForegroundService"
             android:description="@string/foreground_service_description"
             android:exported="false" />
-
         <service
             android:name=".codelabs.fundamentals.service.BoundService"
             android:description="@string/bound_service_description"
             android:exported="false" />
-
         <service
             android:name=".codelabs.fundamentals.service.MessengerBoundService"
             android:description="@string/messenger_bound_service_description"
             android:exported="false" />
-
         <service
             android:name=".codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <!-- This Broadcast Receiver won't work for API 26+       -->
-        <receiver android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverPlaneMode"
+        <!-- This Broadcast Receiver won't work for API 26+ -->
+        <receiver
+            android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverPlaneMode"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.AIRPLANE_MODE" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
     </application>
 
 </manifest>

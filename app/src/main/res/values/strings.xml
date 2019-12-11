@@ -170,8 +170,10 @@
     <string name="notification_broadcast_receiver_plane_mode_title">PLANE MODE</string>
     <string name="notification_broadcast_receiver_plane_mode_body">The phone is un plane mode app will not display web links.</string>
     <string name="label_broadcast_api_26_header">Implementation for API 26+</string>
-    <string name="label_broadcast_receiver_api_26_description">Test Context-Register receivers - Start button launch a broadcast receiver for Battery Saver action. Stop Button Remove the broadcast receiver from context and broadcast reciever is remove when the activity is destroy.</string>
+    <string name="label_broadcast_receiver_api_26_description">Test Context-Register receivers - Start button launch a broadcast receiver for Wi-Fi action. Stop Button Remove the broadcast receiver from context and broadcast receiver is remove when the activity is destroy.</string>
     <string name="label_broadcast_receiver_stop_message">Broadcast Stop</string>
     <string name="label_broadcast_receiver_start_message">Broadcast Start</string>
+    <string name="broadcast_notification_title">Wi-Fi</string>
+    <string name="broadcast_notification_body">Wi Fi is disabled, app might not work correctly.</string>
 
 </resources>

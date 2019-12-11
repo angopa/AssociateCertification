@@ -75,6 +75,34 @@
 
                     </RelativeLayout>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:text="Async Broadcast Receiver"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="Implementation for goAsync(), and PendingIntent, we create an extra thread and run the code in a AsyncTask implementation, when the execution ends you have to finish the PendingIntent. This kind of implementation is useful when you need an extra time to run your code. And you can use JobScheduler too. Start init a Broadcast for ACTION_AIRPLANE_MODE_CHANGED, and will stop when close the activity. Check the log to see behavior."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="startBroadcastForOrientationChanges"
+                        android:text="@string/generic_label_start"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="sendMessageToWearable"
+                        android:text="Send Message"/>
+
                 </LinearLayout>
 
             </RelativeLayout>
