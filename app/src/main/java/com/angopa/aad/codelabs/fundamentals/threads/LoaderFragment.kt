@@ -81,7 +81,8 @@ class LoaderFragment :
         listAdapter = adapter
 
         //Prepare the loader. Either re-connect with an existing one, or start a new one
-        loaderManager.initLoader(0, null, this@LoaderFragment)
+        LoaderManager.getInstance(this)
+            .initLoader(0, null, this@LoaderFragment)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -102,7 +103,8 @@ class LoaderFragment :
         // Called when the action bar search text has changed. Update the search filter, and restart
         // the loader to do a new query with this filter
         curFilter = if (newText?.isNotEmpty() == true) newText else null
-        loaderManager.restartLoader(0, null, this)
+        LoaderManager.getInstance(this)
+            .restartLoader(0, null, this)
         return true
     }
 

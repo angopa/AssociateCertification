@@ -2,6 +2,7 @@ package com.angopa.aad
 
 import android.app.Application
 import android.content.BroadcastReceiver
+import android.content.Intent
 import android.content.IntentFilter
 import android.widget.Toast
 import com.angopa.aad.receiver.AppMessagesReceiver
@@ -11,7 +12,7 @@ class WearApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        val pendingIntent = IntentFilter("com.angopa.aad.MESSAGE")
+        val pendingIntent = IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED)
         appMessagesReceiver = AppMessagesReceiver()
         registerReceiver(appMessagesReceiver, pendingIntent)
         Toast.makeText(this, "Broadcast Start", Toast.LENGTH_SHORT).show()

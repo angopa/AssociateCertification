@@ -14,6 +14,7 @@ import androidx.lifecycle.observe
 import com.angopa.aad.adapters.LinkAdapter
 import com.angopa.aad.codelabs.fundamentals.activity.MultiplePurposeActivity
 import com.angopa.aad.codelabs.fundamentals.broadcast.BroadcastReceiverActivity
+import com.angopa.aad.codelabs.fundamentals.contentproviders.ContentProviderActivity
 import com.angopa.aad.codelabs.fundamentals.service.ServiceActivity
 import com.angopa.aad.codelabs.fundamentals.threads.ThreadsActivity
 import com.angopa.aad.codelabs.localization.LocalizationActivity
@@ -55,6 +56,7 @@ class AndroidCoreFragment : Fragment() {
                 override fun serviceCodelabTapped() = startNewActivity(ServiceActivity::class.java)
                 override fun threadsCodelabTapped() = startNewActivity(ThreadsActivity::class.java)
                 override fun broadcastCodelabTapped() = startNewActivity(BroadcastReceiverActivity::class.java)
+                override fun contentProvidersCodelabTapped() = startNewActivity(ContentProviderActivity::class.java)
             }
         }
 
@@ -79,5 +81,6 @@ class AndroidCoreFragment : Fragment() {
         fun serviceCodelabTapped()
         fun threadsCodelabTapped()
         fun broadcastCodelabTapped()
+        fun contentProvidersCodelabTapped()
     }
 }

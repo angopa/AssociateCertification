@@ -12,6 +12,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
 
     <uses-feature
         android:name="android.hardware.Sensor"
@@ -30,11 +32,7 @@
         android:theme="@style/Base.Theme.AAD"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".codelabs.toast.ToastActivity"
@@ -79,7 +77,15 @@
         <activity
             android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverActivity"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".codelabs.fundamentals.contentproviders.ContentProviderActivity"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!-- SERVICES -->
         <service
             android:name=".codelabs.fundamentals.service.ExampleService"
@@ -103,9 +109,7 @@
             android:exported="false" />
         <service
             android:name=".codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
-
-        <!-- This Broadcast Receiver won't work for API 26+ -->
+            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- This Broadcast Receiver won't work for API 26+ -->
         <receiver
             android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverPlaneMode"
             android:exported="true">

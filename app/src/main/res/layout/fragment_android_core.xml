@@ -97,7 +97,6 @@
                         android:textAppearance="?attr/textAppearanceBody1" />
 
                     <ImageView
-                        android:id="@+id/toast_codelab_image_view"
                         android:layout_width="140dp"
                         android:layout_height="60dp"
                         android:layout_alignParentTop="true"
@@ -131,7 +130,6 @@
                         android:textAppearance="?attr/textAppearanceBody1" />
 
                     <ImageView
-                        android:id="@+id/snackbar_codelab_image_view"
                         android:layout_width="140dp"
                         android:layout_height="60dp"
                         android:layout_alignParentTop="true"
@@ -165,7 +163,6 @@
                         android:textAppearance="?attr/textAppearanceBody1" />
 
                     <ImageView
-                        android:id="@+id/localization_codelab_image_view"
                         android:layout_width="140dp"
                         android:layout_height="60dp"
                         android:layout_alignParentTop="true"
@@ -199,7 +196,6 @@
                         android:textAppearance="?attr/textAppearanceBody1" />
 
                     <ImageView
-                        android:id="@+id/activity_codelab_image_view"
                         android:layout_width="140dp"
                         android:layout_height="60dp"
                         android:layout_alignParentTop="true"
@@ -233,7 +229,6 @@
                         android:textAppearance="?attr/textAppearanceBody1" />
 
                     <ImageView
-                        android:id="@+id/service_codelab_image_view"
                         android:layout_width="140dp"
                         android:layout_height="60dp"
                         android:layout_alignParentTop="true"
@@ -267,7 +262,6 @@
                         android:textAppearance="?attr/textAppearanceBody1" />
 
                     <ImageView
-                        android:id="@+id/thread_codelab_image_view"
                         android:layout_width="140dp"
                         android:layout_height="60dp"
                         android:layout_alignParentTop="true"
@@ -301,13 +295,45 @@
                         android:textAppearance="?attr/textAppearanceBody1" />
 
                     <ImageView
-                        android:id="@+id/broadcast_codelab_image_view"
                         android:layout_width="140dp"
                         android:layout_height="60dp"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
                         android:src="@drawable/broadcast_receiver_image" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/Theme.AAD.CardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="@{() -> callback.contentProvidersCodelabTapped()}"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/label_title_content_providers_card"
+                        android:textAppearance="?attr/textAppearanceBody1" />
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/content_providers_image" />
 
                 </RelativeLayout>
 

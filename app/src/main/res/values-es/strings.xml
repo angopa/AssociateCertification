@@ -171,4 +171,12 @@
     <string name="broadcast_notification_title">Wi-Fi</string>
     <string name="broadcast_notification_body">Wi Fi is disabled, app might not work correctly.</string>
 
+    <!-- Content Provider -->
+    <string name="label_title_content_providers">Content Provider</string>
+    <string name="label_title_content_providers_card">Content Providers</string>
+    <string name="screen_header_content_provider">Content Provider</string>
+    <string name="label_providers_header_user_dictironary">User Dictionary Provider</string>
+    <string name="label_generic_search">Search</string>
+    <string name="label_providers_user_dictionary_description">Display saved user words, we use ListFragment and SimpleCursorAdapter for displaying the information. And TextWatcher for the Search action.</string>
+
 </resources>

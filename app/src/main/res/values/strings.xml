@@ -26,6 +26,7 @@
     <string name="dialog_label_cancel" translation_description="">Cancel</string>
     <string name="label_test_button" translation_description="">Test Button</string>
     <string name="label_return" translation_description="">Return</string>
+    <string name="label_generic_search" translation_description="">Search</string>
 
     <!-- Android Core Tab -->
     <string name="android_core_header_label" translation_description="">Core</string>
@@ -58,7 +59,7 @@
     <!-- Location Activity -->
     <string name="localization_screen_title" translation_description="">Localization Codelab</string>
     <string name="label_locale_language" translation_description="">Locale language:
-        <xliff:g id="def_language"  >%s</xliff:g>
+        <xliff:g id="def_language">%s</xliff:g>
     </string>
     <string name="label_localization_card" translation_description="">Localize your app</string>
     <string name="label_locale_date" translation_description="">Date: %s</string>
@@ -141,39 +142,46 @@
     <string name="label_thread_async_task_title" translation_description="">Async Task</string>
     <string name="label_thread_async_task_description" translation_description="">Simple Async Task example simulating downloading files, will display some fake progress and alert the user when all the fake files were downloaded.</string>
     <string name="label_thread_launch_async_task" translation_description="">Launch Async Task</string>
-    <string name="label_thread_loader_class">Loader Class</string>
-    <string name="label_thread_job_scheduler">Job Scheduler Class</string>
-    <string name="label_thread_network_type_required">Network Type Required:</string>
-    <string name="label_thread_none">None</string>
-    <string name="label_thread_any">Any</string>
-    <string name="label_thread_wifi">Wifi</string>
-    <string name="label_thread_schedule_job_button">Schedule Job</string>
-    <string name="label_thread_cancel_job_button">Cancel Job</string>
-    <string name="notification_title_job_scheduler">Job Scheduler</string>
-    <string name="notification_body_job_scheduler">Job Scheduler reach the conditions to run the job.</string>
-    <string name="toast_message_job_schdeuler_started">Job Scheduled, job will run when the constraints are met.</string>
-    <string name="toast_message_job_scheduler_cancelled">Jobs Cancelled</string>
-    <string name="label_thread_requires">Requires:</string>
-    <string name="label_device_idle_switch">Device Idle</string>
-    <string name="label_device_charging_switch">Device Charging</string>
-    <string name="label_thread_job_scheduler_title">Job Scheduler</string>
-    <string name="label_thread_job_scheduler_description">JobScheduler has the advantage of conserving battery by optimally scheduling jobs to reduce power consumption, and by working with the Doze API.</string>
-    <string name="label_thread_override_deadline">Override Deadline:</string>
-    <string name="label_thread_no_set">Not Set</string>
-    <string name="label_thread_start_thread">Start Thread</string>
+    <string name="label_thread_loader_class" translation_description="">Loader Class</string>
+    <string name="label_thread_job_scheduler" translation_description="">Job Scheduler Class</string>
+    <string name="label_thread_network_type_required" translation_description="">Network Type Required:</string>
+    <string name="label_thread_none" translation_description="">None</string>
+    <string name="label_thread_any" translation_description="">Any</string>
+    <string name="label_thread_wifi" translation_description="">Wifi</string>
+    <string name="label_thread_schedule_job_button" translation_description="">Schedule Job</string>
+    <string name="label_thread_cancel_job_button" translation_description="">Cancel Job</string>
+    <string name="notification_title_job_scheduler" translation_description="">Job Scheduler</string>
+    <string name="notification_body_job_scheduler" translation_description="">Job Scheduler reach the conditions to run the job.</string>
+    <string name="toast_message_job_schdeuler_started" translation_description="">Job Scheduled, job will run when the constraints are met.</string>
+    <string name="toast_message_job_scheduler_cancelled" translation_description="">Jobs Cancelled</string>
+    <string name="label_thread_requires" translation_description="">Requires:</string>
+    <string name="label_device_idle_switch" translation_description="">Device Idle</string>
+    <string name="label_device_charging_switch" translation_description="">Device Charging</string>
+    <string name="label_thread_job_scheduler_title" translation_description="">Job Scheduler</string>
+    <string name="label_thread_job_scheduler_description" translation_description="">JobScheduler has the advantage of conserving battery by optimally scheduling jobs to reduce power consumption, and by working with the Doze API.</string>
+    <string name="label_thread_override_deadline" translation_description="">Override Deadline:</string>
+    <string name="label_thread_no_set" translation_description="">Not Set</string>
+    <string name="label_thread_start_thread" translation_description="">Start Thread</string>
 
     <!-- Broadcast Receiver -->
-    <string name="label_broadcast_receiver_card">Broadcast Receiver</string>
-    <string name="label_broadcast_receiver_toolbar_title">Broadcast Receiver</string>
-    <string name="label_broadcast_receiver_header">Broadcast Receiver</string>
-    <string name="label_broadcast_receiver_description">If your device API level is 26 or higher, you cannot see the broadcast receiver trigger by AIRPLANE_MODE_CHANGED action declared in the Android manifest. API 26+ impose restrictions when declaring implicit broadcasts (broadcasts that do not target your app specifically). Try it if your device API is 26 or lower.</string>
-    <string name="notification_broadcast_receiver_plane_mode_title">PLANE MODE</string>
-    <string name="notification_broadcast_receiver_plane_mode_body">The phone is un plane mode app will not display web links.</string>
-    <string name="label_broadcast_api_26_header">Implementation for API 26+</string>
-    <string name="label_broadcast_receiver_api_26_description">Test Context-Register receivers - Start button launch a broadcast receiver for Wi-Fi action. Stop Button Remove the broadcast receiver from context and broadcast receiver is remove when the activity is destroy.</string>
-    <string name="label_broadcast_receiver_stop_message">Broadcast Stop</string>
-    <string name="label_broadcast_receiver_start_message">Broadcast Start</string>
-    <string name="broadcast_notification_title">Wi-Fi</string>
-    <string name="broadcast_notification_body">Wi Fi is disabled, app might not work correctly.</string>
+    <string name="label_broadcast_receiver_card" translation_description="">Broadcast Receiver</string>
+    <string name="label_broadcast_receiver_toolbar_title" translation_description="">Broadcast Receiver</string>
+    <string name="label_broadcast_receiver_header" translation_description="">Broadcast Receiver</string>
+    <string name="label_broadcast_receiver_description" translation_description="">If your device API level is 26 or higher, you cannot see the broadcast receiver trigger by AIRPLANE_MODE_CHANGED action declared in the Android manifest. API 26+ impose restrictions when declaring implicit broadcasts (broadcasts that do not target your app specifically). Try it if your device API is 26 or lower.</string>
+    <string name="notification_broadcast_receiver_plane_mode_title" translation_description="">PLANE MODE</string>
+    <string name="notification_broadcast_receiver_plane_mode_body" translation_description="">The phone is un plane mode app will not display web links.</string>
+    <string name="label_broadcast_api_26_header" translation_description="">Implementation for API 26+</string>
+    <string name="label_broadcast_receiver_api_26_description" translation_description="">Test Context-Register receivers - Start button launch a broadcast receiver for Wi-Fi action. Stop Button Remove the broadcast receiver from context and broadcast receiver is remove when the activity is destroy.</string>
+    <string name="label_broadcast_receiver_stop_message" translation_description="">Broadcast Stop</string>
+    <string name="label_broadcast_receiver_start_message" translation_description="">Broadcast Start</string>
+    <string name="broadcast_notification_title" translation_description="">Wi-Fi</string>
+    <string name="broadcast_notification_body" translation_description="">Wi Fi is disabled, app might not work correctly.</string>
+    <string name="label_title_content_providers" translation_description="">Content Provider</string>
+
+    <!-- Content Provider -->
+    <string name="label_title_content_providers_card" translation_description="">Content Providers</string>
+    <string name="screen_header_content_provider">Content Provider</string>
+    <string name="label_providers_header_user_dictironary">User Dictionary Provider</string>
+    <string name="label_providers_user_dictionary_description">Display saved user words, we use ListFragment and SimpleCursorAdapter for displaying the information. And TextWatcher for the Search action.</string>
 
 </resources>

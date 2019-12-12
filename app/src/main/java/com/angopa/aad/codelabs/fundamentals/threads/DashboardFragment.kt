@@ -10,7 +10,7 @@ import androidx.navigation.findNavController
 import com.angopa.aad.R
 import com.angopa.aad.databinding.FragmentThreadDashboardBinding
 
-class DashboardThreadFragment : Fragment() {
+class DashboardFragment : Fragment() {
 
     private lateinit var binding: FragmentThreadDashboardBinding
 
@@ -23,32 +23,32 @@ class DashboardThreadFragment : Fragment() {
             inflater, R.layout.fragment_thread_dashboard, container, false
         ).apply {
             launchSimpleRunnableButton.setOnClickListener { view ->
-                val direction = DashboardThreadFragmentDirections.actionDashboardToSimpleThread()
+                val direction = DashboardFragmentDirections.actionDashboardToSimpleThread()
                 view.findNavController().navigate(direction)
             }
 
             launchRecurrentRunnableButton.setOnClickListener { view ->
-                val direction = DashboardThreadFragmentDirections.actionDashboardToRecurrentThread()
+                val direction = DashboardFragmentDirections.actionDashboardToRecurrentThread()
                 view.findNavController().navigate(direction)
             }
 
             launchThreadPoolButton.setOnClickListener { view ->
-                val direction = DashboardThreadFragmentDirections.actionDashboardToThreadPool()
+                val direction = DashboardFragmentDirections.actionDashboardToThreadPool()
                 view.findNavController().navigate(direction)
             }
 
             launchAsyncTaskButton.setOnClickListener { view ->
-                val direction = DashboardThreadFragmentDirections.actionDashboardToAsyncTask()
+                val direction = DashboardFragmentDirections.actionDashboardToAsyncTask()
                 view.findNavController().navigate(direction)
             }
 
             launchLoaderButton.setOnClickListener {view ->
-                val direction = DashboardThreadFragmentDirections.actionDashboardToLoader()
+                val direction = DashboardFragmentDirections.actionDashboardToLoader()
                 view.findNavController().navigate(direction)
             }
 
             launchJobSchedulerButton.setOnClickListener { view ->
-                val direction = DashboardThreadFragmentDirections.actionDashboardToJobScheduler()
+                val direction = DashboardFragmentDirections.actionDashboardToJobScheduler()
                 view.findNavController().navigate(direction)
             }
         }

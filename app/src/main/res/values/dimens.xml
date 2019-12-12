@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="margin_extra_big">64dp</dimen>
+    <dimen name="margin_big">32dp</dimen>
     <dimen name="margin_normal">16dp</dimen>
     <dimen name="margin_small">8dp</dimen>
 
@@ -14,4 +16,5 @@
     <dimen name="default_corner_radius">10dp</dimen>
 
     <dimen name="appbar_padding">16dp</dimen>
+
 </resources>
