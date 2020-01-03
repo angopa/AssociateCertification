@@ -22,6 +22,8 @@ import androidx.loader.content.Loader
 import androidx.navigation.findNavController
 import com.angopa.aad.R
 import com.angopa.aad.databinding.FragmentProvidersUserDictionaryBinding
+import com.angopa.aad.utilities.AppConfiguration
+import com.angopa.aad.utilities.DialogFactory
 import timber.log.Timber
 
 // Defines a list of columns to retrieve from the Cursor and load into an output row
@@ -39,6 +41,8 @@ class UserDictionaryFragment : ListFragment(), LoaderManager.LoaderCallbacks<Cur
     private var searchString: String? = null
 
     private lateinit var adapter: SimpleCursorAdapter
+
+    val dialogFactory = DialogFactory(AppConfiguration.get())
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -70,7 +74,7 @@ class UserDictionaryFragment : ListFragment(), LoaderManager.LoaderCallbacks<Cur
             })
 
             fab.setOnClickListener {
-                insertNewWord()
+                displayNewWordDialog()
             }
 
             navControlBackButton.setOnClickListener { view ->
@@ -79,20 +83,21 @@ class UserDictionaryFragment : ListFragment(), LoaderManager.LoaderCallbacks<Cur
         }
 
         adapter = SimpleCursorAdapter(
-            requireContext(),
-            android.R.layout.simple_list_item_2,
-            null,
+            requireContext(),                           // The application's Context object
+            android.R.layout.simple_list_item_2,        // A layout in XML for one row in the ListView
+            null,                                    // The result from the query
             arrayOf(
                 UserDictionary.Words.WORD,
                 UserDictionary.Words._ID
-            ),
+            ),                                          // A String array of column names in the cursor
             intArrayOf(
                 android.R.id.text1,
                 android.R.id.text2
-            ),
-            0
+            ),                                          // An integer array of view ID's in the row layout
+            0                                     // Flags (usually none are needed)
         )
 
+        //Set the adapter for the ListView
         listAdapter = adapter
 
         LoaderManager.getInstance(this)
@@ -105,6 +110,7 @@ class UserDictionaryFragment : ListFragment(), LoaderManager.LoaderCallbacks<Cur
         // If the word is the empty string, gets everything
         var selectionClause: String? = null
 
+        // Declares an array to contain selection arguments
         val selectionArgs = searchString?.takeIf { it.isNotEmpty() }?.let {
             selectionClause = "${UserDictionary.Words.WORD} = ?"
             arrayOf(it)
@@ -114,6 +120,7 @@ class UserDictionaryFragment : ListFragment(), LoaderManager.LoaderCallbacks<Cur
         }
 
         Timber.d("SelectionArgs: ${selectionArgs.asList()}, SelectionClause: $selectionClause")
+
         return CursorLoader(
             (activity as Context),
             UserDictionary.Words.CONTENT_URI,
@@ -136,16 +143,25 @@ class UserDictionaryFragment : ListFragment(), LoaderManager.LoaderCallbacks<Cur
         adapter.swapCursor(null)
     }
 
+    private fun displayNewWordDialog() {
+        dialogFactory.createNewWordDialog(requireContext(),
+            LayoutInflater.from(requireContext()),
+            object : NewWordListener {
+                override fun newWord(word: String) {
+                    insertNewWord(word)
+                }
+            }).show()
+    }
+
     // Defines a new Uri object that receives the result of the insertion
-    private lateinit var newUri: Uri
+    private var newUri: Uri? = null
 
-
-    private fun insertNewWord() {
+    private fun insertNewWord(word: String) {
         // Defines an object to contain the new values to insert
         val newValues = ContentValues().apply {
             put(UserDictionary.Words.APP_ID, "com.angopa.aad")
             put(UserDictionary.Words.LOCALE, "en_US")
-            put(UserDictionary.Words.WORD, "insert")
+            put(UserDictionary.Words.WORD, word)
             put(UserDictionary.Words.FREQUENCY, "100")
         }
 
@@ -153,12 +169,15 @@ class UserDictionaryFragment : ListFragment(), LoaderManager.LoaderCallbacks<Cur
 
         val contentResolver: ContentResolver = requireContext().contentResolver
 
-        val uri = contentResolver.insert(
+        newUri = contentResolver.insert(
             UserDictionary.Words.CONTENT_URI,   // the user dictionary content URI
             newValues                           // the values to insert
         )
 
-        Timber.d(uri.toString())
+        Timber.d(newUri.toString())
     }
 
+    interface NewWordListener {
+        fun newWord(word: String)
+    }
 }

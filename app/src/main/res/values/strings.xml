@@ -182,6 +182,11 @@
     <string name="label_title_content_providers_card" translation_description="">Content Providers</string>
     <string name="screen_header_content_provider">Content Provider</string>
     <string name="label_providers_header_user_dictironary">User Dictionary Provider</string>
-    <string name="label_providers_user_dictionary_description">Display saved user words, we use ListFragment and SimpleCursorAdapter for displaying the information. And TextWatcher for the Search action.</string>
+    <string name="label_providers_user_dictionary_description">Display saved user words, we use ListFragment and SimpleCursorAdapter for displaying the information. And TextWatcher for the Search action. Access to the user dictionary was removed from API 23 upwards.  </string>
+    <string name="introduce_new_word_dialog">Introduce new word</string>
+
+    <!-- Notifications -->
+    <string name="notification_activity_title">Notifications</string>
+    <string name="label_title_notification_card">Notification</string>
 
 </resources>

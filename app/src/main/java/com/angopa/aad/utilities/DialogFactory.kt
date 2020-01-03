@@ -7,9 +7,12 @@ import android.view.View
 import android.widget.CalendarView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import androidx.core.widget.doAfterTextChanged
 import com.angopa.aad.R
 import com.angopa.aad.codelabs.fundamentals.activity.MultiplePurposeActivity
+import com.angopa.aad.codelabs.fundamentals.contentproviders.UserDictionaryFragment
 import com.angopa.aad.generated.callback.OnClickListener
+import kotlinx.android.synthetic.main.custom_new_dictionary_word.view.*
 import java.util.*
 
 class DialogFactory(private val appConfiguration: AppConfiguration) {
@@ -32,6 +35,24 @@ class DialogFactory(private val appConfiguration: AppConfiguration) {
             })
             .setPositiveButton(OK_STRING) { _, _ ->
                 selectDateListener.onSelectDateTapped(selectedDateString)
+            }
+            .setNegativeButton(CANCEL_STRING, null)
+            .create()
+    }
+
+    fun createNewWordDialog(
+        context: Context,
+        inflater: LayoutInflater,
+        newWordListener: UserDictionaryFragment.NewWordListener
+    ): AlertDialog {
+        var newWord = ""
+        return getBaseBuilder(context)
+            .setView(inflater.inflate(R.layout.custom_new_dictionary_word, null).apply {
+                findViewById<TextView>(R.id.new_dictionary_word).apply {
+                    doAfterTextChanged { newWord = new_dictionary_word.text.toString() }
+                }
+            }).setPositiveButton(OK_STRING) {_,_ ->
+                newWordListener.newWord(newWord)
             }
             .setNegativeButton(CANCEL_STRING, null)
             .create()

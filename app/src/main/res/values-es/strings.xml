@@ -178,5 +178,8 @@
     <string name="label_providers_header_user_dictironary">User Dictionary Provider</string>
     <string name="label_generic_search">Search</string>
     <string name="label_providers_user_dictionary_description">Display saved user words, we use ListFragment and SimpleCursorAdapter for displaying the information. And TextWatcher for the Search action.</string>
+    <string name="introduce_new_word_dialog">Introduce new word</string>
+    <string name="notification_activity_title">Notifications</string>
+    <string name="label_title_notification_card">Notification</string>
 
 </resources>

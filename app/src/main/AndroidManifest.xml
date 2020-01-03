@@ -32,7 +32,11 @@
         android:theme="@style/Base.Theme.AAD"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".codelabs.toast.ToastActivity"
@@ -79,13 +83,10 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".codelabs.fundamentals.contentproviders.ContentProviderActivity"
-            android:parentActivityName=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".codelabs.notification.NotificationCodelabActivity"
+            android:parentActivityName=".MainActivity" />
         <!-- SERVICES -->
         <service
             android:name=".codelabs.fundamentals.service.ExampleService"
@@ -110,6 +111,13 @@
         <service
             android:name=".codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- This Broadcast Receiver won't work for API 26+ -->
+
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <receiver
             android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverPlaneMode"
             android:exported="true">
@@ -119,6 +127,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
     </application>
 
 </manifest>

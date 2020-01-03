@@ -18,6 +18,7 @@ import com.angopa.aad.codelabs.fundamentals.contentproviders.ContentProviderActi
 import com.angopa.aad.codelabs.fundamentals.service.ServiceActivity
 import com.angopa.aad.codelabs.fundamentals.threads.ThreadsActivity
 import com.angopa.aad.codelabs.localization.LocalizationActivity
+import com.angopa.aad.codelabs.notification.NotificationCodelabActivity
 import com.angopa.aad.codelabs.snackbar.SnackbarActivity
 import com.angopa.aad.codelabs.toast.ToastActivity
 import com.angopa.aad.databinding.FragmentAndroidCoreBinding
@@ -41,7 +42,6 @@ class AndroidCoreFragment : Fragment() {
             inflater, R.layout.fragment_android_core, container, false
         ).apply {
             viewModel = androidCoreViewModel
-            lifecycleOwner = viewLifecycleOwner
 
             val adapter = LinkAdapter()
             linksRecyclerView.adapter = adapter
@@ -57,6 +57,7 @@ class AndroidCoreFragment : Fragment() {
                 override fun threadsCodelabTapped() = startNewActivity(ThreadsActivity::class.java)
                 override fun broadcastCodelabTapped() = startNewActivity(BroadcastReceiverActivity::class.java)
                 override fun contentProvidersCodelabTapped() = startNewActivity(ContentProviderActivity::class.java)
+                override fun notificationCodelabTapped() = startNewActivity(NotificationCodelabActivity::class.java)
             }
         }
 
@@ -82,5 +83,6 @@ class AndroidCoreFragment : Fragment() {
         fun threadsCodelabTapped()
         fun broadcastCodelabTapped()
         fun contentProvidersCodelabTapped()
+        fun notificationCodelabTapped()
     }
 }
