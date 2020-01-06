@@ -31,7 +31,7 @@ class AsyncTaskFragment : Fragment() {
                 view.findNavController().navigateUp()
             }
 
-            launchAsyncTaskButton.setOnClickListener { view ->
+            launchAsyncTaskButton.setOnClickListener {
                 DownloadFileTask().execute(1, 1, 1)
                 DownloadFileTask().execute(1, 1, 1, 1, 1, 1, 1)
                 DownloadFileTask().execute(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)

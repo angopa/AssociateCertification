@@ -1,9 +1,7 @@
 package com.angopa.aad
 
+import android.app.*
 import android.app.Application
-import android.app.Notification
-import android.app.NotificationChannel
-import android.app.NotificationManager
 import android.content.Context
 import android.graphics.Color
 import android.os.Build
@@ -66,6 +64,15 @@ abstract class CoreApplication : Application() {
         channel.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
 
         val service = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        service.createNotificationChannelGroup(NotificationChannelGroup(WORK_GROUP_ID, "Work Group"))
+        service.createNotificationChannel(channel)
+
+        channel = NotificationChannel(
+            LOW_NOTIFICATION_CHANNEL_ID,
+            "Low Importance Notifications",
+            NotificationManager.IMPORTANCE_LOW
+        )
+        channel.group = WORK_GROUP_ID
         service.createNotificationChannel(channel)
 
         channel = NotificationChannel(
@@ -73,6 +80,7 @@ abstract class CoreApplication : Application() {
             "Regular Notifications",
             NotificationManager.IMPORTANCE_DEFAULT
         )
+        channel.setShowBadge(false)
         service.createNotificationChannel(channel)
 
         channel = NotificationChannel(
@@ -80,6 +88,7 @@ abstract class CoreApplication : Application() {
             "Important Notifications",
             NotificationManager.IMPORTANCE_HIGH
         )
+        channel.group = WORK_GROUP_ID
         service.createNotificationChannel(channel)
 
         channel = NotificationChannel(
@@ -87,6 +96,7 @@ abstract class CoreApplication : Application() {
             "Job Service notification",
             NotificationManager.IMPORTANCE_HIGH
         )
+
         channel.enableLights(true)
         channel.lightColor = Color.RED
         channel.enableVibration(true)

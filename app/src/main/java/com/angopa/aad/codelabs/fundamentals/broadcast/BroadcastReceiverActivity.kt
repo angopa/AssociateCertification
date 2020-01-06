@@ -48,7 +48,7 @@ class BroadcastReceiverActivity : BaseActivity() {
         displayToastMessage(getString(R.string.generic_label_start))
     }
 
-    fun sendMessageToWearable(view: View) {
+    fun sendMessageToWearable() {
         Intent().also { intent ->
             intent.action = "com.angopa.aad.MESSAGE"
             intent.putExtra("data", "Message from the app!")

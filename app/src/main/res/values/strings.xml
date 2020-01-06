@@ -20,6 +20,7 @@
     <string name="generic_label_save" translation_description="">SAVE</string>
     <string name="generic_label_start" translation_description="">Start</string>
     <string name="generic_label_stop" translation_description="">Stop</string>
+    <string name="generic_label_reply" translation_description="">Reply</string>
     <string name="generic_do_something_message" translation_description="">Do something</string>
     <string name="activity_restarted_message" translation_description="">Activity restarted</string>
     <string name="dialog_label_ok" translation_description="">Ok</string>
@@ -188,5 +189,30 @@
     <!-- Notifications -->
     <string name="notification_activity_title">Notifications</string>
     <string name="label_title_notification_card">Notification</string>
+    <string name="notification_title">Notification Title</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="reply_label">Reply...</string>
+    <string name="label_basic_notification">Basic Notification</string>
+    <string name="label_expandable_notification">Expandable Notification</string>
+    <string name="label_intent_notification">Intent Notification</string>
+    <string name="label_reply_notification">Reply Notification</string>
+    <string name="notification_reply_message">Your reply was successfully post.</string>
+    <string name="download_notification_title">Picture Download</string>
+    <string name="download_notification_text">Download in Progress</string>
+    <string name="download_notification_complete">Download Complete</string>
+    <string name="progress_bar_notification">Progress bar Notification</string>
+    <string name="infinite_progress_bar">Infinite Progress bar</string>
+    <string name="message_style_notification">Message Style Notification</string>
+    <string name="media_type_notification">Media Type Notification</string>
+    <string name="high_priority_notification">High priority notification</string>
+    <string name="empty_activity_details">Empty Activity, just to show how empty back task stack works. Check code and Manifest for details.</string>
+    <string name="task_stack_notification">Task Stack Notification</string>
+    <string name="empty_task_stack_notification">Empty Task Stack Notification</string>
+    <string name="notification_empty_stack_text">Notification with empty stack</string>
+    <string name="notification_back_stack_text">Notification with Back Stack</string>
+    <string name="notification_number_label">Notification number %s</string>
+    <string name="group_notification_label">Group Notification</string>
+    <string name="notification_settings">Redirect to Notification Settings</string>
+
 
 </resources>

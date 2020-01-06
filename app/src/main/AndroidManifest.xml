@@ -14,6 +14,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
     <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
 
     <uses-feature
         android:name="android.hardware.Sensor"
@@ -87,6 +88,14 @@
         <activity
             android:name=".codelabs.notification.NotificationCodelabActivity"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".codelabs.notification.FullScreenActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".codelabs.notification.EmptyTaskActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="" />
         <!-- SERVICES -->
         <service
             android:name=".codelabs.fundamentals.service.ExampleService"
@@ -111,7 +120,6 @@
         <service
             android:name=".codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- This Broadcast Receiver won't work for API 26+ -->
-
         <service android:name=".service.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -127,6 +135,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+        <receiver android:name=".codelabs.notification.NotificationPublisher" />
 
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"

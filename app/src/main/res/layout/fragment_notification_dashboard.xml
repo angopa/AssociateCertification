@@ -1,6 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/basic_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/label_basic_notification" />
+
+        <Button
+            android:id="@+id/expandable_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/label_expandable_notification" />
+
+        <Button
+            android:id="@+id/intent_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/label_intent_notification" />
+
+        <Button
+            android:id="@+id/reply_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/label_reply_notification" />
+
+        <Button
+            android:id="@+id/progress_bar_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/progress_bar_notification" />
+
+        <Button
+            android:id="@+id/progress_bar_infinite_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/infinite_progress_bar" />
+
+        <Button
+            android:id="@+id/messaging_style_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/message_style_notification" />
+
+        <Button
+            android:id="@+id/media_type_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/media_type_notification" />
+
+        <Button
+            android:id="@+id/high_priority_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/high_priority_notification" />
+
+        <Button
+            android:id="@+id/task_stack_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/task_stack_notification" />
+
+        <Button
+            android:id="@+id/empty_task_stack_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/empty_task_stack_notification" />
+
+        <Button
+            android:id="@+id/group_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/group_notification_label" />
+
+        <Button
+            android:id="@+id/open_notification_channel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/notification_settings" />
+
+    </LinearLayout>
+
+</layout>

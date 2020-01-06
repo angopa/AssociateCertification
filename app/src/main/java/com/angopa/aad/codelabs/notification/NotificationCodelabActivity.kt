@@ -14,5 +14,4 @@ class NotificationCodelabActivity : BaseActivity() {
     override fun getBindingComponent() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_notifications)
     }
-
 }
