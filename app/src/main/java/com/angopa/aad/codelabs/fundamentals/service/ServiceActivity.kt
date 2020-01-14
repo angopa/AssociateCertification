@@ -160,7 +160,7 @@ class ServiceActivity : BaseActivity() {
      * Called when a button is clicked (the button in the layout file attaches to this method with
      * the android:onClick attribute
      */
-    fun onButtonClick() {
+    fun onButtonClick(view: View) {
         if (bound) {
             // Call a method from the LocalService
             // However, if this call were something that might hang, then this request should
@@ -173,7 +173,7 @@ class ServiceActivity : BaseActivity() {
         }
     }
 
-    fun sayHello() {
+    fun sayHello(view: View) {
         if (messengerBound) {
             // Create and send a message ti the service, using a supported 'what' value
             val msg: Message = Message.obtain(null, MSG_SAY_HELLO, 0, 0)

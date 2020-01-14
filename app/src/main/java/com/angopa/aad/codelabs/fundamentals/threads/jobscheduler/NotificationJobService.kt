@@ -13,6 +13,8 @@ import com.angopa.aad.utilities.PRIMARY_CHANNEL_ID
 
 class NotificationJobService : JobService() {
 
+    private lateinit var notificationManager: NotificationManager
+
     override fun onStartJob(params: JobParameters?): Boolean {
         val intent = Intent(this, MainActivity::class.java)
         val pendingIntent: PendingIntent = PendingIntent.getActivity(
@@ -31,7 +33,7 @@ class NotificationJobService : JobService() {
             .setDefaults(NotificationCompat.DEFAULT_ALL)
             .setAutoCancel(true)
 
-        val notificationManager =
+        notificationManager =
             getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.notify(0, builder.build())
 

@@ -208,5 +208,15 @@
     <string name="notification_number_label">Notification number %s</string>
     <string name="group_notification_label">Group Notification</string>
     <string name="notification_settings">Redirect to Notification Settings</string>
+    <string name="custom_notification_label">Custom Notification</string>
+
+    <!-- Work Manager -->
+    <string name="work_manager_screen_title">Work Manager</string>
+    <string name="work_manager_label">Work Manager</string>
+    <string name="simple_constraint_worker_label">Simple Constraint Worker</string>
+    <string name="worker_with_work_data_label">Worker With Work Data</string>
+    <string name="observe_worker_label">Observe Worker</string>
+    <string name="progress_worker_label">Progress Worker</string>
+    <string name="chain_workers_label">Chain Workers</string>
 
 </resources>

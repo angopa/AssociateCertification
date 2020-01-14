@@ -14,7 +14,7 @@ import com.angopa.aad.workers.SeedTabTableWorker
 /**
  * The room database for this app
  */
-@Database(entities = [Tab::class, Link::class], version = 2, exportSchema = false)
+@Database(entities = [Tab::class, Link::class], version = 3, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun tabDao(): TabDao
     abstract fun linkDao(): LinkDao

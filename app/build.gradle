@@ -81,8 +81,10 @@ dependencies {
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
 
-    //Work
+    //WorkManager
     implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
+    implementation "androidx.work:work-runtime:$rootProject.workVersion"
+    implementation "androidx.work:work-rxjava2:$rootProject.workVersion"
 
     // Timber
     implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
@@ -95,6 +97,9 @@ dependencies {
     implementation "com.jakewharton:butterknife:$rootProject.butterknife"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknife"
 
+    // Kotlin
+    implementation "androidx.concurrent:concurrent-futures-ktx:1.1.0-alpha01"
+
     // Testing dependencies
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$rootProject.espressoVersion"
@@ -104,7 +109,7 @@ dependencies {
     androidTestImplementation "androidx.test.uiautomator:uiautomator:$rootProject.uiAutomatorVersion"
     androidTestImplementation "androidx.work:work-testing:$rootProject.workVersion"
     androidTestImplementation "com.google.truth:truth:$rootProject.truthVersion"
-    testImplementation "junit:junit:$rootProject.junitVersion"
+//    testImplementation "junit:junit:$rootProject.junitVersion"
 
 }
 

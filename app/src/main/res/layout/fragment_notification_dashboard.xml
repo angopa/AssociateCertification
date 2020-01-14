@@ -91,6 +91,13 @@
             android:text="@string/group_notification_label" />
 
         <Button
+            android:id="@+id/custom_notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/custom_notification_label" />
+        
+        <Button
             android:id="@+id/open_notification_channel_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

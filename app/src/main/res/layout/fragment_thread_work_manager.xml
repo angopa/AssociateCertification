@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="clickHandler"
+            type="com.angopa.aad.codelabs.fundamentals.workmanager.ThreadWorkManagerFragment.OnClickHandlerListener" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Some of this implementation might be similar to those in the previous page. Check Code and log to see behavior"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_margin="@dimen/margin_normal"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{() -> clickHandler.threadingInWorker()}"
+            android:text="Threading in Worker" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{() -> clickHandler.threadingCoroutineWorker()}"
+            android:text="Threading in Worker" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{() -> clickHandler.longRunningWorker()}"
+            android:text="Long Running Worker" />
+
+    </LinearLayout>
+
+</layout>

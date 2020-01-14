@@ -10,6 +10,7 @@ import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RemoteViews
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
@@ -50,6 +51,7 @@ class NotificationDashboardFragment : Fragment() {
             taskStackNotificationButton.setOnClickListener { displayNotificationWithTaskStack() }
             emptyTaskStackNotificationButton.setOnClickListener { displayNotificationWithEmptyTaskStack() }
             groupNotificationButton.setOnClickListener { displayGroupNotification() }
+            customNotificationButton.setOnClickListener { displayCustomNotification() }
             openNotificationChannelButton.setOnClickListener {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                     redirectToNotificationSettings()
@@ -331,6 +333,22 @@ class NotificationDashboardFragment : Fragment() {
         }
 
         startActivity(intent)
+    }
+
+    private fun displayCustomNotification() {
+        // Get the layouts to use in the custom notification
+        val notificationLayout = RemoteViews(requireContext().packageName, R.layout.custom_notification_small)
+        val notificationLayoutExpanded = RemoteViews(requireContext().packageName, R.layout.custom_notification_large)
+
+        // Apply the layouts to the notification
+        val builder = NotificationCompat.Builder(requireContext(), REGULAR_NOTIFICATION_CHANNEL_ID)
+            .setSmallIcon(R.drawable.ic_notification)
+            // If remove setStyle you have to set your own headers and styles
+            .setStyle(NotificationCompat.DecoratedCustomViewStyle())
+            .setCustomContentView(notificationLayout)
+            .setCustomBigContentView(notificationLayoutExpanded)
+
+        showNotification(builder)
     }
 
     private fun obtainBasicConfiguration(): NotificationCompat.Builder {

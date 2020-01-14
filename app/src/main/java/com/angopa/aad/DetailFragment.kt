@@ -4,19 +4,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.angopa.aad.databinding.FragmentDetailBinding
-import kotlinx.android.synthetic.main.include_fragment_toolbar.*
 import timber.log.Timber
 
 
 class DetailFragment : Fragment() {
 
-    private val args : DetailFragmentArgs by navArgs()
+    private val args: DetailFragmentArgs by navArgs()
 
     private lateinit var binding: FragmentDetailBinding
 
@@ -31,7 +29,7 @@ class DetailFragment : Fragment() {
             Timber.d("LinkUri: %s", args.linkUri)
             webView.loadUrl(args.linkUri)
 
-            toolbar.setNavigationOnClickListener {view ->
+            toolbar.setNavigationOnClickListener { view ->
                 view.findNavController().navigateUp()
             }
         }

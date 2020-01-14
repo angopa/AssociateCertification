@@ -9,17 +9,17 @@ import android.os.StrictMode
 import android.os.StrictMode.VmPolicy
 import android.util.Log
 import androidx.annotation.RequiresApi
+import androidx.work.Configuration
 import com.angopa.aad.utilities.*
 import com.angopa.aad.utilities.localization.LocaleManager
 import com.crashlytics.android.Crashlytics
-import com.crashlytics.android.core.CrashlyticsCore
-import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.iid.FirebaseInstanceId
 import io.fabric.sdk.android.Fabric
 import timber.log.Timber
 import timber.log.Timber.DebugTree
+import java.util.concurrent.Executors
 
-abstract class CoreApplication : Application() {
+abstract class CoreApplication : Application(), Configuration.Provider {
 
     abstract fun initializeAppConfiguration()
 
@@ -64,7 +64,12 @@ abstract class CoreApplication : Application() {
         channel.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
 
         val service = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        service.createNotificationChannelGroup(NotificationChannelGroup(WORK_GROUP_ID, "Work Group"))
+        service.createNotificationChannelGroup(
+            NotificationChannelGroup(
+                WORK_GROUP_ID,
+                "Work Group"
+            )
+        )
         service.createNotificationChannel(channel)
 
         channel = NotificationChannel(
@@ -105,14 +110,14 @@ abstract class CoreApplication : Application() {
 
     private fun configureFirebase() {
         FirebaseInstanceId.getInstance().instanceId
-            .addOnCompleteListener(OnCompleteListener { task ->
+            .addOnCompleteListener { task ->
                 if (!task.isSuccessful) {
                     Timber.e("getInstanceId failed")
                 }
 
                 val token = task.result?.token
                 Timber.d("Token: %s", token)
-            })
+            }
     }
 
     private fun configureDebugLogging(crashlyticsEnabled: Boolean) {
@@ -124,10 +129,7 @@ abstract class CoreApplication : Application() {
                     tag: String?,
                     message: String,
                     t: Throwable?
-                ) { // Nothing to log.
-                    if (message == null) {
-                        return
-                    }
+                ) {
                     // Don't log verbose messages.
                     if (priority < Log.DEBUG) {
                         return
@@ -159,4 +161,10 @@ abstract class CoreApplication : Application() {
                 .build()
         )
     }
+
+    // Configure WorkManager
+    override fun getWorkManagerConfiguration(): Configuration = Configuration.Builder()
+        .setMinimumLoggingLevel(Log.DEBUG)
+        .setExecutor(Executors.newFixedThreadPool(8))
+        .build()
 }

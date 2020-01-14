@@ -80,6 +80,9 @@
             android:name=".codelabs.fundamentals.threads.ThreadsActivity"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".codelabs.fundamentals.workmanager.WorkManagerActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverActivity"
             android:parentActivityName=".MainActivity" />
         <activity
@@ -119,13 +122,14 @@
             android:exported="false" />
         <service
             android:name=".codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- This Broadcast Receiver won't work for API 26+ -->
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
         <service android:name=".service.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
+        <!-- This Broadcast Receiver won't work for API 26+ -->
         <receiver
             android:name=".codelabs.fundamentals.broadcast.BroadcastReceiverPlaneMode"
             android:exported="true">
@@ -140,6 +144,11 @@
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"
             android:value="false" />
+
+        <provider
+            android:name="androidx.work.impl.WorkManagerInitializer"
+            android:authorities="${applicationId}.workmanager-init"
+            tools:node="remove" />
     </application>
 
 </manifest>
