@@ -108,6 +108,7 @@ abstract class CoreApplication : Application(), Configuration.Provider {
         service.createNotificationChannel(channel)
     }
 
+    //Something
     private fun configureFirebase() {
         FirebaseInstanceId.getInstance().instanceId
             .addOnCompleteListener { task ->
