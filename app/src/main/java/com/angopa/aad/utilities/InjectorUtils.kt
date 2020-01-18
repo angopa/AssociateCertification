@@ -11,9 +11,10 @@ import com.angopa.aad.viewmodel.*
  * Static methods used to inject classes needed for various Activities and Fragments
  */
 object InjectorUtils {
-    private fun getTabRepository(context: Context): TabRepository = TabRepository.getInstance(
-        AppDatabase.getInstance(context.applicationContext).tabDao()
-    )
+    private fun getTabRepository(context: Context): TabRepository =
+        TabRepository.getInstance(
+            AppDatabase.getInstance(context.applicationContext).tabDao()
+        )
 
 
     private fun getLinkRepository(context: Context): LinkRepository =

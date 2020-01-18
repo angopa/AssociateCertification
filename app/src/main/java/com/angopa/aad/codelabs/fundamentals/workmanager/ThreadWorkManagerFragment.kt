@@ -56,7 +56,10 @@ class ThreadWorkManagerFragment : Fragment() {
     }
 
     private fun createLongRunningWorker() {
-        val workData = workDataOf(KEY_INPUT_URL to "https://www.google.com", KEY_OUTPUT_FILE_NAME to "fileName" )
+        val workData = workDataOf(
+            KEY_INPUT_URL to "https://www.google.com",
+            KEY_OUTPUT_FILE_NAME to "fileName"
+        )
 
         val request = OneTimeWorkRequestBuilder<LongRunningWorker>()
             .setInputData(workData)

@@ -9,7 +9,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.work.*
+import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
 import com.angopa.aad.codelabs.fundamentals.workmanager.workers.ProgressWorker
 import com.angopa.aad.codelabs.fundamentals.workmanager.workers.ProgressWorker.Companion.Progress
@@ -42,13 +44,15 @@ class DashboardFragment : Fragment() {
                 override fun intermediateWorkerProgress() = createIntermediateObserver()
                 override fun chainingWorkers() = createChainOfWorkers()
                 override fun simpleRecurringWork() = createSimpleRecurringWork()
-            }
+                override fun threadInWorkManager() =
+                    findNavController().navigate(DashboardFragmentDirections.actionDashboardToThreadInWorkManager())
 
-            launchThreadingInWorkManagerButton.setOnClickListener { view ->
-                val direction = DashboardFragmentDirections.actionDashboardToThreadInWorkManager()
-                view.findNavController().navigate(direction)
+                override fun blurOMaticCodelab() =
+                    findNavController().navigate(DashboardFragmentDirections.actionDashboardToSelectImage())
             }
         }
+
+        (activity as BaseActivity).resetTitle()
 
         return binding.root
     }
@@ -169,6 +173,8 @@ class DashboardFragment : Fragment() {
         fun intermediateWorkerProgress()
         fun chainingWorkers()
         fun simpleRecurringWork()
+        fun threadInWorkManager()
+        fun blurOMaticCodelab()
     }
 
     companion object {

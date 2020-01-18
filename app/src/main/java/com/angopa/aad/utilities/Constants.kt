@@ -16,3 +16,9 @@ const val WORK_GROUP_ID = "work_group_id"
 
 const val LANGUAGE_ENGLISH = "en"
 const val LANGUAGE_SPANISH = "es"
+
+const val DELAY_TIME_MILLIS = 2000L
+
+const val OUTPUT_PATH = "blur_filter_outputs"
+
+const val KEY_IMAGE_URI = "KEY_IMAGE_URI"

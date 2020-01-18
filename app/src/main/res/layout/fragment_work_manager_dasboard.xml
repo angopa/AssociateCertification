@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:onClick="@{() -> clickHandler.simpleConstraintWorkRequest()()}"
+                android:onClick="@{() -> clickHandler.simpleConstraintWorkRequest()}"
                 android:text="@string/simple_constraint_worker_label" />
 
             <Button
@@ -65,14 +65,22 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="@{() -> clickHandler.simpleRecurringWork()}"
-                android:text="Periodic Work" />
+                android:text="@string/periodic_work_label" />
 
             <Button
-                android:id="@+id/launch_threading_in_work_manager_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Threading in Work Manager" />
+                android:onClick="@{() -> clickHandler.threadInWorkManager()}"
+                android:text="@string/threading_in_work_manager_label" />
+
+            <Button
+                android:id="@+id/blur_o_matic_codelab_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="@{() -> clickHandler.blurOMaticCodelab()}"
+                android:text="Blur-O-Matic" />
 
         </LinearLayout>
 

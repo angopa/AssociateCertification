@@ -35,4 +35,12 @@ abstract class BaseActivity : AppCompatActivity() {
     fun <T: String> displayToastMessage(message: T) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
+
+    fun updateTitle(title: String) {
+        supportActionBar?.title = title
+    }
+
+    fun resetTitle() {
+        supportActionBar?.setTitle(getScreenTitle())
+    }
 }

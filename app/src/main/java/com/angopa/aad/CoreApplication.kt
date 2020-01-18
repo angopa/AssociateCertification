@@ -113,6 +113,7 @@ abstract class CoreApplication : Application(), Configuration.Provider {
             .addOnCompleteListener { task ->
                 if (!task.isSuccessful) {
                     Timber.e("getInstanceId failed")
+                    return@addOnCompleteListener
                 }
 
                 val token = task.result?.token

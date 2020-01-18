@@ -224,6 +224,19 @@
     <string name="observe_worker_label">Observe Worker</string>
     <string name="progress_worker_label">Progress Worker</string>
     <string name="chain_workers_label">Chain Workers</string>
-
+    <string name="periodic_work_label">Periodic Work</string>
+    <string name="threading_in_work_manager_label">Threading in Work Manager</string>
+    <string name="blur_title">Select Blur Amount</string>
+    <string name="select_image">Select Image</string>
+    <string name="go">Go</string>
+    <string name="see_file">See File</string>
+    <string name="description_image">The image to blur and save.</string>
+    <string name="blur_lv_1">A little blurred</string>
+    <string name="blur_lv_2">More blurred</string>
+    <string name="blur_lv_3">The most blurred</string>
+    <string name="cancel_work">Cancel Work</string>
+    <string name="set_permissions_in_settings">Go to Settings -> Apps and Notifications ->
+        WorkManager Demo -> App Permissions and grant access to Storage.</string>
+    <string name="blur_codelab_title">Blur Codelab</string>
 
 </resources>

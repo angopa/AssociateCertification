@@ -42,6 +42,7 @@ class AndroidCoreFragment : Fragment() {
             inflater, R.layout.fragment_android_core, container, false
         ).apply {
             viewModel = androidCoreViewModel
+            lifecycleOwner = viewLifecycleOwner
 
             val adapter = LinkAdapter()
             linksRecyclerView.adapter = adapter

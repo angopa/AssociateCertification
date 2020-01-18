@@ -18,11 +18,44 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
 
+        <action
+            android:id="@+id/action_dashboard_to_select_image"
+            app:destination="@+id/select_image"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
     </fragment>
 
     <fragment
         android:id="@+id/thread_in_work_manager"
         android:name="com.angopa.aad.codelabs.fundamentals.workmanager.ThreadWorkManagerFragment"
         tools:layout="@layout/fragment_thread_work_manager" />
+
+    <fragment
+        android:id="@+id/select_image"
+        android:name="com.angopa.aad.codelabs.fundamentals.workmanager.bluromaticcodelab.SelectImageFragment"
+        tools:layout="@layout/fragment_select_image" >
+
+        <action
+            android:id="@+id/action_dashboard_to_blur_codelab"
+            app:destination="@+id/blur_codelab"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/blur_codelab"
+        android:name="com.angopa.aad.codelabs.fundamentals.workmanager.bluromaticcodelab.BlurFragment"
+        tools:layout="@layout/fragment_blur" >
+
+        <argument android:name="imageUri"
+            app:argType="string"/>
+
+    </fragment>
 
 </navigation>
