@@ -118,6 +118,9 @@ dependencies {
     androidTestImplementation "androidx.work:work-testing:$rootProject.workVersion"
     androidTestImplementation "com.google.truth:truth:$rootProject.truthVersion"
     androidTestImplementation "junit:junit:$rootProject.junitVersion"
+
+    // Wear App ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    wearApp project(':wearable')
 }
 
 apply plugin: 'com.google.gms.google-services'

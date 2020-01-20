@@ -1,2 +1,2 @@
-include ':app', ':werable'
+include ':app', ':wearable'
 rootProject.name='My Application'
