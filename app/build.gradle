@@ -34,6 +34,10 @@ android {
             buildConfigField "boolean", "CRASHLYTICS_ENABLED", "true"
         }
     }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/NOTICE.md'
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -104,6 +108,10 @@ dependencies {
     // Kotlin
     implementation "androidx.concurrent:concurrent-futures-ktx:1.1.0-alpha01"
 
+    // JAX-B dependencies for JDK 9+
+    implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
+    implementation "org.glassfish.jaxb:jaxb-runtime:2.3.2"
+
     // Testing dependencies
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$rootProject.espressoVersion"
@@ -113,8 +121,7 @@ dependencies {
     androidTestImplementation "androidx.test.uiautomator:uiautomator:$rootProject.uiAutomatorVersion"
     androidTestImplementation "androidx.work:work-testing:$rootProject.workVersion"
     androidTestImplementation "com.google.truth:truth:$rootProject.truthVersion"
-//    testImplementation "junit:junit:$rootProject.junitVersion"
-
+    androidTestImplementation "junit:junit:$rootProject.junitVersion"
 }
 
 apply plugin: 'com.google.gms.google-services'

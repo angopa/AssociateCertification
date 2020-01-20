@@ -10,6 +10,7 @@ import android.content.res.Configuration
 import android.os.Build
 import android.os.LocaleList
 import com.angopa.aad.Storage
+import timber.log.Timber
 import java.util.*
 
 /**
@@ -172,6 +173,7 @@ class LocaleManager private constructor(
             application: Application,
             defaultLocale: Locale = Locale.getDefault()
         ): LocaleManager {
+            Timber.d(defaultLocale.toString())
             return init(application, Storage.getInstance(application))
         }
 
