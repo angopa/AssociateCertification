@@ -123,4 +123,5 @@ dependencies {
     wearApp project(':wearable')
 }
 
+
 apply plugin: 'com.google.gms.google-services'
