@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/thread_in_work_manager"
-        android:name="com.angopa.aad.codelabs.fundamentals.workmanager.ThreadWorkManagerFragment"
+        android:name="com.angopa.aad.codelabs.fundamentals.workmanager.threadwork.ThreadWorkManagerFragment"
         tools:layout="@layout/fragment_thread_work_manager" />
 
     <fragment

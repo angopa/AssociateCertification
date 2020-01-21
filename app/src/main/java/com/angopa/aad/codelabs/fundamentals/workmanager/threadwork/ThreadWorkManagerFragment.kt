@@ -1,4 +1,4 @@
-package com.angopa.aad.codelabs.fundamentals.workmanager
+package com.angopa.aad.codelabs.fundamentals.workmanager.threadwork
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.workDataOf
@@ -19,6 +20,10 @@ import com.angopa.aad.databinding.FragmentThreadWorkManagerBinding
 
 class ThreadWorkManagerFragment : Fragment() {
     private lateinit var binding: FragmentThreadWorkManagerBinding
+
+    private val viewModel: ThreadWorkViewModel by viewModels {
+        InjectorUtils.getThreadWorkViewModelFactory(requireContext())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,30 +47,15 @@ class ThreadWorkManagerFragment : Fragment() {
     }
 
     private fun createWorker() {
-        val request = OneTimeWorkRequestBuilder<DownloadWorker>()
-            .build()
-
-        WorkManager.getInstance(requireContext()).enqueue(request)
+        viewModel.createWorker()
     }
 
     private fun createCoroutineWorker() {
-        val request = OneTimeWorkRequestBuilder<CoroutineDownloadWorker>()
-            .build()
-
-        WorkManager.getInstance(requireContext()).enqueue(request)
+        viewModel.createCoroutineWorker()
     }
 
     private fun createLongRunningWorker() {
-        val workData = workDataOf(
-            KEY_INPUT_URL to "https://www.google.com",
-            KEY_OUTPUT_FILE_NAME to "fileName"
-        )
-
-        val request = OneTimeWorkRequestBuilder<LongRunningWorker>()
-            .setInputData(workData)
-            .build()
-
-        WorkManager.getInstance(requireContext()).enqueue(request)
+        viewModel.createLongRunningWorker()
     }
 
     interface OnClickHandlerListener {

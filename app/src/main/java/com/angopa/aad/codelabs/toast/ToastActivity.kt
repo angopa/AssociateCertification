@@ -4,9 +4,12 @@ import android.view.Gravity
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModel
 import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
+import com.angopa.aad.codelabs.toast.viewmodel.ToastViewModel
 import com.angopa.aad.databinding.ActivityToastBinding
 
 /**
@@ -18,6 +21,10 @@ import com.angopa.aad.databinding.ActivityToastBinding
 class ToastActivity : BaseActivity() {
 
     private lateinit var binding: ActivityToastBinding
+
+    private val toastViewModel: ToastViewModel by viewModels {
+        InjectorUtil.provideToastActivityViewModelFactory()
+    }
 
     override fun getBindingComponent() {
         binding = DataBindingUtil.setContentView<ActivityToastBinding>(
