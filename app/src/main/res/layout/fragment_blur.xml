@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -89,21 +89,22 @@
                         android:layout_gravity="center_horizontal"
                         android:indeterminate="true"
                         android:visibility="gone" />
+
                 </LinearLayout>
 
                 <Button
                     android:id="@+id/go_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/go" />
+                    android:text="@string/go"
+                    android:layout_marginEnd="@dimen/margin_big"/>
 
                 <Button
                     android:id="@+id/see_file_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/see_file"
-                    android:visibility="gone"
-                    tools:visibility="visible" />
+                    android:visibility="gone" />
 
             </LinearLayout>
 

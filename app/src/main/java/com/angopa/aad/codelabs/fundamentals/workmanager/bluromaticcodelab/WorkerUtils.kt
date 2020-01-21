@@ -1,4 +1,4 @@
-package com.angopa.aad.codelabs.fundamentals.workmanager.workers
+package com.angopa.aad.codelabs.fundamentals.workmanager.bluromaticcodelab
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -33,15 +33,11 @@ class WorkerUtils {
          */
         fun makeStatusNotification(message: String, context: Context) {
             // Create the notification
-            // Create the notification
             val builder = NotificationCompat.Builder(context, REGULAR_NOTIFICATION_CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
                 .setContentTitle(context.getString(R.string.notification_title))
                 .setContentText(message)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
-                .setVibrate(LongArray(0))
 
-            // Show the notification
             // Show the notification
             NotificationManagerCompat.from(context).notify(0, builder.build())
         }
