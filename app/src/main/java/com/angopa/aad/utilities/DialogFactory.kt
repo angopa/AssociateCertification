@@ -1,19 +1,15 @@
 package com.angopa.aad.utilities
 
 import android.content.Context
-import android.content.DialogInterface
 import android.view.LayoutInflater
-import android.view.View
 import android.widget.CalendarView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.core.widget.doAfterTextChanged
 import com.angopa.aad.R
-import com.angopa.aad.codelabs.fundamentals.activity.MultiplePurposeActivity
-import com.angopa.aad.codelabs.fundamentals.contentproviders.UserDictionaryFragment
-import com.angopa.aad.generated.callback.OnClickListener
+import com.angopa.aad.androidcore.codelabs.fundamentals.activity.MultiplePurposeActivity
+import com.angopa.aad.androidcore.codelabs.fundamentals.contentproviders.UserDictionaryFragment
 import kotlinx.android.synthetic.main.custom_new_dictionary_word.view.*
-import java.util.*
 
 class DialogFactory(private val appConfiguration: AppConfiguration) {
 

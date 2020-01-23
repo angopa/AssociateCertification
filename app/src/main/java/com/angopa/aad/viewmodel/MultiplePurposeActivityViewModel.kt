@@ -2,7 +2,7 @@ package com.angopa.aad.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.angopa.aad.Storage
-import com.angopa.aad.codelabs.fundamentals.activity.ActivityModel
+import com.angopa.aad.androidcore.codelabs.fundamentals.activity.ActivityModel
 
 class MultiplePurposeActivityViewModel(
     private val storage: Storage

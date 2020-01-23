@@ -5,7 +5,7 @@
 
         <variable
             name="callback"
-            type="com.angopa.aad.codelabs.snackbar.SnackbarActivity.Callback" />
+            type="com.angopa.aad.androidcore.codelabs.snackbar.SnackbarActivity.Callback" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

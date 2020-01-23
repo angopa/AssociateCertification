@@ -4,6 +4,7 @@
     <dimen name="margin_big">32dp</dimen>
     <dimen name="margin_normal">16dp</dimen>
     <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_minimum">4dp</dimen>
 
     <!-- Minimum height of description so that the collapsing toolbar can be shown on every page -->
     <dimen name="plant_description_min_height">300dp</dimen>

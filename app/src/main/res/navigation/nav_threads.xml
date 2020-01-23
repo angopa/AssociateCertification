@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dashboard_thread_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.DashboardFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.DashboardFragment"
         tools:layout="@layout/fragment_thread_dashboard">
 
         <action
@@ -63,32 +63,32 @@
 
     <fragment
         android:id="@+id/simple_runnable_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.SimpleRunnableFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.SimpleRunnableFragment"
         tools:layout="@layout/fragment_simple_runnable" />
 
     <fragment
         android:id="@+id/recurrent_runnable_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.RecurrentRunnableFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.RecurrentRunnableFragment"
         tools:layout="@layout/fragment_recurrent_runnable" />
 
     <fragment
         android:id="@+id/async_task_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.AsyncTaskFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.AsyncTaskFragment"
         tools:layout="@layout/fragment_thread_async_task" />
 
     <fragment
         android:id="@+id/loader_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.LoaderFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.LoaderFragment"
         tools:layout="@layout/fragment_thread_loader" />
 
     <fragment
         android:id="@+id/job_scheduler_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.jobscheduler.JobSchedulerFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.jobscheduler.JobSchedulerFragment"
         tools:layout="@layout/fragment_thread_job_scheduler"/>
 
     <fragment
         android:id="@+id/thread_pool_executor"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.ThreadPoolExecutorFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.ThreadPoolExecutorFragment"
         tools:layout="@layout/fragment_thread_pool_executor">
 
         <action
@@ -127,22 +127,22 @@
 
     <fragment
         android:id="@+id/fixed_thread_pool_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.FixedThreadPoolFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.FixedThreadPoolFragment"
         tools:layout="@layout/fragment_thread_fixed_pool" />
 
     <fragment
         android:id="@+id/scheduled_thread_pool_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.ScheduledThreadPoolFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.ScheduledThreadPoolFragment"
         tools:layout="@layout/fragment_thread_scheduled_pool" />
 
     <fragment
         android:id="@+id/custom_thread_pool_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.CustomThreadPoolFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.CustomThreadPoolFragment"
         tools:layout="@layout/fragment_thread_custom_pool" />
 
     <fragment
         android:id="@+id/thread_progress_bar"
-        android:name="com.angopa.aad.codelabs.fundamentals.threads.ProgressBarExampleThreadFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.ProgressBarExampleThreadFragment"
         tools:layout="@layout/fragment_thread_progress_bar" />
 
 </navigation>

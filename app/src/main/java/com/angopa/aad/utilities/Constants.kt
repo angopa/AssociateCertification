@@ -1,5 +1,9 @@
 package com.angopa.aad.utilities
 
+import com.angopa.aad.androidui.codelabs.useravatar.Badge
+import com.angopa.aad.androidui.codelabs.useravatar.User
+import com.angopa.aad.androidui.codelabs.useravatar.UserColor
+
 /**
  * Constants used throughout the app
  */

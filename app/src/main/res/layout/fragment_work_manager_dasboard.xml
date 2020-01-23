@@ -5,7 +5,7 @@
 
         <variable
             name="clickHandler"
-            type="com.angopa.aad.codelabs.fundamentals.workmanager.DashboardFragment.OnClickHandlerListener" />
+            type="com.angopa.aad.androidcore.codelabs.fundamentals.workmanager.DashboardFragment.OnClickHandlerListener" />
     </data>
 
     <androidx.core.widget.NestedScrollView

@@ -2,6 +2,9 @@ package com.angopa.aad.utilities
 
 import android.content.Context
 import com.angopa.aad.Storage
+import com.angopa.aad.androidcore.AndroidCoreViewModelFactory
+import com.angopa.aad.androiddata.AndroidDataManagementViewModelFactory
+import com.angopa.aad.androidui.AndroidUiViewModelFactory
 import com.angopa.aad.data.AppDatabase
 import com.angopa.aad.data.LinkRepository
 import com.angopa.aad.data.TabRepository
@@ -26,30 +29,33 @@ object InjectorUtils {
     fun provideAndroidCoreViewModelFactory(
         context: Context,
         tabId: String
-    ): AndroidCoreViewModelFactory = AndroidCoreViewModelFactory(
-        getTabRepository(context),
-        getLinkRepository(context),
-        tabId
-    )
+    ): AndroidCoreViewModelFactory =
+        AndroidCoreViewModelFactory(
+            getTabRepository(context),
+            getLinkRepository(context),
+            tabId
+        )
 
 
     fun provideAndroidUiViewModelFactory(
         context: Context,
         tabId: String
-    ): AndroidUiViewModelFactory = AndroidUiViewModelFactory(
-        getTabRepository(context),
-        getLinkRepository(context),
-        tabId
-    )
+    ): AndroidUiViewModelFactory =
+        AndroidUiViewModelFactory(
+            getTabRepository(context),
+            getLinkRepository(context),
+            tabId
+        )
 
     fun provideAndroidDataManagementViewModelFactory(
         context: Context,
         tabId: String
-    ): AndroidDataManagementViewModelFactory = AndroidDataManagementViewModelFactory(
-        getTabRepository(context),
-        getLinkRepository(context),
-        tabId
-    )
+    ): AndroidDataManagementViewModelFactory =
+        AndroidDataManagementViewModelFactory(
+            getTabRepository(context),
+            getLinkRepository(context),
+            tabId
+        )
 
 
     fun provideAndroidDebuggingViewModelFactory(

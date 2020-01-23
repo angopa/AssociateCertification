@@ -5,7 +5,7 @@
 
         <variable
             name="callback"
-            type="com.angopa.aad.codelabs.fundamentals.service.ServiceActivity.Callback" />
+            type="com.angopa.aad.androidcore.codelabs.fundamentals.service.ServiceActivity.Callback" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

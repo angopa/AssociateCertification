@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dashboard_fragment"
-        android:name="com.angopa.aad.codelabs.notification.NotificationDashboardFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.notification.NotificationDashboardFragment"
         tools:layout="@layout/fragment_notification_dashboard">
 
     </fragment>

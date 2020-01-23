@@ -234,4 +234,7 @@
         WorkManager Demo -> App Permissions and grant access to Storage.</string>
     <string name="blur_codelab_title">Blur Codelab</string>
 
+    <!-- Android Ui-->
+    <string name="ui_codelab_avatar_screen_title">Avatar Image</string>
+
 </resources>

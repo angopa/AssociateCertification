@@ -7,11 +7,11 @@
 
         <variable
             name="viewModel"
-            type="com.angopa.aad.viewmodel.AndroidCoreViewModel" />
+            type="com.angopa.aad.androidcore.AndroidCoreViewModel" />
 
         <variable
             name="callback"
-            type="com.angopa.aad.AndroidCoreFragment.Callback" />
+            type="com.angopa.aad.androidcore.AndroidCoreFragment.Callback" />
 
     </data>
 

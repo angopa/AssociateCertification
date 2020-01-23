@@ -1,7 +1,6 @@
 package com.angopa.aad
 
-import android.net.Uri
-import com.angopa.aad.codelabs.fundamentals.activity.ActivityModel
+import com.angopa.aad.androidcore.codelabs.fundamentals.activity.ActivityModel
 import java.util.*
 
 /**

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dashboard_fragment"
-        android:name="com.angopa.aad.codelabs.fundamentals.workmanager.DashboardFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.workmanager.DashboardFragment"
         tools:layout="@layout/fragment_work_manager_dasboard">
 
         <action
@@ -30,12 +30,12 @@
 
     <fragment
         android:id="@+id/thread_in_work_manager"
-        android:name="com.angopa.aad.codelabs.fundamentals.workmanager.threadwork.ThreadWorkManagerFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.workmanager.threadwork.ThreadWorkManagerFragment"
         tools:layout="@layout/fragment_thread_work_manager" />
 
     <fragment
         android:id="@+id/select_image"
-        android:name="com.angopa.aad.codelabs.fundamentals.workmanager.bluromaticcodelab.SelectImageFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.workmanager.bluromaticcodelab.SelectImageFragment"
         tools:layout="@layout/fragment_select_image" >
 
         <action
@@ -50,7 +50,7 @@
 
     <fragment
         android:id="@+id/blur_codelab"
-        android:name="com.angopa.aad.codelabs.fundamentals.workmanager.bluromaticcodelab.BlurFragment"
+        android:name="com.angopa.aad.androidcore.codelabs.fundamentals.workmanager.bluromaticcodelab.BlurFragment"
         tools:layout="@layout/fragment_blur" >
 
         <argument android:name="imageUri"

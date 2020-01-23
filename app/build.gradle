@@ -108,6 +108,12 @@ dependencies {
     // Kotlin
     implementation "androidx.concurrent:concurrent-futures-ktx:1.1.0-alpha01"
 
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+
+    // JSON Converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
     // Testing dependencies
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$rootProject.espressoVersion"

@@ -5,7 +5,7 @@
 
         <variable
             name="callbackHandler"
-            type="com.angopa.aad.codelabs.fundamentals.threads.jobscheduler.JobSchedulerFragment.CallbackHandler" />
+            type="com.angopa.aad.androidcore.codelabs.fundamentals.threads.jobscheduler.JobSchedulerFragment.CallbackHandler" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

@@ -11,7 +11,8 @@ import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.work.Configuration
 import com.angopa.aad.utilities.*
-import com.angopa.aad.utilities.localization.LocaleManager
+import com.angopa.aad.androidcore.codelabs.localization.LocaleManager
+import com.angopa.aad.manualdependencyinjection.AppContainer
 import com.crashlytics.android.Crashlytics
 import com.google.firebase.iid.FirebaseInstanceId
 import io.fabric.sdk.android.Fabric
@@ -20,6 +21,9 @@ import timber.log.Timber.DebugTree
 import java.util.concurrent.Executors
 
 abstract class CoreApplication : Application(), Configuration.Provider {
+
+    //This is a test for Manual Dependency Injection
+    val appContainer = AppContainer()
 
     abstract fun initializeAppConfiguration()
 

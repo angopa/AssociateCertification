@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.angopa.aad.viewmodel.AndroidDataManagementViewModel" />
+            type="com.angopa.aad.androiddata.AndroidDataManagementViewModel" />
 
     </data>
 
