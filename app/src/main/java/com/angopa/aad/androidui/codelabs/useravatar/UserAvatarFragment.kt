@@ -7,7 +7,7 @@ import com.angopa.aad.R
 import com.angopa.aad.databinding.ActivityUserAvatarBinding
 import timber.log.Timber
 
-class UserAvatarContainer : BaseActivity() {
+class UserAvatarFragment : BaseActivity() {
     private lateinit var dataBinding: ActivityUserAvatarBinding
     private lateinit var users: ArrayList<User>
 

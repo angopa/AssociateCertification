@@ -96,7 +96,12 @@
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:taskAffinity="" />
-        <activity android:name=".androidui.codelabs.useravatar.UserAvatarContainer"
+        <activity
+            android:name=".androidui.codelabs.useravatar.UserAvatarFragment"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".dependencyinjection.dagger.LoginActivity"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.angopa.aad.manualdependencyinjection
+package com.angopa.aad.dependencyinjection.manualdependencyinjection
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -9,7 +9,6 @@ import retrofit2.converter.gson.GsonConverterFactory
  *
  * Check CoreApplication to check how was implemented.
  */
-
 class AppContainer {
     // Since you want to expose userRepository out of the container, you need to satisfy its
     // dependencies

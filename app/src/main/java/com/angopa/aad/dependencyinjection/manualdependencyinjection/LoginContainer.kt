@@ -1,4 +1,4 @@
-package com.angopa.aad.manualdependencyinjection
+package com.angopa.aad.dependencyinjection.manualdependencyinjection
 
 class LoginContainer (private val userRepository: UserRepository) {
     val loginUserData = LoginUserData()

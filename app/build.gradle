@@ -49,13 +49,13 @@ android {
 }
 
 dependencies {
-    kapt "androidx.room:room-compiler:$rootProject.roomVersion"
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:multidex:1.0.3'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "androidx.concurrent:concurrent-futures-ktx:1.1.0-alpha01"
 
     //Firebase
     implementation 'com.google.firebase:firebase-analytics:17.2.2'
@@ -88,6 +88,7 @@ dependencies {
     //Room
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
+    kapt "androidx.room:room-compiler:$rootProject.roomVersion"
 
     //WorkManager
     implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
@@ -101,18 +102,13 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
     kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
 
-    //Butterknife
-    implementation "com.jakewharton:butterknife:$rootProject.butterknife"
-    kapt "com.jakewharton:butterknife-compiler:$rootProject.butterknife"
+    // Retrofit - JSON Converter
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
 
-    // Kotlin
-    implementation "androidx.concurrent:concurrent-futures-ktx:1.1.0-alpha01"
-
-    // Retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
-
-    // JSON Converter
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    // Dagger
+    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
 
     // Testing dependencies
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"

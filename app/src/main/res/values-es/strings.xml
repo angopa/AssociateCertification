@@ -24,6 +24,8 @@
     <string name="dialog_label_cancel">Cancel</string>
     <string name="label_test_button">Test Button</string>
     <string name="label_return">Return</string>
+    <string name="label_continue">Continue</string>
+    <string name="label_login">Login</string>
 
     <!-- Android Core Tab -->
     <string name="android_core_header_label">Basico</string>
@@ -236,5 +238,11 @@
 
     <!-- Android Ui-->
     <string name="ui_codelab_avatar_screen_title">Avatar Image</string>
+
+    <!-- Dagger -->
+    <string name="hint_user_name">user name</string>
+    <string name="button_label_load_data">Load Data</string>
+    <string name="label_login_password">Fragment Login Password</string>
+    <string name="label_username_fragment">Fragment Login Username</string>
 
 </resources>

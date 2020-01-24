@@ -1,4 +1,4 @@
-package com.angopa.aad.manualdependencyinjection
+package com.angopa.aad.dependencyinjection.manualdependencyinjection
 
 class LoginViewModelFactory(private val userRepository: UserRepository) : Factory {
     @Suppress("UNCHECKED_CAST")

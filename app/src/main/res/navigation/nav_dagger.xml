@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_dagger"
+    app:startDestination="@id/login_username">
+
+    <fragment
+        android:id="@+id/login_username"
+        android:name="com.angopa.aad.dependencyinjection.dagger.LoginUsernameFragment"
+        tools:layout="@layout/fragment_login_username_dagger">
+
+        <action
+            android:id="@+id/action_username_to_password"
+            app:destination="@+id/login_password"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment android:id="@+id/login_password"
+        android:name="com.angopa.aad.dependencyinjection.dagger.LoginPasswordFragment"
+        tools:layout="@layout/fragment_login_username_dagger">
+
+    </fragment>
+
+</navigation>

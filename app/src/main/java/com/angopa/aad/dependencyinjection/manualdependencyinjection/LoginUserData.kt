@@ -1,4 +1,4 @@
-package com.angopa.aad.manualdependencyinjection
+package com.angopa.aad.dependencyinjection.manualdependencyinjection
 
 class LoginUserData() {
     constructor(

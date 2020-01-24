@@ -1,4 +1,4 @@
-package com.angopa.aad.manualdependencyinjection
+package com.angopa.aad.dependencyinjection.manualdependencyinjection
 
 import androidx.lifecycle.ViewModel
 

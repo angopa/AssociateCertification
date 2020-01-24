@@ -17,6 +17,8 @@ buildscript {
         lifecycleVersion = '2.1.0'
         glideVersion = '4.10.0'
         butterknife = '10.2.0'
+        retrofitVersion = '2.6.0'
+        daggerVersion = '2.24'
 
         coreTestingVersion = '2.0.0'
         espressoVersion = '3.2.0'

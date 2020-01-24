@@ -27,6 +27,8 @@
     <string name="dialog_label_cancel" translation_description="">Cancel</string>
     <string name="label_test_button" translation_description="">Test Button</string>
     <string name="label_return" translation_description="">Return</string>
+    <string name="label_login" translation_description="">Login</string>
+    <string name="label_continue" translation_description="">Continue</string>
     <string name="label_generic_search" translation_description="">Search</string>
 
     <!-- Android Core Tab -->
@@ -181,66 +183,72 @@
 
     <!-- Content Provider -->
     <string name="label_title_content_providers_card" translation_description="">Content Providers</string>
-    <string name="screen_header_content_provider">Content Provider</string>
-    <string name="label_providers_header_user_dictironary">User Dictionary Provider</string>
-    <string name="label_providers_user_dictionary_description">Display saved user words, we use ListFragment and SimpleCursorAdapter for displaying the information. And TextWatcher for the Search action. Access to the user dictionary was removed from API 23 upwards.  </string>
-    <string name="introduce_new_word_dialog">Introduce new word</string>
+    <string name="screen_header_content_provider" translation_description="">Content Provider</string>
+    <string name="label_providers_header_user_dictironary" translation_description="">User Dictionary Provider</string>
+    <string name="label_providers_user_dictionary_description" translation_description="">Display saved user words, we use ListFragment and SimpleCursorAdapter for displaying the information. And TextWatcher for the Search action. Access to the user dictionary was removed from API 23 upwards.  </string>
+    <string name="introduce_new_word_dialog" translation_description="">Introduce new word</string>
 
     <!-- Notifications -->
-    <string name="notification_activity_title">Notifications</string>
-    <string name="label_title_notification_card">Notification</string>
-    <string name="notification_title">Notification Title</string>
-    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
-    <string name="reply_label">Reply...</string>
-    <string name="label_basic_notification">Basic Notification</string>
-    <string name="label_expandable_notification">Expandable Notification</string>
-    <string name="label_intent_notification">Intent Notification</string>
-    <string name="label_reply_notification">Reply Notification</string>
-    <string name="notification_reply_message">Your reply was successfully post.</string>
-    <string name="download_notification_title">Picture Download</string>
-    <string name="download_notification_text">Download in Progress</string>
-    <string name="download_notification_complete">Download Complete</string>
-    <string name="progress_bar_notification">Progress bar Notification</string>
-    <string name="infinite_progress_bar">Infinite Progress bar</string>
-    <string name="message_style_notification">Message Style Notification</string>
-    <string name="media_type_notification">Media Type Notification</string>
-    <string name="high_priority_notification">High priority notification</string>
-    <string name="empty_activity_details">Empty Activity, just to show how empty back task stack works. Check code and Manifest for details.</string>
-    <string name="task_stack_notification">Task Stack Notification</string>
-    <string name="empty_task_stack_notification">Empty Task Stack Notification</string>
-    <string name="notification_empty_stack_text">Notification with empty stack</string>
-    <string name="notification_back_stack_text">Notification with Back Stack</string>
-    <string name="notification_number_label">Notification number %s</string>
-    <string name="group_notification_label">Group Notification</string>
-    <string name="notification_settings">Redirect to Notification Settings</string>
-    <string name="custom_notification_label">Custom Notification</string>
+    <string name="notification_activity_title" translation_description="">Notifications</string>
+    <string name="label_title_notification_card" translation_description="">Notification</string>
+    <string name="notification_title" translation_description="">Notification Title</string>
+    <string name="lorem_ipsum" translation_description="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="reply_label" translation_description="">Reply...</string>
+    <string name="label_basic_notification" translation_description="">Basic Notification</string>
+    <string name="label_expandable_notification" translation_description="">Expandable Notification</string>
+    <string name="label_intent_notification" translation_description="">Intent Notification</string>
+    <string name="label_reply_notification" translation_description="">Reply Notification</string>
+    <string name="notification_reply_message" translation_description="">Your reply was successfully post.</string>
+    <string name="download_notification_title" translation_description="">Picture Download</string>
+    <string name="download_notification_text" translation_description="">Download in Progress</string>
+    <string name="download_notification_complete" translation_description="">Download Complete</string>
+    <string name="progress_bar_notification" translation_description="" >Progress bar Notification</string>
+    <string name="infinite_progress_bar" translation_description="">Infinite Progress bar</string>
+    <string name="message_style_notification" translation_description="">Message Style Notification</string>
+    <string name="media_type_notification" translation_description="">Media Type Notification</string>
+    <string name="high_priority_notification" translation_description="">High priority notification</string>
+    <string name="empty_activity_details" translation_description="">Empty Activity, just to show how empty back task stack works. Check code and Manifest for details.</string>
+    <string name="task_stack_notification" translation_description="">Task Stack Notification</string>
+    <string name="empty_task_stack_notification" translation_description="">Empty Task Stack Notification</string>
+    <string name="notification_empty_stack_text" translation_description="">Notification with empty stack</string>
+    <string name="notification_back_stack_text" translation_description="">Notification with Back Stack</string>
+    <string name="notification_number_label" translation_description="">Notification number %s</string>
+    <string name="group_notification_label" translation_description="">Group Notification</string>
+    <string name="notification_settings" translation_description="">Redirect to Notification Settings</string>
+    <string name="custom_notification_label" translation_description="">Custom Notification</string>
 
     <!-- Work Manager -->
-    <string name="work_manager_screen_title">Work Manager</string>
-    <string name="work_manager_label">Work Manager</string>
-    <string name="simple_worker_label">Simple Worker</string>
-    <string name="simple_constraint_worker_label">Simple Constraint Worker</string>
-    <string name="worker_with_work_data_label">Worker With Work Data</string>
-    <string name="observe_worker_label">Observe Worker</string>
-    <string name="progress_worker_label">Progress Worker</string>
-    <string name="chain_workers_label">Chain Workers</string>
-    <string name="periodic_work_label">Periodic Work</string>
-    <string name="threading_in_work_manager_label">Threading in Work Manager</string>
-    <string name="blur_title">Select Blur Amount</string>
-    <string name="select_image">Select Image</string>
-    <string name="go">Go</string>
-    <string name="see_file">See File</string>
-    <string name="description_image">The image to blur and save.</string>
-    <string name="blur_lv_1">A little blurred</string>
-    <string name="blur_lv_2">More blurred</string>
-    <string name="blur_lv_3">The most blurred</string>
-    <string name="cancel_work">Cancel Work</string>
-    <string name="set_permissions_in_settings">Go to Settings -> Apps and Notifications ->
+    <string name="work_manager_screen_title" translation_description="">Work Manager</string>
+    <string name="work_manager_label" translation_description="">Work Manager</string>
+    <string name="simple_worker_label" translation_description="">Simple Worker</string>
+    <string name="simple_constraint_worker_label" translation_description="">Simple Constraint Worker</string>
+    <string name="worker_with_work_data_label" translation_description="">Worker With Work Data</string>
+    <string name="observe_worker_label" translation_description="">Observe Worker</string>
+    <string name="progress_worker_label" translation_description="">Progress Worker</string>
+    <string name="chain_workers_label" translation_description="">Chain Workers</string>
+    <string name="periodic_work_label" translation_description="">Periodic Work</string>
+    <string name="threading_in_work_manager_label" translation_description="">Threading in Work Manager</string>
+    <string name="blur_title" translation_description="">Select Blur Amount</string>
+    <string name="select_image" translation_description="">Select Image</string>
+    <string name="go" translation_description="">Go</string>
+    <string name="see_file" translation_description="">See File</string>
+    <string name="description_image" translation_description="">The image to blur and save.</string>
+    <string name="blur_lv_1" translation_description="">A little blurred</string>
+    <string name="blur_lv_2" translation_description="">More blurred</string>
+    <string name="blur_lv_3" translation_description="">The most blurred</string>
+    <string name="cancel_work" translation_description="">Cancel Work</string>
+    <string name="set_permissions_in_settings" translation_description="">Go to Settings -> Apps and Notifications ->
         WorkManager Demo -> App Permissions and grant access to Storage.</string>
-    <string name="blur_codelab_title">Blur Codelab</string>
+    <string name="blur_codelab_title" translation_description="">Blur Codelab</string>
 
     <!-- Android Ui-->
-    <string name="ui_codelab_avatar_screen_title" tools:ignore="ExtraTranslation">Avatar Image</string>
+    <string name="ui_codelab_avatar_screen_title" translation_description="">Avatar Image</string>
+
+    <!-- Dagger -->
+    <string name="hint_user_name" translation_description="">user name</string>
+    <string name="button_label_load_data" translation_description="">Load Data</string>
+    <string name="label_login_password" translation_description="">Fragment Login Password</string>
+    <string name="label_username_fragment" translation_description="">Fragment Login Username</string>
 
 
 </resources>

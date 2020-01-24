@@ -1,0 +1,3 @@
+package com.angopa.aad.dependencyinjection.manualdependencyinjection
+
+class UserLocalDataSource

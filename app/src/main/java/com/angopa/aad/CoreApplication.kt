@@ -12,7 +12,9 @@ import androidx.annotation.RequiresApi
 import androidx.work.Configuration
 import com.angopa.aad.utilities.*
 import com.angopa.aad.androidcore.codelabs.localization.LocaleManager
-import com.angopa.aad.manualdependencyinjection.AppContainer
+import com.angopa.aad.dependencyinjection.dagger.ApplicationComponent
+import com.angopa.aad.dependencyinjection.dagger.DaggerApplicationComponent
+import com.angopa.aad.dependencyinjection.manualdependencyinjection.AppContainer
 import com.crashlytics.android.Crashlytics
 import com.google.firebase.iid.FirebaseInstanceId
 import io.fabric.sdk.android.Fabric
@@ -22,8 +24,11 @@ import java.util.concurrent.Executors
 
 abstract class CoreApplication : Application(), Configuration.Provider {
 
-    //This is a test for Manual Dependency Injection
-    val appContainer = AppContainer()
+    // This is a test for Manual Dependency Injection
+    val appContainer: AppContainer = AppContainer()
+
+    // Dagger - Reference to the application graph that is used across the whole app
+    val appComponent: ApplicationComponent = DaggerApplicationComponent.create()
 
     abstract fun initializeAppConfiguration()
 

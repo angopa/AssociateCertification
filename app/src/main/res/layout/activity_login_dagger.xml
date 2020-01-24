@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="userDataVariable"
+            type="com.angopa.aad.dependencyinjection.dagger.LoginUserData" />
+
+        <variable
+            name="callback"
+            type="com.angopa.aad.dependencyinjection.dagger.LoginActivity.Callback" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_big"
+                    android:layout_marginBottom="@dimen/margin_big"
+                    android:hint="@string/hint_user_name"
+                    android:text="@{userDataVariable.userName}" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="@{() -> callback.loadData()}"
+                    android:text="@string/button_label_load_data" />
+
+                <fragment
+                    android:id="@+id/nav_dagger"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    app:defaultNavHost="true"
+                    app:navGraph="@navigation/nav_dagger" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

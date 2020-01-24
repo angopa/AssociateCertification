@@ -12,7 +12,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.angopa.aad.R
 import com.angopa.aad.adapters.LinkAdapter
-import com.angopa.aad.androidui.codelabs.useravatar.UserAvatarContainer
+import com.angopa.aad.androidui.codelabs.useravatar.UserAvatarFragment
 import com.angopa.aad.databinding.FragmentAndroidUiBinding
 import com.angopa.aad.utilities.InjectorUtils
 
@@ -42,7 +42,7 @@ class AndroidUiFragment : Fragment() {
             subscribeUi(adapter)
 
             callback = object : Callback {
-                override fun userImageExample() = launchActivity(UserAvatarContainer::class.java)
+                override fun userImageExample() = launchActivity(UserAvatarFragment::class.java)
             }
         }
 
