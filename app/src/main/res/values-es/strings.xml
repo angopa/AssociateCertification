@@ -240,9 +240,24 @@
     <string name="ui_codelab_avatar_screen_title">Avatar Image</string>
 
     <!-- Dagger -->
-    <string name="hint_user_name">user name</string>
+    <string name="hint_username">user name</string>
+    <string name="hint_password">password</string>
     <string name="button_label_load_data">Load Data</string>
     <string name="label_login_password">Fragment Login Password</string>
     <string name="label_username_fragment">Fragment Login Username</string>
+    <string name="tab_title_dagger">DAGGER</string>
+    <string name="registration_screen_title">Register Screen</string>
+    <string name="label_error">Error happening during registration. Try again</string>
+    <string name="label_register">Register</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="main_screen_dagger_codelab">Dagger</string>
+    <string name="label_welcome">Welcome</string>
+    <string name="label_error_logging">Error logging you in. Try again.</string>
+    <string name="label_unregister">Unregister</string>
+    <string name="label_hello">Hello</string>
+    <string name="label_setting">Setting</string>
+    <string name="settings_screen_title">Settings</string>
+    <string name="label_logout">Logout</string>
+    <string name="label_refresh_notifications">Refresh Notifications</string>
 
 </resources>

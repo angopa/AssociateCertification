@@ -6,11 +6,11 @@
 
         <variable
             name="userDataVariable"
-            type="com.angopa.aad.dependencyinjection.dagger.LoginUserData" />
+            type="com.angopa.aad.dependencyinjection.daggerbasic.LoginUserData" />
 
         <variable
             name="callback"
-            type="com.angopa.aad.dependencyinjection.dagger.LoginActivity.Callback" />
+            type="com.angopa.aad.dependencyinjection.daggerbasic.LoginActivity.Callback" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -36,7 +36,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/margin_big"
                     android:layout_marginBottom="@dimen/margin_big"
-                    android:hint="@string/hint_user_name"
+                    android:hint="@string/hint_username"
                     android:text="@{userDataVariable.userName}" />
 
                 <Button

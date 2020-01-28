@@ -1,4 +1,4 @@
-package com.angopa.aad.dependencyinjection.dagger
+package com.angopa.aad.dependencyinjection.daggerbasic
 
 import dagger.Component
 import javax.inject.Singleton
@@ -17,4 +17,6 @@ interface ApplicationComponent {
     // This function exposes the LoginComponent Factory out ot the graph so consumers
     // can use it to obtain new instances of LoginComponent
     fun loginComponent(): LoginComponent.Factory
+
+    fun userRepository(): UserRepository
 }

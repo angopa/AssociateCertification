@@ -99,9 +99,17 @@
         <activity
             android:name=".androidui.codelabs.useravatar.UserAvatarFragment"
             android:parentActivityName=".MainActivity" />
-
         <activity
-            android:name=".dependencyinjection.dagger.LoginActivity"
+            android:name=".dependencyinjection.daggerbasic.LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".dependencyinjection.daggercodelab.login.LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".dependencyinjection.daggercodelab.registration.RegistrationActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".dependencyinjection.daggercodelab.main.MainActivity"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -109,6 +117,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".dependencyinjection.daggercodelab.settings.SettingsActivity"
+            android:parentActivityName=".MainActivity" />
         <!-- SERVICES -->
         <service
             android:name="com.angopa.aad.androidcore.codelabs.fundamentals.service.ExampleService"

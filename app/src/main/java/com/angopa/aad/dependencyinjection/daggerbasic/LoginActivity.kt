@@ -1,4 +1,4 @@
-package com.angopa.aad.dependencyinjection.dagger
+package com.angopa.aad.dependencyinjection.daggerbasic
 
 import android.os.Bundle
 import android.text.TextUtils

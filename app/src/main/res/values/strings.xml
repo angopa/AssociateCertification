@@ -245,10 +245,25 @@
     <string name="ui_codelab_avatar_screen_title" translation_description="">Avatar Image</string>
 
     <!-- Dagger -->
-    <string name="hint_user_name" translation_description="">user name</string>
+    <string name="hint_username" translation_description="">username</string>
+    <string name="hint_password" translation_description="">password</string>
     <string name="button_label_load_data" translation_description="">Load Data</string>
     <string name="label_login_password" translation_description="">Fragment Login Password</string>
     <string name="label_username_fragment" translation_description="">Fragment Login Username</string>
+    <string name="tab_title_dagger">DAGGER</string>
+    <string name="registration_screen_title">Register Screen</string>
+    <string name="label_error">Error happening during registration. Try again</string>
+    <string name="label_register">Register</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="main_screen_dagger_codelab">Dagger</string>
+    <string name="label_welcome">Welcome</string>
+    <string name="label_error_logging">Error logging you in. Try again.</string>
+    <string name="label_unregister">Unregister</string>
+    <string name="label_hello">Hello</string>
+    <string name="label_setting">Setting</string>
+    <string name="settings_screen_title">Settings</string>
+    <string name="label_logout">Logout</string>
+    <string name="label_refresh_notifications">Refresh Notifications</string>
 
 
 </resources>

@@ -12,8 +12,10 @@ import androidx.annotation.RequiresApi
 import androidx.work.Configuration
 import com.angopa.aad.utilities.*
 import com.angopa.aad.androidcore.codelabs.localization.LocaleManager
-import com.angopa.aad.dependencyinjection.dagger.ApplicationComponent
-import com.angopa.aad.dependencyinjection.dagger.DaggerApplicationComponent
+import com.angopa.aad.dependencyinjection.daggercodelab.di.AppComponentCodelab
+import com.angopa.aad.dependencyinjection.daggercodelab.di.DaggerAppComponentCodelab
+import com.angopa.aad.dependencyinjection.daggerbasic.ApplicationComponent
+import com.angopa.aad.dependencyinjection.daggerbasic.DaggerApplicationComponent
 import com.angopa.aad.dependencyinjection.manualdependencyinjection.AppContainer
 import com.crashlytics.android.Crashlytics
 import com.google.firebase.iid.FirebaseInstanceId
@@ -29,6 +31,18 @@ abstract class CoreApplication : Application(), Configuration.Provider {
 
     // Dagger - Reference to the application graph that is used across the whole app
     val appComponent: ApplicationComponent = DaggerApplicationComponent.create()
+
+    // Dagger - reference to the application graph for Dagger Codelab
+    val appComponentCodelab: AppComponentCodelab by lazy {
+        initializeComponent()
+    }
+
+    private fun initializeComponent(): AppComponentCodelab {
+        // Creates an instance of AppComponent using its Factory constructor
+        // We pass the applicationContext that will be used as Context in the graph
+        return DaggerAppComponentCodelab.factory().create(applicationContext)
+    }
+
 
     abstract fun initializeAppConfiguration()
 
