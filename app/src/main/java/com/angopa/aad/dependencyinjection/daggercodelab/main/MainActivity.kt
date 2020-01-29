@@ -6,20 +6,29 @@ import com.angopa.aad.BaseActivity
 import com.angopa.aad.CoreApplication
 import com.angopa.aad.R
 import com.angopa.aad.databinding.ActivityMainDaggerCodelabBinding
+import com.angopa.aad.dependencyinjection.daggercodelab.BaseActivityDagger
 import com.angopa.aad.dependencyinjection.daggercodelab.login.LoginActivity
 import com.angopa.aad.dependencyinjection.daggercodelab.registration.RegistrationActivity
 import com.angopa.aad.dependencyinjection.daggercodelab.settings.SettingsActivity
+import com.angopa.aad.dependencyinjection.daggercodelab.user.UserManager
 import javax.inject.Inject
 
-class MainActivity : BaseActivity() {
+class MainActivity : BaseActivityDagger() {
     private lateinit var binding: ActivityMainDaggerCodelabBinding
 
     // @Inject annotated fields will be provided by Dagger
     @Inject
     lateinit var mainViewModel: MainViewModel
 
+    lateinit var userManager: UserManager
+
     override fun getScreenTitle(): Int {
         return R.string.main_screen_dagger_codelab
+    }
+
+    override fun getComponent() {
+        // Grabs instance of UserManager from the application graph
+        userManager = (application as CoreApplication).appComponentCodelab.userManager()
     }
 
     /**
@@ -28,8 +37,6 @@ class MainActivity : BaseActivity() {
      * else carry on with MainActivity.
      */
     override fun getBindingComponent() {
-        // Grabs instance of UserManager from the application graph
-        val userManager = (application as CoreApplication).appComponentCodelab.userManager()
         if (!userManager.isUserLoggedIn()) {
             if (!userManager.isUserRegistered()) {
                 startActivity(Intent(this, RegistrationActivity::class.java))

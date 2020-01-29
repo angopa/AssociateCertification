@@ -34,22 +34,26 @@
         android:theme="@style/Base.Theme.AAD"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.toast.ToastActivity"
+            android:name=".androidcore.codelabs.toast.ToastActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.snackbar.SnackbarActivity"
+            android:name=".androidcore.codelabs.snackbar.SnackbarActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.localization.LocalizationActivity"
+            android:name=".androidcore.codelabs.localization.LocalizationActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.activity.MultiplePurposeActivity"
+            android:name=".androidcore.codelabs.fundamentals.activity.MultiplePurposeActivity"
             android:configChanges="orientation" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.activity.OptionListExample"
+            android:name=".androidcore.codelabs.fundamentals.activity.OptionListExample"
             android:configChanges="orientation">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
@@ -70,29 +74,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.service.ServiceActivity"
+            android:name=".androidcore.codelabs.fundamentals.service.ServiceActivity"
             android:configChanges="orientation"
             android:exported="false" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.ThreadsActivity"
+            android:name=".androidcore.codelabs.fundamentals.threads.ThreadsActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.workmanager.WorkManagerActivity"
+            android:name=".androidcore.codelabs.fundamentals.workmanager.WorkManagerActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.broadcast.BroadcastReceiverActivity"
+            android:name=".androidcore.codelabs.fundamentals.broadcast.BroadcastReceiverActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.contentproviders.ContentProviderActivity"
+            android:name=".androidcore.codelabs.fundamentals.contentproviders.ContentProviderActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.notification.NotificationCodelabActivity"
+            android:name=".androidcore.codelabs.notification.NotificationCodelabActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.notification.FullScreenActivity"
+            android:name=".androidcore.codelabs.notification.FullScreenActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.angopa.aad.androidcore.codelabs.notification.EmptyTaskActivity"
+            android:name=".androidcore.codelabs.notification.EmptyTaskActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:taskAffinity="" />
@@ -110,39 +114,33 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".dependencyinjection.daggercodelab.main.MainActivity"
-            android:parentActivityName=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".dependencyinjection.daggercodelab.settings.SettingsActivity"
             android:parentActivityName=".MainActivity" />
         <!-- SERVICES -->
         <service
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.service.ExampleService"
+            android:name=".androidcore.codelabs.fundamentals.service.ExampleService"
             android:description="@string/service_description"
             android:exported="false" />
         <service
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.service.ExampleIntentService"
+            android:name=".androidcore.codelabs.fundamentals.service.ExampleIntentService"
             android:description="@string/intent_service_description"
             android:exported="false" />
         <service
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.service.ForegroundService"
+            android:name=".androidcore.codelabs.fundamentals.service.ForegroundService"
             android:description="@string/foreground_service_description"
             android:exported="false" />
         <service
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.service.BoundService"
+            android:name=".androidcore.codelabs.fundamentals.service.BoundService"
             android:description="@string/bound_service_description"
             android:exported="false" />
         <service
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.service.MessengerBoundService"
+            android:name=".androidcore.codelabs.fundamentals.service.MessengerBoundService"
             android:description="@string/messenger_bound_service_description"
             android:exported="false" />
         <service
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
+            android:name=".androidcore.codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <service android:name=".service.MyFirebaseMessagingService">
@@ -152,7 +150,7 @@
         </service>
         <!-- This Broadcast Receiver won't work for API 26+ -->
         <receiver
-            android:name="com.angopa.aad.androidcore.codelabs.fundamentals.broadcast.BroadcastReceiverPlaneMode"
+            android:name=".androidcore.codelabs.fundamentals.broadcast.BroadcastReceiverPlaneMode"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.AIRPLANE_MODE" />
@@ -160,7 +158,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.angopa.aad.androidcore.codelabs.notification.NotificationPublisher" />
+        <receiver android:name=".androidcore.codelabs.notification.NotificationPublisher" />
 
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"

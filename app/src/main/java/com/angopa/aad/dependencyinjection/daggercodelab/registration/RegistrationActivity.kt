@@ -7,12 +7,13 @@ import com.angopa.aad.BaseActivity
 import com.angopa.aad.CoreApplication
 import com.angopa.aad.R
 import com.angopa.aad.databinding.ActivityRegistrationDaggerCodelabBinding
+import com.angopa.aad.dependencyinjection.daggercodelab.BaseActivityDagger
 import com.angopa.aad.dependencyinjection.daggercodelab.main.MainActivity
 import com.angopa.aad.dependencyinjection.daggercodelab.registration.enterdetails.EnterDetailsFragment
 import com.angopa.aad.dependencyinjection.daggercodelab.registration.termsandconditions.TermsAndConditionsFragment
 import javax.inject.Inject
 
-class RegistrationActivity : BaseActivity() {
+class RegistrationActivity : BaseActivityDagger() {
     private lateinit var binding: ActivityRegistrationDaggerCodelabBinding
 
     // Stores an instance of RegistrationComponent so that its Fragments can access it
@@ -22,15 +23,13 @@ class RegistrationActivity : BaseActivity() {
     @Inject
     lateinit var registrationViewModel: RegistrationViewModel
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun getComponent() {
         // Creates an instance of Registration component by grabbing the factory from the app graph
         registrationComponent = (application as CoreApplication)
             .appComponentCodelab.registrationComponent().create()
 
         // Injects this activity to the just created Registration component
         registrationComponent.inject(this)
-
-        super.onCreate(savedInstanceState)
     }
 
     override fun getScreenTitle(): Int {
@@ -69,7 +68,8 @@ class RegistrationActivity : BaseActivity() {
         if (supportFragmentManager.backStackEntryCount > 0) {
             supportFragmentManager.popBackStack()
         } else {
-            super.onBackPressed()
+            startActivity(Intent(this, com.angopa.aad.MainActivity::class.java))
+            finish()
         }
     }
 }

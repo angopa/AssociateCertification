@@ -6,15 +6,15 @@ buildscript {
         minSdkVersion = 21
         targetSdkVersion = 29
 
-        navigationVersion = '2.1.0'
+        navigationVersion = '2.2.0'
         timberVersion = '4.7.1'
         viewPagerVersion = '1.0.0'
-        materialVersion = '1.2.0-alpha03'
+        materialVersion = '1.2.0-alpha04'
         roomVersion = '2.2.3'
-        workVersion = '2.3.0-rc01'
+        workVersion = '2.3.0'
         gsonVersion = '2.8.2'
         timberVersion = '4.7.1'
-        lifecycleVersion = '2.1.0'
+        lifecycleVersion = '2.2.0'
         glideVersion = '4.10.0'
         butterknife = '10.2.0'
         retrofitVersion = '2.6.0'
@@ -40,7 +40,6 @@ buildscript {
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
         classpath 'com.google.gms:google-services:4.3.3'
         classpath 'io.fabric.tools:gradle:1.31.2'
-
     }
 }
 
@@ -48,7 +47,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
     }
 }
 

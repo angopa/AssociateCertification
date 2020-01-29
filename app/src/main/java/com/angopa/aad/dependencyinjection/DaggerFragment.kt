@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.angopa.aad.R
 import com.angopa.aad.databinding.FragmentDaggerBinding
 import com.angopa.aad.dependencyinjection.daggercodelab.login.LoginActivity
+import com.angopa.aad.dependencyinjection.daggercodelab.main.MainActivity
 
 class DaggerFragment : Fragment() {
     private lateinit var binding: FragmentDaggerBinding
@@ -31,7 +32,7 @@ class DaggerFragment : Fragment() {
         }
 
         binding.daggerCodelab.setOnClickListener {
-            startActivity(Intent(requireContext(), LoginActivity::class.java))
+            startActivity(Intent(requireContext(), MainActivity::class.java))
         }
 
         return binding.root

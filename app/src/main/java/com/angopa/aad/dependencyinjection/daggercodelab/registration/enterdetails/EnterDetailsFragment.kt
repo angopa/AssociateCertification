@@ -46,6 +46,8 @@ class EnterDetailsFragment : Fragment() {
             container,
             false
         ).apply {
+            lifecycleOwner = viewLifecycleOwner
+
             errorTextView = error
             usernameEditText = username
             passwordEditText = password
@@ -65,7 +67,7 @@ class EnterDetailsFragment : Fragment() {
 
         }
 
-        registrationViewModel.enterDetailState.observe(this,
+        registrationViewModel.enterDetailState.observe(viewLifecycleOwner,
             Observer<EnterDetailsViewState> { state ->
                 when (state) {
                     is EnterDetailSuccess -> {

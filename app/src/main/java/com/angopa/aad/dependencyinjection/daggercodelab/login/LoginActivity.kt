@@ -13,12 +13,13 @@ import com.angopa.aad.CoreApplication
 import com.angopa.aad.R
 import com.angopa.aad.databinding.ActivityLoginDaggerCodelabBinding
 import com.angopa.aad.databinding.ActivityMainDaggerCodelabBinding
+import com.angopa.aad.dependencyinjection.daggercodelab.BaseActivityDagger
 import com.angopa.aad.dependencyinjection.daggercodelab.main.MainActivity
 import com.angopa.aad.dependencyinjection.daggercodelab.registration.RegistrationActivity
 import timber.log.Timber
 import javax.inject.Inject
 
-class LoginActivity : BaseActivity() {
+class LoginActivity : BaseActivityDagger() {
     private lateinit var binding: ActivityLoginDaggerCodelabBinding
 
     // @Inject annotated fields will be provided by Dagger
@@ -27,9 +28,8 @@ class LoginActivity : BaseActivity() {
 
     private lateinit var errorTextView: TextView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun getComponent() {
         (application as CoreApplication).appComponentCodelab.loginComponent().create().inject(this)
-        super.onCreate(savedInstanceState)
     }
 
     override fun getScreenTitle(): Int {
