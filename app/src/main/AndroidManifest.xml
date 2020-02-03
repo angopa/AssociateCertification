@@ -118,6 +118,12 @@
         <activity
             android:name=".dependencyinjection.daggercodelab.settings.SettingsActivity"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".androidui.codelabs.constraintlayout.ConstraintLayoutActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".androidui.codelabs.constraintlayout.ConstraintSetActivity"
+            android:parentActivityName=".androidui.codelabs.constraintlayout.ConstraintLayoutActivity" />
         <!-- SERVICES -->
         <service
             android:name=".androidcore.codelabs.fundamentals.service.ExampleService"
@@ -142,13 +148,11 @@
         <service
             android:name=".androidcore.codelabs.fundamentals.threads.jobscheduler.NotificationJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
-
         <service android:name=".service.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
-        </service>
-        <!-- This Broadcast Receiver won't work for API 26+ -->
+        </service> <!-- This Broadcast Receiver won't work for API 26+ -->
         <receiver
             android:name=".androidcore.codelabs.fundamentals.broadcast.BroadcastReceiverPlaneMode"
             android:exported="true">

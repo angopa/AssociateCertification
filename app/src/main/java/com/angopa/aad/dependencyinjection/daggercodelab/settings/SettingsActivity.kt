@@ -6,27 +6,29 @@ import com.angopa.aad.BaseActivity
 import com.angopa.aad.CoreApplication
 import com.angopa.aad.R
 import com.angopa.aad.databinding.ActivitySettingsDaggerCodelabBinding
+import com.angopa.aad.dependencyinjection.daggercodelab.BaseActivityDagger
 import com.angopa.aad.dependencyinjection.daggercodelab.login.LoginActivity
 import javax.inject.Inject
 
-class SettingsActivity : BaseActivity() {
+class SettingsActivity : BaseActivityDagger() {
     private lateinit var binding: ActivitySettingsDaggerCodelabBinding
 
     @Inject
     lateinit var settingsViewModel: SettingsViewModel
+
+    override fun getComponent() {
+        // Gets the userManager from the application graph to obtain the UserComponent
+        // and gets this Activity injected
+        val userManager = (application as CoreApplication).appComponentCodelab.userManager()
+        userManager.userComponent!!.inject(this)
+    }
 
     override fun getScreenTitle(): Int {
         return R.string.settings_screen_title
     }
 
     override fun getBindingComponent() {
-        // Gets the userManager from the application graph to obtain the UserComponent
-        // and gets this Activity injected
-        val userManager = (application as CoreApplication).appComponentCodelab.userManager()
-        userManager.userComponent!!.inject(this)
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_settings_dagger_codelab)
-
         setupViews()
     }
 

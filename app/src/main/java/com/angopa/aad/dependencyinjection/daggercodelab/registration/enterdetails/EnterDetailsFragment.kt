@@ -30,7 +30,6 @@ class EnterDetailsFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-
         // Grabs the registrationComponent from the Activity and injects this Fragment
         (activity as RegistrationActivity).registrationComponent.inject(this)
     }

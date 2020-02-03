@@ -12,6 +12,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.angopa.aad.R
 import com.angopa.aad.adapters.LinkAdapter
+import com.angopa.aad.androidui.codelabs.constraintlayout.ConstraintLayoutActivity
 import com.angopa.aad.androidui.codelabs.useravatar.UserAvatarFragment
 import com.angopa.aad.databinding.FragmentAndroidUiBinding
 import com.angopa.aad.utilities.InjectorUtils
@@ -43,6 +44,7 @@ class AndroidUiFragment : Fragment() {
 
             callback = object : Callback {
                 override fun userImageExample() = launchActivity(UserAvatarFragment::class.java)
+                override fun constraintLayout() = launchActivity(ConstraintLayoutActivity::class.java)
             }
         }
 
@@ -61,6 +63,7 @@ class AndroidUiFragment : Fragment() {
 
     interface Callback {
         fun userImageExample()
+        fun constraintLayout()
     }
 
 }

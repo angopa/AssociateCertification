@@ -85,7 +85,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
-                            android:text="User Avatar Container"
+                            android:text="@string/card_label_user_avatar"
                             android:textAppearance="?attr/textAppearanceBody1" />
 
                         <ImageView
@@ -95,6 +95,39 @@
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentBottom="true"
                             android:src="@drawable/toast_image" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/Theme.AAD.CardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="@{() -> callback.constraintLayout()()}"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/card_label_constraint_layout"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/constrain_layout_image" />
 
                     </RelativeLayout>
 

@@ -202,7 +202,7 @@
     <string name="download_notification_title" translation_description="">Picture Download</string>
     <string name="download_notification_text" translation_description="">Download in Progress</string>
     <string name="download_notification_complete" translation_description="">Download Complete</string>
-    <string name="progress_bar_notification" translation_description="" >Progress bar Notification</string>
+    <string name="progress_bar_notification" translation_description="">Progress bar Notification</string>
     <string name="infinite_progress_bar" translation_description="">Infinite Progress bar</string>
     <string name="message_style_notification" translation_description="">Message Style Notification</string>
     <string name="media_type_notification" translation_description="">Media Type Notification</string>
@@ -241,9 +241,6 @@
         WorkManager Demo -> App Permissions and grant access to Storage.</string>
     <string name="blur_codelab_title" translation_description="">Blur Codelab</string>
 
-    <!-- Android Ui-->
-    <string name="ui_codelab_avatar_screen_title" translation_description="">Avatar Image</string>
-
     <!-- Dagger -->
     <string name="hint_username" translation_description="">username</string>
     <string name="hint_password" translation_description="">password</string>
@@ -264,6 +261,57 @@
     <string name="settings_screen_title">Settings</string>
     <string name="label_logout">Logout</string>
     <string name="label_refresh_notifications">Refresh Notifications</string>
+
+    <!-- ANDROID UI-->
+    <string name="ui_codelab_avatar_screen_title" translation_description="">Avatar Image</string>
+    <string name="card_label_user_avatar">User Avatar Container</string>
+    <string name="card_label_constraint_layout">Constraint Layout</string>
+
+    <!-- Constraint Layout -->
+    <string name="constraint_layout_screen_title">Constraint Layout</string>
+    <string name="label_centering_views">Centering views</string>
+    <string name="label_basic_arrange">Basic Arrange</string>
+    <string name="label_centered_button">Centered Button</string>
+    <string name="label_button">Button</string>
+    <string name="label_button_2">Button 2</string>
+    <string name="label_button_3">Button 3</string>
+    <string name="label_button_4">Button 4</string>
+    <string name="label_button_5">Button 5</string>
+    <string name="label_button_6">Button 6</string>
+    <string name="label_button_7">Button 7</string>
+    <string name="label_button_8">Button 8</string>
+
+    <!--  Motion  -->
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="label_advance_arrangement">Advance Arrangement</string>
+    <string name="label_guidelines">GuideLines</string>
+    <string name="label_number_8">8</string>
+    <string name="label_number_seven">7</string>
+    <string name="label_zeros">0.0</string>
+    <string name="label_number_9">9</string>
+    <string name="label_number_4">4</string>
+    <string name="label_number_5">5</string>
+    <string name="label_number_3">3</string>
+    <string name="label_number_6">6</string>
+    <string name="label_number_1">1</string>
+    <string name="label_number_2">2</string>
+    <string name="label_number_0">0</string>
+    <string name="label_dot">.</string>
+    <string name="label_aspect_ratio">Aspect Ratio</string>
+    <string name="content_description_lake_tahoe">content_description_lake_tahoe</string>
+    <string name="content_description_android_button">Android Button</string>
+    <string name="label_android_icon">Big Android Icon</string>
+    <string name="label_textview">TextView</string>
+    <string name="label_advance_chains">Advance Chains</string>
+    <string name="label_basic_chains">Basic Chains</string>
+    <string name="label_symbol_plus">+</string>
+    <string name="label_symbol_minus">-</string>
+    <string name="label_division">/</string>
+    <string name="label_symbol_equal">=</string>
+    <string name="label_symbol_times">*</string>
+    <string name="label_constraintset">ConstraintSet</string>
+    <string name="label_lake_tahoe">Lake Tahoe</string>
 
 
 </resources>
