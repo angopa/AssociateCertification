@@ -32,4 +32,9 @@ class UserAvatarFragment : BaseActivity() {
 
         handler.postDelayed(runnable, 1000)
     }
+
+    override fun onStop() {
+        handler.removeCallbacks(runnable)
+        super.onStop()
+    }
 }

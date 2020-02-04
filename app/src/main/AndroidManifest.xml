@@ -124,6 +124,12 @@
         <activity
             android:name=".androidui.codelabs.constraintlayout.ConstraintSetActivity"
             android:parentActivityName=".androidui.codelabs.constraintlayout.ConstraintLayoutActivity" />
+        <activity
+            android:name=".androidui.codelabs.motion.MotionLayoutActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".androidui.codelabs.recyclerview.RecyclerViewActivity"
+            android:parentActivityName=".MainActivity" />
         <!-- SERVICES -->
         <service
             android:name=".androidcore.codelabs.fundamentals.service.ExampleService"

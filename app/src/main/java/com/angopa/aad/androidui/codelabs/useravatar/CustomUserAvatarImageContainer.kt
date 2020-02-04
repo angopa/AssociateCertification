@@ -77,6 +77,7 @@ class CustomUserAvatarImageContainer @JvmOverloads constructor(
                 val avatarImageContainer: ImageView = findViewById(R.id.user_avatar_image)
                 Glide.with(context)
                     .asBitmap()
+                    .error(R.drawable.ic_android_black_24dp)
                     .load(userAvatarUrl)
                     .fitCenter()
                     .into(getBitmapImageViewTarget(avatarImageContainer))

@@ -13,6 +13,8 @@ import androidx.lifecycle.observe
 import com.angopa.aad.R
 import com.angopa.aad.adapters.LinkAdapter
 import com.angopa.aad.androidui.codelabs.constraintlayout.ConstraintLayoutActivity
+import com.angopa.aad.androidui.codelabs.motion.MotionLayoutActivity
+import com.angopa.aad.androidui.codelabs.recyclerview.RecyclerViewActivity
 import com.angopa.aad.androidui.codelabs.useravatar.UserAvatarFragment
 import com.angopa.aad.databinding.FragmentAndroidUiBinding
 import com.angopa.aad.utilities.InjectorUtils
@@ -43,8 +45,18 @@ class AndroidUiFragment : Fragment() {
             subscribeUi(adapter)
 
             callback = object : Callback {
-                override fun userImageExample() = launchActivity(UserAvatarFragment::class.java)
-                override fun constraintLayout() = launchActivity(ConstraintLayoutActivity::class.java)
+                override fun userImageExample() =
+                    launchActivity(UserAvatarFragment::class.java)
+
+                override fun constraintLayout() =
+                    launchActivity(ConstraintLayoutActivity::class.java)
+
+                override fun motionLayout() =
+                    launchActivity(MotionLayoutActivity::class.java)
+
+                override fun recyclerView() =
+                    launchActivity(RecyclerViewActivity::class.java)
+
             }
         }
 
@@ -64,6 +76,7 @@ class AndroidUiFragment : Fragment() {
     interface Callback {
         fun userImageExample()
         fun constraintLayout()
+        fun motionLayout()
+        fun recyclerView()
     }
-
 }
