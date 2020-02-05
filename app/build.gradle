@@ -20,6 +20,8 @@ android {
 
         renderscriptTargetApi 18
         renderscriptSupportModeEnabled true
+
+        resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
     }
     buildTypes {
         debug {
@@ -109,6 +111,12 @@ dependencies {
     // Dagger
     implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+
+    // Map
+    implementation "com.google.android.gms:play-services-maps:$rootProject.mapVersion"
+
+    // Estimote
+    implementation 'com.estimote:proximity-sdk:1.0.5'
 
     // Testing dependencies
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"

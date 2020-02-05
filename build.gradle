@@ -19,6 +19,7 @@ buildscript {
         butterknife = '10.2.0'
         retrofitVersion = '2.6.0'
         daggerVersion = '2.24'
+        mapVersion = '17.0.0'
 
         coreTestingVersion = '2.0.0'
         espressoVersion = '3.2.0'

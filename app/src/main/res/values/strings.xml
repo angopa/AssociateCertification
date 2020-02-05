@@ -325,6 +325,7 @@
     <string name="label_change">Change</string>
     <string name="label_predictive_animation">Predictive Animation</string>
     <string name="label_custom_animation">Custom Animation</string>
+    <string name="tab_title_map">MAP</string>
 
 
 </resources>

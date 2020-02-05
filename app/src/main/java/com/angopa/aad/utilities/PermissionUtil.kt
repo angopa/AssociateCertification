@@ -8,7 +8,7 @@ import androidx.core.content.PermissionChecker.PERMISSION_GRANTED
 class PermissionUtil private constructor() {
 
     enum class PermissionState {
-        GRANTED, NOT_YET_REQUESTED_DURING_USER_SESSION, DENIED_TEMPORARILY, DENIED_PERMANENTLY
+        GRANTED, DENIED_TEMPORARILY, DENIED_PERMANENTLY
     }
 
     companion object {

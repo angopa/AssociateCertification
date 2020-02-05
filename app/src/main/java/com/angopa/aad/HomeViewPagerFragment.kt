@@ -46,6 +46,7 @@ class HomeViewPagerFragment : Fragment() {
             DEBUGGING_PAGE_INDEX -> R.drawable.ic_debugging
             TESTING_PAGE_INDEX -> R.drawable.ic_testing
             DAGGER_PAGE_INDEX -> R.drawable.ic_dagger
+            MAP_PAGE_INDEX -> R.drawable.ic_map
             else -> throw IndexOutOfBoundsException()
         }
     }
@@ -58,6 +59,7 @@ class HomeViewPagerFragment : Fragment() {
             DEBUGGING_PAGE_INDEX -> getString(R.string.tab_title_debugging)
             TESTING_PAGE_INDEX -> getString(R.string.tab_title_testing)
             DAGGER_PAGE_INDEX -> getString(R.string.tab_title_dagger)
+            MAP_PAGE_INDEX -> getString(R.string.tab_title_map)
             else -> throw IndexOutOfBoundsException()
         }
     }

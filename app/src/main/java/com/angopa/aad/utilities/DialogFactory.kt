@@ -54,6 +54,13 @@ class DialogFactory(private val appConfiguration: AppConfiguration) {
             .create()
     }
 
+    fun createInformationalDialog(context: Context, message: String, title: String): AlertDialog =
+        getBaseBuilder(context)
+            .setMessage(message)
+            .setTitle(title)
+            .setPositiveButton(OK_STRING, null)
+            .create()
+
     private fun getBaseBuilder(context: Context): AlertDialog.Builder =
         AlertDialog.Builder(context).setCancelable(false)
 
