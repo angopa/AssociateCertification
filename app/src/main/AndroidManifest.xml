@@ -133,6 +133,9 @@
             android:name=".androidui.codelabs.recyclerview.RecyclerViewActivity"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".androidui.codelabs.adaptiveui.NewsReaderActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".androidui.codelabs.paging.PagingActivity"
             android:parentActivityName=".MainActivity" />
         <activity

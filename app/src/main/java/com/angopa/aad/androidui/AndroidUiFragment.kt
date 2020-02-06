@@ -12,6 +12,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import com.angopa.aad.R
 import com.angopa.aad.adapters.LinkAdapter
+import com.angopa.aad.androidui.codelabs.adaptiveui.NewsReaderActivity
 import com.angopa.aad.androidui.codelabs.constraintlayout.ConstraintLayoutActivity
 import com.angopa.aad.androidui.codelabs.motion.MotionLayoutActivity
 import com.angopa.aad.androidui.codelabs.paging.PagingActivity
@@ -61,6 +62,10 @@ class AndroidUiFragment : Fragment() {
                 override fun paging() {
                     launchActivity(PagingActivity::class.java)
                 }
+
+                override fun adaptiveUi() {
+                    launchActivity(NewsReaderActivity::class.java)
+                }
             }
         }
 
@@ -82,6 +87,7 @@ class AndroidUiFragment : Fragment() {
         fun constraintLayout()
         fun motionLayout()
         fun recyclerView()
+        fun adaptiveUi()
         fun paging()
     }
 }

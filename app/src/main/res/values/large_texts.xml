@@ -98,11 +98,70 @@
         (1,945 ft (593 m)). Additionally, Lake Tahoe is the sixth largest lake by volume in the
         United States at 122,160,280 acre·ft (150,682,490 dam3), behind the five Great Lakes.
 
-The lake was formed about 2 million years ago and is a part of the Lake Tahoe Basin with the modern
+        The lake was formed about 2 million years ago and is a part of the Lake Tahoe Basin with the modern
         lake being shaped during the ice ages. It is known for the clarity of its water and the
         panorama of surrounding mountains on all sides. The area surrounding the lake is also
         referred to as Lake Tahoe, or simply Tahoe. More than 75 percent of the lakes watershed is
         national forest land, comprising the Lake Tahoe Basin Management Unit of the United States
         Forest Service.
     </string>
+
+    <string name="sport_news" translatable="false">
+        Barcelona sporting director Eric Abidal has taken a dig at club legend Xavi, who he implicitly
+        accused of filtering news of the meeting the pair held in Qatar last month. Abidal also
+        claimed that no official offer was made to Xavi to take over as coach, as had been reported at the time.
+
+
+        \“There was no offer. If he (Xavi) has it, let him show it because I haven\'t seen it,\”
+        said Abidal in an interview with Catalan daily Sport.
+
+        \“In the first meeting we had, Xavi listened. In the second he had to tell us his plan. What
+        came out in the press was more political than sports-related. I don\’t do politics. I only talk about football.
+    </string>
+
+    <string name="finance_news" translatable="false">
+        Negative interest rates that have spread through Europe and Japan are coming soon to the
+        U.S., according to a Societe Generale strategist.
+
+        A “deflationary bust” in which officials pour still more money into the system will take
+        the benchmark U.S. 10-year Treasury note to minus-1% and 30-year bond yields negative as
+        well, the firm’s Albert Edwards contends in an analysis on the state of financial markets.
+
+        In the consistently bearish strategist’s latest note to clients, Edwards takes on the “new
+        level of fiscal debauchery for the U.S.” that he said will continue as policymakers look
+        for ways to maintain the recovery.
+
+        Edwards said he is “now more convinced than ever before that the coming deflationary
+        bust will take the US 30y yield below zero. I am also convinced that helicopter money
+        will be the chosen way out of this deflationary quagmire, especially as it becomes
+        increasingly clear that there is now no way left to reverse every government’s exploding
+        fiscal liabilities. The Ice Age is nearing the end.”
+    </string>
+
+    <string name="world_news" translatable="false">
+        (Bloomberg) -- The most influential mills’ group in the world’s largest steelmaker has
+        sounded the alarm about the outlook as the coronavirus crisis rips through China’s economy,
+        warning of transport snarls, weaker demand, and a situation this quarter that
+        “does not look optimistic.”
+
+        “Companies are facing restrictions in logistics and transport, trades have been muted,
+        prices of raw materials and steel have slid, which is causing the market’s value to
+        decline,” the China Iron y Steel Association said. The group, which represents the biggest
+        suppliers, gave a green light for lower production, while flagging potential
+        for stimulus-aided demand later in the year.
+
+        Commodities have been rocked by China’s health crisis, which has killed hundreds,
+        sickened thousands, and hurt the outlook for raw material demand as company activities
+        are suspended and transport barred. The country is the top buyer of iron ore from
+        shippers including BHP Group, Rio Tinto Group and Vale SA. Conditions in China’s
+        steel industry -- which accounts for more than half global output -- set the tone
+        for producers and users around the world.
+
+        The virus’s impact on the steel industry will be concentrated in the first quarter,
+        the association said in a statement. “Steelmakers should appropriately adjust production
+        schedules based on orders, finances, ability to transport materials,” it said. The sector
+        should “avoid malignant competition, manage traders, and strictly not sell at low prices
+        and disrupt the market.”
+    </string>
+
 </resources>

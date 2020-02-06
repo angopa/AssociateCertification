@@ -267,6 +267,9 @@
     <string name="card_label_user_avatar">User Avatar Container</string>
     <string name="card_label_constraint_layout">Constraint Layout</string>
     <string name="card_label_motion_layout">Motion Layout</string>
+    <string name="card_label_adaptive_ui">Adaptive UI</string>
+    <string name="card_label_recycler_view">Recycler View</string>
+    <string name="card_label_paging">Paging</string>
 
     <!-- Constraint Layout -->
     <string name="constraint_layout_screen_title">Constraint Layout</string>
@@ -314,7 +317,8 @@
     <string name="hint_title">Title</string>
     <string name="hint_description">Description</string>
     <string name="label_title_motion_layout">Motion</string>
-    <string name="card_label_recycler_view">Recycler View</string>
+
+    <!-- Recycler View -->
     <string name="label_title_recycler_view">Recycler View</string>
     <string name="label_simple_recycler_view">Simple Recycler View</string>
     <string name="label_linear_layout">Linear Layout Manager</string>
@@ -328,11 +332,15 @@
     <string name="tab_title_map">MAP</string>
 
     <!-- Paging -->
-    <string name="card_label_paging">Paging</string>
     <string name="paging_screen_title">Paging</string>
     <string name="menu_title_delete_all">Delete All</string>
     <string name="menu_title_insert">Insert</string>
     <string name="insert_post_screen_title">Create New Post</string>
+    <string name="label_sports">Sports</string>
+    <string name="label_world">World</string>
+    <string name="label_finances">Finances</string>
+
+    <!-- Adaptive UI -->
 
 
 </resources>

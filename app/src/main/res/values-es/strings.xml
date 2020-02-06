@@ -240,6 +240,10 @@
     <string name="ui_codelab_avatar_screen_title">Avatar Image</string>
     <string name="card_label_constraint_layout">Constraint Layout</string>
     <string name="card_label_user_avatar">User Avatar Container</string>
+    <string name="card_label_motion_layout">Motion Layout</string>
+    <string name="card_label_recycler_view">Recycler View</string>
+    <string name="card_label_adaptive_ui">Adaptive UI</string>
+    <string name="card_label_paging">Paging</string>
 
     <!-- Dagger -->
     <string name="hint_username">user name</string>
@@ -275,10 +279,6 @@
     <string name="label_button_7">Button 7</string>
     <string name="label_button_8">Button 8</string>
     <string name="label_button">Button</string>
-
-    <!--  Motion  -->
-    <string name="hint_title">Title</string>
-    <string name="hint_description">Description</string>
     <string name="label_advance_arrangement">Advance Arrangement</string>
     <string name="label_guidelines">GuideLines</string>
     <string name="label_number_8">8</string>
@@ -307,9 +307,13 @@
     <string name="label_constraintset">ConstraintSet</string>
     <string name="label_symbol_times">*</string>
     <string name="label_lake_tahoe">Lake Tahoe</string>
-    <string name="card_label_motion_layout">Motion Layout</string>
+
+    <!--  Motion  -->
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
     <string name="label_title_motion_layout">Motion</string>
-    <string name="card_label_recycler_view">Recycler View</string>
+
+    <!-- Recycler View -->
     <string name="label_title_recycler_view">Recycler View</string>
     <string name="label_simple_recycler_view">Simple Recycler View</string>
     <string name="label_linear_layout">Linear Layout Manager</string>
@@ -321,9 +325,17 @@
     <string name="label_predictive_animation">Predictive Animation</string>
     <string name="label_custom_animation">Custom Animation</string>
     <string name="tab_title_map">MAP</string>
-    <string name="card_label_paging">Paging</string>
+
+    <!-- Paging -->
     <string name="paging_screen_title">Paging</string>
     <string name="menu_title_delete_all">Delete All</string>
     <string name="menu_title_insert">Insert</string>
+    <string name="insert_post_screen_title">Create New Post</string>
+    <string name="label_sports">Sports</string>
+    <string name="label_world">World</string>
+    <string name="label_finances">Finances</string>
+
+    <!-- Adaptive UI -->
+
 
 </resources>
