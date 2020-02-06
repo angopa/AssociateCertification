@@ -118,6 +118,12 @@ dependencies {
     // Estimote
     implementation 'com.estimote:proximity-sdk:1.0.5'
 
+    // Paging
+    implementation "androidx.paging:paging-runtime:$rootProject.pagingVersion"
+
+    // Annotation
+    implementation "com.android.support:support-annotations:$rootProject.annotationVersion"
+
     // Testing dependencies
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$rootProject.espressoVersion"

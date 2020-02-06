@@ -2,8 +2,8 @@ package com.angopa.aad.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.angopa.aad.data.LinkRepository
-import com.angopa.aad.data.TabRepository
+import com.angopa.aad.data.localdata.LinkRepository
+import com.angopa.aad.data.localdata.TabRepository
 
 class AndroidTestViewModelFactory(
     private val tabRepository: TabRepository,

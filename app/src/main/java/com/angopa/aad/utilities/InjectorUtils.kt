@@ -5,9 +5,11 @@ import com.angopa.aad.Storage
 import com.angopa.aad.androidcore.AndroidCoreViewModelFactory
 import com.angopa.aad.androiddata.AndroidDataManagementViewModelFactory
 import com.angopa.aad.androidui.AndroidUiViewModelFactory
-import com.angopa.aad.data.AppDatabase
-import com.angopa.aad.data.LinkRepository
-import com.angopa.aad.data.TabRepository
+import com.angopa.aad.androidui.codelabs.paging.PagingViewModelFactory
+import com.angopa.aad.data.localdata.AppDatabase
+import com.angopa.aad.data.localdata.LinkRepository
+import com.angopa.aad.data.localdata.PostRepository
+import com.angopa.aad.data.localdata.TabRepository
 import com.angopa.aad.viewmodel.*
 
 /**
@@ -19,10 +21,14 @@ object InjectorUtils {
             AppDatabase.getInstance(context.applicationContext).tabDao()
         )
 
-
     private fun getLinkRepository(context: Context): LinkRepository =
         LinkRepository.getInstance(
             AppDatabase.getInstance(context.applicationContext).linkDao()
+        )
+
+    private fun getPostRepository(context: Context): PostRepository =
+        PostRepository.getInstance(
+            AppDatabase.getInstance(context.applicationContext).postDao()
         )
 
 
@@ -82,4 +88,9 @@ object InjectorUtils {
         context: Context
     ): MultiplePurposeActivityViewModelFactory =
         MultiplePurposeActivityViewModelFactory(Storage.getInstance(context))
+
+    fun providePagingViewModelFactory(
+        context: Context
+    ): PagingViewModelFactory =
+        PagingViewModelFactory(getPostRepository(context))
 }

@@ -1,4 +1,4 @@
-package com.angopa.aad.data
+package com.angopa.aad.data.localdata
 
 import androidx.room.*
 

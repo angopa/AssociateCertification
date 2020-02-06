@@ -4,27 +4,30 @@ import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.angopa.aad.data.localdata.AppDatabase
-import com.angopa.aad.data.localdata.Link
-import com.angopa.aad.utilities.LINK_DATA_FILENAME
+import com.angopa.aad.data.localdata.Post
+import com.angopa.aad.utilities.POST_DATA_FILENAME
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonReader
 import kotlinx.coroutines.coroutineScope
 import timber.log.Timber
 
-class SeedLinkTableWorker(
+/**
+ *  Created by Andres Gonzalez on 02/05/2020.
+ */
+class SeedPostTableWorker(
     context: Context,
-    workerParams: WorkerParameters
-) : CoroutineWorker(context, workerParams) {
+    workerParameters: WorkerParameters
+) : CoroutineWorker(context, workerParameters) {
     override suspend fun doWork(): Result = coroutineScope {
         try {
-            applicationContext.assets.open(LINK_DATA_FILENAME).use { inputStream ->
-                JsonReader(inputStream.reader()).use { jsonReader ->
-                    val linkType = object : TypeToken<List<Link>>() {}.type
-                    val linkList: List<Link> = Gson().fromJson(jsonReader, linkType)
+            applicationContext.assets.open(POST_DATA_FILENAME).use { inputSteam ->
+                JsonReader(inputSteam.reader()).use { jsonReader ->
+                    val tokenType = object : TypeToken<List<Post>>() {}.type
+                    val postList: List<Post> = Gson().fromJson(jsonReader, tokenType)
 
                     val database = AppDatabase.getInstance(applicationContext)
-                    database.linkDao().insertAll(linkList)
+                    database.postDao().insertAll(postList)
                     Result.success()
                 }
             }

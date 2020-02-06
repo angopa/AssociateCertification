@@ -14,6 +14,7 @@ import com.angopa.aad.R
 import com.angopa.aad.adapters.LinkAdapter
 import com.angopa.aad.androidui.codelabs.constraintlayout.ConstraintLayoutActivity
 import com.angopa.aad.androidui.codelabs.motion.MotionLayoutActivity
+import com.angopa.aad.androidui.codelabs.paging.PagingActivity
 import com.angopa.aad.androidui.codelabs.recyclerview.RecyclerViewActivity
 import com.angopa.aad.androidui.codelabs.useravatar.UserAvatarFragment
 import com.angopa.aad.databinding.FragmentAndroidUiBinding
@@ -57,6 +58,9 @@ class AndroidUiFragment : Fragment() {
                 override fun recyclerView() =
                     launchActivity(RecyclerViewActivity::class.java)
 
+                override fun paging() {
+                    launchActivity(PagingActivity::class.java)
+                }
             }
         }
 
@@ -78,5 +82,6 @@ class AndroidUiFragment : Fragment() {
         fun constraintLayout()
         fun motionLayout()
         fun recyclerView()
+        fun paging()
     }
 }

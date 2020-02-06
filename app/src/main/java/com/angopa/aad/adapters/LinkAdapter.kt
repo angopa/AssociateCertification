@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.angopa.aad.HomeViewPagerFragmentDirections
 import com.angopa.aad.R
-import com.angopa.aad.data.Link
+import com.angopa.aad.data.localdata.Link
 import com.angopa.aad.databinding.ListItemLinkBinding
 
 class LinkAdapter :

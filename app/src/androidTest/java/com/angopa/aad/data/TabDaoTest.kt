@@ -4,8 +4,10 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import com.angopa.aad.data.localdata.AppDatabase
+import com.angopa.aad.data.localdata.Tab
+import com.angopa.aad.data.localdata.TabDao
 import com.angopa.aad.utilities.getValue
-import com.angopa.aad.utilities.testTab
 import kotlinx.coroutines.runBlocking
 import org.hamcrest.CoreMatchers.equalTo
 import org.junit.After

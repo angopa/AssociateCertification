@@ -20,6 +20,8 @@ buildscript {
         retrofitVersion = '2.6.0'
         daggerVersion = '2.24'
         mapVersion = '17.0.0'
+        pagingVersion = "2.1.1"
+        annotationVersion = '28.0.0'
 
         coreTestingVersion = '2.0.0'
         espressoVersion = '3.2.0'

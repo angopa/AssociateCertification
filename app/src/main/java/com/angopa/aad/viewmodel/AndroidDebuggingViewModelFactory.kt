@@ -2,8 +2,8 @@ package com.angopa.aad.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.angopa.aad.data.LinkRepository
-import com.angopa.aad.data.TabRepository
+import com.angopa.aad.data.localdata.LinkRepository
+import com.angopa.aad.data.localdata.TabRepository
 
 /**
  * Factory for creating a [AndroidDebuggingViewModel] with a constructor that takes a [TabRepository],

@@ -327,5 +327,12 @@
     <string name="label_custom_animation">Custom Animation</string>
     <string name="tab_title_map">MAP</string>
 
+    <!-- Paging -->
+    <string name="card_label_paging">Paging</string>
+    <string name="paging_screen_title">Paging</string>
+    <string name="menu_title_delete_all">Delete All</string>
+    <string name="menu_title_insert">Insert</string>
+    <string name="insert_post_screen_title">Create New Post</string>
+
 
 </resources>

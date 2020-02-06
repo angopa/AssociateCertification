@@ -9,7 +9,7 @@
         
         <variable
             name="link"
-            type="com.angopa.aad.data.Link" />
+            type="com.angopa.aad.data.localdata.Link" />
     </data>
     
     <androidx.cardview.widget.CardView

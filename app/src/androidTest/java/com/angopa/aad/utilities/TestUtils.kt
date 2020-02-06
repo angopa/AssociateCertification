@@ -1,7 +1,7 @@
 package com.angopa.aad.utilities
 
-import com.angopa.aad.data.Link
-import com.angopa.aad.data.Tab
+import com.angopa.aad.data.localdata.Link
+import com.angopa.aad.data.localdata.Tab
 
 /**
  * [Tab] objects used for testing

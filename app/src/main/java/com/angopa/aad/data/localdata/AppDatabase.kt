@@ -1,4 +1,4 @@
-package com.angopa.aad.data
+package com.angopa.aad.data.localdata
 
 import android.content.Context
 import androidx.room.Database
@@ -9,15 +9,17 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import com.angopa.aad.utilities.DATABASE_NAME
 import com.angopa.aad.workers.SeedLinkTableWorker
+import com.angopa.aad.workers.SeedPostTableWorker
 import com.angopa.aad.workers.SeedTabTableWorker
 
 /**
  * The room database for this app
  */
-@Database(entities = [Tab::class, Link::class], version = 3, exportSchema = false)
+@Database(entities = [Tab::class, Link::class, Post::class], version = 4, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun tabDao(): TabDao
     abstract fun linkDao(): LinkDao
+    abstract fun postDao(): PostDao
 
     companion object {
         //For singleton implementation
@@ -25,8 +27,12 @@ abstract class AppDatabase : RoomDatabase() {
         private var instance: AppDatabase? = null
 
         fun getInstance(context: Context): AppDatabase {
-            return instance ?: synchronized(this) {
-                instance?: buildDatabase(context).also { instance = it }
+            return instance
+                ?: synchronized(this) {
+                instance
+                    ?: buildDatabase(
+                        context
+                    ).also { instance = it }
             }
         }
 
@@ -39,8 +45,10 @@ abstract class AppDatabase : RoomDatabase() {
                         super.onCreate(db)
                         val request = OneTimeWorkRequestBuilder<SeedTabTableWorker>().build()
                         val request2 = OneTimeWorkRequestBuilder<SeedLinkTableWorker>().build()
+                        val request3 = OneTimeWorkRequestBuilder<SeedPostTableWorker>().build()
                         WorkManager.getInstance(context).enqueue(request)
                         WorkManager.getInstance(context).enqueue(request2)
+                        WorkManager.getInstance(context).enqueue(request3)
                     }
                 })
                 .fallbackToDestructiveMigration()

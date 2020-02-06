@@ -1,4 +1,4 @@
-package com.angopa.aad.data
+package com.angopa.aad.data.localdata
 
 /**
  * Repository module for holding data operations
@@ -12,8 +12,10 @@ class LinkRepository private constructor(private val linkDao: LinkDao) {
         @Volatile
         private var instance: LinkRepository? = null
 
-        fun getInstance(linkDao: LinkDao) = instance ?: synchronized(this) {
-            instance ?: LinkRepository(linkDao).also { instance = it }
+        fun getInstance(linkDao: LinkDao) = instance
+            ?: synchronized(this) {
+            instance
+                ?: LinkRepository(linkDao).also { instance = it }
         }
     }
 }
