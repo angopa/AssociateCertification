@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layoutDescription="@xml/motion_scene_14">
+
+    <include layout="@layout/fragment_motion_10_coordinatorlayout" />
+
+    <androidx.constraintlayout.utils.widget.MockView
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        app:mock_diagonalsColor="@color/white"
+        app:mock_label="Side Panel" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

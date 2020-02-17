@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.angopa.aad.views.CollapsibleToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:minHeight="50dp"
+    motion:layoutDescription="@xml/motion_scene_09"
+    motion:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorAccent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/monterrey" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_monterrey"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+
+</com.angopa.aad.views.CollapsibleToolbar>

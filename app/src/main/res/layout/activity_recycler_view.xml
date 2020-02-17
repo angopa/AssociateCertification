@@ -18,4 +18,5 @@
             app:navGraph="@navigation/nav_recycler_view" />
 
     </FrameLayout>
+
 </layout>

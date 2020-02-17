@@ -1,0 +1,30 @@
+package com.angopa.aad.androidui.codelabs.motion.viewpager
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+
+/**
+ *  Created by Andres Gonzalez on 02/13/2020.
+ */
+class Page : Fragment() {
+    private var layoutId = 0
+
+    override fun setArguments(args: Bundle?) {
+        super.setArguments(args)
+        if (args != null) {
+            layoutId = args.getInt("layout")
+        }
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(layoutId, container, false)
+    }
+}

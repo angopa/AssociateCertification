@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.angopa.aad.views.DrawerContent xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu"
+    android:layout_width="180dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/colorPrimaryDark"
+    motion:layoutDescription="@xml/motion_scene_13">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:text="@string/label_monterrey"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        motion:layout_constraintBottom_toTopOf="@id/text_view_2"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toTopOf="parent"
+        motion:layout_constraintVertical_bias="0.0"
+        motion:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/text_view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Calfornia"
+        android:textColor="@color/text"
+        motion:layout_constraintBottom_toTopOf="@+id/horizontal_divider"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@+id/text_view" />
+
+    <View
+        android:id="@+id/horizontal_divider"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="#c2c1c1"
+        motion:layout_constraintBottom_toTopOf="@+id/text_view_3"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@id/text_view_2" />
+
+    <TextView
+        android:id="@+id/text_view_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Information"
+        android:textColor="@color/text"
+        motion:layout_constraintBottom_toTopOf="@+id/text_view_4"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@+id/horizontal_divider" />
+
+    <TextView
+        android:id="@+id/text_view_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Directions"
+        android:textColor="@color/text"
+        motion:layout_constraintBottom_toTopOf="@+id/text_view_5"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@+id/text_view_3" />
+
+    <TextView
+        android:id="@+id/text_view_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Sight-Seeing"
+        android:textColor="@color/text"
+        motion:layout_constraintBottom_toBottomOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintHorizontal_bias="0.5"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@+id/text_view_4" />
+
+</com.angopa.aad.views.DrawerContent>

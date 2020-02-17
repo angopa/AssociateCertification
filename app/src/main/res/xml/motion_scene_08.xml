@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="1000"
+        app:motionInterpolator="linear">
+        <OnSwipe
+            app:dragDirection="dragRight"
+            app:touchAnchorId="@+id/button"
+            app:touchAnchorSide="right" />
+        <KeyFrameSet>
+            <KeyCycle
+                android:translationY="50dp"
+                app:framePosition="100"
+                app:motionTarget="@+id/button"
+                app:waveOffset="0"
+                app:wavePeriod="0"
+                app:waveShape="sin" />
+            <KeyCycle
+                android:translationY="50dp"
+                app:framePosition="50"
+                app:motionTarget="@+id/button"
+                app:waveOffset="0"
+                app:wavePeriod="1"
+                app:waveShape="sin" />
+            <KeyCycle
+                android:translationY="50dp"
+                app:framePosition="0"
+                app:motionTarget="@+id/button"
+                app:waveOffset="0"
+                app:wavePeriod="0"
+                app:waveShape="sin" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="@dimen/motion_view_size"
+            android:layout_height="@dimen/motion_view_size"
+            android:layout_marginStart="@dimen/margin_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                app:attributeName="backgroundColor"
+                app:customColorValue="@color/motion_initial_background" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="@dimen/motion_view_size"
+            android:layout_height="@dimen/motion_view_size"
+            android:layout_marginEnd="@dimen/margin_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                app:attributeName="backgroundColor"
+                app:customColorValue="@color/motion_final_background" />
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>

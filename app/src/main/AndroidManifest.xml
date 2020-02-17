@@ -130,6 +130,12 @@
             android:name=".androidui.codelabs.motion.MotionLayoutActivity"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".androidui.codelabs.motion.MotionDemoActivity"
+            android:parentActivityName=".androidui.codelabs.motion.MotionLayoutActivity" />
+        <activity
+            android:name=".androidui.codelabs.motion.viewpager.MotionViewPagerActivity"
+            android:parentActivityName=".androidui.codelabs.motion.MotionLayoutActivity" />
+        <activity
             android:name=".androidui.codelabs.recyclerview.RecyclerViewActivity"
             android:parentActivityName=".MainActivity" />
         <activity
