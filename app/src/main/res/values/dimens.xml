@@ -12,7 +12,9 @@
 
     <dimen name="padding_normal">16dp</dimen>
     <dimen name="padding_small">8dp</dimen>
-    
+    <dimen name="padding_big">32dp</dimen>
+    <dimen name="padding_medium">24dp</dimen>
+
     <dimen name="default_elevation">1dp</dimen>
 
     <dimen name="default_corner_radius">10dp</dimen>
@@ -26,5 +28,7 @@
     <dimen name="default_float_margin">20dp</dimen>
 
     <dimen name="motion_view_size">64dp</dimen>
+    <dimen name="tall_toolbar_height">150dp</dimen>
+
 
 </resources>

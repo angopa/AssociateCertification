@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.paging
+package com.angopa.aad.androidui.codelabs.paging.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -24,7 +24,9 @@ class PostAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.list_item_post, parent, false)
-        return ViewHolder(view)
+        return ViewHolder(
+            view
+        )
     }
 
     override fun getItemCount(): Int = dataset.size

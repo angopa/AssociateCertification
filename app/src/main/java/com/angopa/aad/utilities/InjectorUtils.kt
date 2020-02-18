@@ -1,16 +1,17 @@
 package com.angopa.aad.utilities
 
 import android.content.Context
+import com.angopa.aad.Application
 import com.angopa.aad.Storage
 import com.angopa.aad.androidcore.AndroidCoreViewModelFactory
 import com.angopa.aad.androiddata.AndroidDataManagementViewModelFactory
 import com.angopa.aad.androidui.AndroidUiViewModelFactory
-import com.angopa.aad.androidui.codelabs.paging.PagingViewModelFactory
-import com.angopa.aad.data.localdata.AppDatabase
-import com.angopa.aad.data.localdata.LinkRepository
-import com.angopa.aad.data.localdata.PostRepository
-import com.angopa.aad.data.localdata.TabRepository
-import com.angopa.aad.viewmodel.*
+import com.angopa.aad.androidui.codelabs.paging.viewmodel.CheeseViewModelFactory
+import com.angopa.aad.androidui.codelabs.paging.viewmodel.PagingViewModelFactory
+import com.angopa.aad.data.localdata.*
+import com.angopa.aad.viewmodel.AndroidDebuggingViewModelFactory
+import com.angopa.aad.viewmodel.AndroidTestViewModelFactory
+import com.angopa.aad.viewmodel.MultiplePurposeActivityViewModelFactory
 
 /**
  * Static methods used to inject classes needed for various Activities and Fragments
@@ -29,6 +30,11 @@ object InjectorUtils {
     private fun getPostRepository(context: Context): PostRepository =
         PostRepository.getInstance(
             AppDatabase.getInstance(context.applicationContext).postDao()
+        )
+
+    private fun getCheeseRepository(context: Context): CheeseRepository =
+        CheeseRepository.getInstance(
+            AppDatabase.getInstance(context.applicationContext).cheeseDao()
         )
 
 
@@ -92,5 +98,13 @@ object InjectorUtils {
     fun providePagingViewModelFactory(
         context: Context
     ): PagingViewModelFactory =
-        PagingViewModelFactory(getPostRepository(context))
+        PagingViewModelFactory(
+            getPostRepository(context)
+        )
+
+    fun provideCheeseViewModelFactory(
+        context: Context,
+        application: Application
+    ): CheeseViewModelFactory =
+        CheeseViewModelFactory(application, getCheeseRepository(context))
 }

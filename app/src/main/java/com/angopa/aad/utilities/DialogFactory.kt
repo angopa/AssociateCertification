@@ -9,7 +9,6 @@ import androidx.core.widget.doAfterTextChanged
 import com.angopa.aad.R
 import com.angopa.aad.androidcore.codelabs.fundamentals.activity.MultiplePurposeActivity
 import com.angopa.aad.androidcore.codelabs.fundamentals.contentproviders.UserDictionaryFragment
-import com.angopa.aad.androidui.codelabs.paging.PagingActivity
 import com.angopa.aad.androidui.codelabs.paging.SettingOption
 import kotlinx.android.synthetic.main.custom_new_dictionary_word.view.*
 

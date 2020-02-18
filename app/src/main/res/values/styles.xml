@@ -32,5 +32,18 @@
         <item name="android:layout_marginBottom">@dimen/margin_small</item>
     </style>
 
+    <!-- Button Styling   -->
+    <style name="BaseButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="LoseButton" parent="BaseButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/lose_button</item>
+        <item name="android:textColor">#FFE2DF</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
 
 </resources>

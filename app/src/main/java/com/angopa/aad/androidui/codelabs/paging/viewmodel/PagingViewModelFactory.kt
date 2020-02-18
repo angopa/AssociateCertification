@@ -1,9 +1,8 @@
-package com.angopa.aad.androidui.codelabs.paging
+package com.angopa.aad.androidui.codelabs.paging.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.angopa.aad.androidui.codelabs.paging.viewmodel.PagingViewModel
 import com.angopa.aad.data.localdata.PostDao
 import com.angopa.aad.data.localdata.PostRepository
 

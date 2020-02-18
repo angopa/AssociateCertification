@@ -312,6 +312,9 @@
     <string name="hint_title">Title</string>
     <string name="hint_description">Description</string>
     <string name="label_title_motion_layout">Motion</string>
+    <string name="simple_constraint_description">Click the object and drag it over the path</string>
+    <string name="label_monterrey">Monterrey</string>
+    <string name="label_california">California</string>
 
     <!-- Recycler View -->
     <string name="label_title_recycler_view">Recycler View</string>
@@ -334,11 +337,46 @@
     <string name="label_sports">Sports</string>
     <string name="label_world">World</string>
     <string name="label_finances">Finances</string>
-    <string name="simple_constraint_description">Click the object and drag it over the path</string>
-    <string name="label_monterrey">Monterrey</string>
-    <string name="label_california">California</string>
 
     <!-- Adaptive UI -->
 
+    <!-- Navigation -->
+    <string name="navigation_screen_title">Navigation Drawer</string>
+    <string name="card_label_navigation_drawer">Navigation Drawer</string>
+    <string name="navigation_details">Details</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_over">Game Over</string>
+    <string name="try_again">Try Again?</string>
+    <string name="question_1">How many kilometers are in a marathon?</string>
+    <string name="answer_1">22</string>
+    <string name="answer_2">75</string>
+    <string name="answer_3">42</string>
+    <string name="answer_4">10</string>
+    <string name="start">Start</string>
+    <string name="versus">VS</string>
+    <string name="select_an_avatar">Select an Avatar</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">sign up</string>
+    <string name="leaderboards">Leaderboards</string>
+    <string name="next_match">Next Match</string>
+    <string name="trivia">Trivia!</string>
+    <string name="play">Play</string>
+    <string name="profile_name_1">Ali Connors</string>
+    <string name="profile_image">Profile image</string>
+    <string name="user_points">10,000 pts</string>
+    <string name="user_rank">#1</string>
+    <string name="rank">Rank</string>
+    <string name="rank_1">#1</string>
+    <string name="wins">Wins</string>
+    <string name="wins_amount">42</string>
+    <string name="losses">Losses</string>
+    <string name="losses_amount">03</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="screen_title_paging_dashboard">Paging</string>
+    <string name="social_network_label_btn">Social Network</string>
+    <string name="cheese_factory_label_btn">Cheese Factory</string>
+    <string name="screen_title_cheese_factory">Cheese Factory</string>
 
 </resources>

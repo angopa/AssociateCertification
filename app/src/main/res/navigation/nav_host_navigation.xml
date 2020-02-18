@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host_navigation"
+    app:startDestination="@+id/fragment_navigation_dashboard">
+
+    <fragment
+        android:id="@+id/fragment_navigation_dashboard"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.NavigationDashboardFragment"
+        android:label="Navigation UI"
+        tools:layout="@layout/fragment_navigation_dashboard">
+
+        <action
+            android:id="@+id/action_dashboard_to_basic_sample"
+            app:destination="@+id/navigation_title_screen" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_title_screen"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.basicsample.TitleScreenFragment"
+        android:label="@string/trivia"
+        tools:layout="@layout/fragment_navigation_title_screen">
+
+        <action
+            android:id="@+id/action_title_screen_to_register"
+            app:destination="@+id/navigation_register"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_title_screen_to_leaderboard"
+            app:destination="@+id/navigation_leaderboard"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_register"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.basicsample.RegisterFragment"
+        android:label="@string/label_register"
+        tools:layout="@layout/fragment_navigation_register">
+
+        <action
+            android:id="@+id/action_register_to_match"
+            app:destination="@+id/navigation_match"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_leaderboard"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.basicsample.LeaderboardFragment"
+        android:label="@string/leaderboards"
+        tools:layout="@layout/fragment_navigation_leaderboard">
+
+        <action
+            android:id="@+id/action_leaderboard_to_user_profile"
+            app:destination="@+id/navigation_user_profile"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_user_profile"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.basicsample.UserProfileFragment"
+        android:label="User Profile "
+        tools:layout="@layout/fragment_navigation_user_profile">
+
+        <argument
+            android:name="userName"
+            android:defaultValue="name" />
+
+        <deepLink app:uri="www.example.com/user/{userName}" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_match"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.basicsample.MatchFragment"
+        android:label="Match"
+        tools:layout="@layout/fragment_navigation_match">
+
+        <action
+            android:id="@+id/action_match_to_in_game"
+            app:destination="@+id/navigation_in_game"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_in_game"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.basicsample.InGameFragment"
+        android:label="Playing"
+        tools:layout="@layout/fragment_navigation_in_game">
+
+        <action
+            android:id="@+id/action_in_game_to_game_over"
+            app:destination="@+id/navigation_game_over"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_in_game_to_result_winner"
+            app:destination="@+id/navigation_result_winner"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_game_over"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.basicsample.NavigationGameOverFragment"
+        android:label="Game Over"
+        tools:layout="@layout/fragment_navigation_game_over">
+
+        <action
+            android:id="@+id/action_game_over_to_match"
+            app:popUpTo="@+id/navigation_match" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_result_winner"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.basicsample.WinnerFragment"
+        android:label="Winner"
+        tools:layout="@layout/fragment_navigation_winner">
+
+        <action
+            android:id="@+id/action_winner_to_leaderboard"
+            app:destination="@id/navigation_leaderboard"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/navigation_title_screen" />
+
+        <action
+            android:id="@+id/action_winner_to_match"
+            app:popUpTo="@id/navigation_match" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_detail_page"
+        android:name="com.angopa.aad.androidui.codelabs.navigation.FragmentDetailsPage"
+        android:label="Details"
+        tools:layout="@layout/fragment_details_page" />
+
+</navigation>

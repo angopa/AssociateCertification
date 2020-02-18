@@ -33,7 +33,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Base.Theme.AAD"
+        android:theme="@style/Theme.AAD"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -142,11 +142,20 @@
             android:name=".androidui.codelabs.adaptiveui.NewsReaderActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".androidui.codelabs.paging.PagingActivity"
+            android:name=".androidui.codelabs.paging.PagingDashboardActivity"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".androidui.codelabs.paging.SocialExamplePagingActivity"
+            android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity" />
+        <activity
+            android:name=".androidui.codelabs.paging.CheeseFactoryPagingActivity"
+            android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity" />
+        <activity
             android:name=".androidui.codelabs.paging.CreatePostActivity"
-            android:parentActivityName=".androidui.codelabs.paging.PagingActivity" />
+            android:parentActivityName=".androidui.codelabs.paging.SocialExamplePagingActivity" />
+        <activity
+            android:name=".androidui.codelabs.navigation.NavigationActivity"
+            android:parentActivityName=".MainActivity" />
         <!-- SERVICES -->
         <service
             android:name=".androidcore.codelabs.fundamentals.service.ExampleService"

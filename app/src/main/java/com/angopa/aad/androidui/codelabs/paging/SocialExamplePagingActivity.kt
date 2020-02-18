@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
+import com.angopa.aad.androidui.codelabs.paging.adapter.PostAdapter
 import com.angopa.aad.androidui.codelabs.paging.viewmodel.PagingViewModel
 import com.angopa.aad.data.localdata.Post
 import com.angopa.aad.databinding.ActivityPagingBinding
@@ -20,11 +21,11 @@ import timber.log.Timber
 /**
  *  Created by Andres Gonzalez on 02/05/2020.
  */
-class PagingActivity : BaseActivity(), PostAdapter.PostActionsListener {
+class SocialExamplePagingActivity : BaseActivity(), PostAdapter.PostActionsListener {
     private lateinit var binding: ActivityPagingBinding
 
     private val pagingViewModel: PagingViewModel by viewModels {
-        InjectorUtils.providePagingViewModelFactory(this@PagingActivity)
+        InjectorUtils.providePagingViewModelFactory(this@SocialExamplePagingActivity)
     }
 
     private lateinit var postAdapter: PostAdapter
@@ -40,9 +41,14 @@ class PagingActivity : BaseActivity(), PostAdapter.PostActionsListener {
         ).apply {
             dataset = ArrayList()
 
-            postAdapter = PostAdapter(this@PagingActivity, this@PagingActivity, dataset)
+            postAdapter =
+                PostAdapter(
+                    this@SocialExamplePagingActivity,
+                    this@SocialExamplePagingActivity,
+                    dataset
+                )
 
-            recyclerView.layoutManager = LinearLayoutManager(this@PagingActivity)
+            recyclerView.layoutManager = LinearLayoutManager(this@SocialExamplePagingActivity)
             recyclerView.adapter = postAdapter
 
             addPostFab.setOnClickListener {
@@ -91,7 +97,7 @@ class PagingActivity : BaseActivity(), PostAdapter.PostActionsListener {
         showAlertDialog(
             DialogFactory(AppConfiguration.get())
                 .createSettingOptionsDialog(
-                    this@PagingActivity,
+                    this@SocialExamplePagingActivity,
                     object : DialogFactory.SettingDialogOptionListener {
                         override fun optionSelected(@SettingOption which: Int) {
                             option = which
