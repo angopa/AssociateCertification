@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.paging.viewmodel
+package com.angopa.aad.androidui.codelabs.paging.social
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

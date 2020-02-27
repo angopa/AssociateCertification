@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.paging.viewholder
+package com.angopa.aad.androidui.codelabs.paging.cheesefactory
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

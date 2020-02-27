@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.paging.viewmodel
+package com.angopa.aad.androidui.codelabs.paging.cheesefactory
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.paging.viewmodel
+package com.angopa.aad.androidui.codelabs.paging.social
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
@@ -17,6 +17,8 @@ class PagingViewModelFactory(
 ) : ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return PagingViewModel(postRepository) as T
+        return PagingViewModel(
+            postRepository
+        ) as T
     }
 }

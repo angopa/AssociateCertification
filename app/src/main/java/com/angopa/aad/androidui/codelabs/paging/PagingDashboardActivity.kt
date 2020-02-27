@@ -4,6 +4,9 @@ import android.content.Intent
 import androidx.databinding.DataBindingUtil
 import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
+import com.angopa.aad.androidui.codelabs.paging.cheesefactory.CheeseFactoryPagingActivity
+import com.angopa.aad.androidui.codelabs.paging.reddit.StartActivity
+import com.angopa.aad.androidui.codelabs.paging.social.SocialExamplePagingActivity
 import com.angopa.aad.databinding.ActivityPagingDashboardBinding
 
 /**
@@ -20,11 +23,30 @@ class PagingDashboardActivity : BaseActivity() {
             R.layout.activity_paging_dashboard
         ).apply {
             socialExample.setOnClickListener {
-                startActivity(Intent(this@PagingDashboardActivity, SocialExamplePagingActivity::class.java))
+                startActivity(
+                    Intent(
+                        this@PagingDashboardActivity,
+                        SocialExamplePagingActivity::class.java
+                    )
+                )
             }
 
             cheeseFactory.setOnClickListener {
-                startActivity(Intent(this@PagingDashboardActivity, CheeseFactoryPagingActivity::class.java))
+                startActivity(
+                    Intent(
+                        this@PagingDashboardActivity,
+                        CheeseFactoryPagingActivity::class.java
+                    )
+                )
+            }
+
+            redditExample.setOnClickListener {
+                startActivity(
+                    Intent(
+                        this@PagingDashboardActivity,
+                        StartActivity::class.java
+                    )
+                )
             }
         }
 

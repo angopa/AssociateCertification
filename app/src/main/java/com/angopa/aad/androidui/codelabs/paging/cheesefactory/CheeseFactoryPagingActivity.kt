@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.paging
+package com.angopa.aad.androidui.codelabs.paging.cheesefactory
 
 import android.view.KeyEvent
 import android.view.inputmethod.EditorInfo
@@ -10,9 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.angopa.aad.Application
 import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
-import com.angopa.aad.androidui.codelabs.paging.adapter.CheeseAdapter
-import com.angopa.aad.androidui.codelabs.paging.viewholder.CheeseViewHolder
-import com.angopa.aad.androidui.codelabs.paging.viewmodel.CheeseViewModel
 import com.angopa.aad.databinding.ActivityCheeseFactoryPagingBinding
 import com.angopa.aad.utilities.InjectorUtils
 
@@ -39,7 +36,8 @@ class CheeseFactoryPagingActivity : BaseActivity() {
             R.layout.activity_cheese_factory_paging
         ).apply {
             // Create adapter for the RecyclerView
-            val adapter = CheeseAdapter()
+            val adapter =
+                CheeseAdapter()
             cheeseList.adapter = adapter
 
             // Subscribe the adapter to the ViewModel, so the items in the adapter are refreshed

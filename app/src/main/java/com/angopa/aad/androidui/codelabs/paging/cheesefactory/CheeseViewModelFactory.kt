@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.paging.viewmodel
+package com.angopa.aad.androidui.codelabs.paging.cheesefactory
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
@@ -14,6 +14,9 @@ class CheeseViewModelFactory(
 ) : ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return CheeseViewModel(application, cheeseRepository) as T
+        return CheeseViewModel(
+            application,
+            cheeseRepository
+        ) as T
     }
 }

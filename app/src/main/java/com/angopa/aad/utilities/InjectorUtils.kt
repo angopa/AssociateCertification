@@ -6,8 +6,8 @@ import com.angopa.aad.Storage
 import com.angopa.aad.androidcore.AndroidCoreViewModelFactory
 import com.angopa.aad.androiddata.AndroidDataManagementViewModelFactory
 import com.angopa.aad.androidui.AndroidUiViewModelFactory
-import com.angopa.aad.androidui.codelabs.paging.viewmodel.CheeseViewModelFactory
-import com.angopa.aad.androidui.codelabs.paging.viewmodel.PagingViewModelFactory
+import com.angopa.aad.androidui.codelabs.paging.cheesefactory.CheeseViewModelFactory
+import com.angopa.aad.androidui.codelabs.paging.social.PagingViewModelFactory
 import com.angopa.aad.data.localdata.*
 import com.angopa.aad.viewmodel.AndroidDebuggingViewModelFactory
 import com.angopa.aad.viewmodel.AndroidTestViewModelFactory
@@ -106,5 +106,8 @@ object InjectorUtils {
         context: Context,
         application: Application
     ): CheeseViewModelFactory =
-        CheeseViewModelFactory(application, getCheeseRepository(context))
+        CheeseViewModelFactory(
+            application,
+            getCheeseRepository(context)
+        )
 }

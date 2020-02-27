@@ -7,6 +7,7 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
+import com.angopa.aad.androidui.codelabs.paging.reddit.db.RedditPostDao
 import com.angopa.aad.utilities.DATABASE_NAME
 import com.angopa.aad.workers.SeedCheeseTable
 import com.angopa.aad.workers.SeedLinkTableWorker
@@ -17,8 +18,8 @@ import com.angopa.aad.workers.SeedTabTableWorker
  * The room database for this app
  */
 @Database(
-    entities = [Tab::class, Link::class, Post::class, Cheese::class],
-    version = 5,
+    entities = [Tab::class, Link::class, Post::class, Cheese::class, RedditPost::class],
+    version = 6,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -26,6 +27,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun linkDao(): LinkDao
     abstract fun postDao(): PostDao
     abstract fun cheeseDao(): CheeseDao
+    abstract fun redditPostDao(): RedditPostDao
 
     companion object {
         //For singleton implementation

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_transition"
+    app:startDestination="@id/dashboard_fragment">
+
+    <fragment
+        android:id="@+id/dashboard_fragment"
+        android:name="com.angopa.aad.androidui.codelabs.transition.dashboard.TransitionDashboardFragment"
+        tools:layout="@layout/fragment_transition_dashboard">
+
+        <action
+            android:id="@+id/action_dashboard_to_transition_between_fragments"
+            app:destination="@+id/transition_between_fragments"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/transition_between_fragments"
+        android:name="com.a.UserListFragment"
+        tools:layout="@layout/fragment_transition_user_list">
+
+        <action
+            android:id="@+id/action_display_user_details"
+            app:destination="@+id/user_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/user_details"
+        android:name="com.angopa.aad.androidui.codelabs.transition.userdetail.UserDetailFragment"
+        tools:layout="@layout/fragment_transition_user_detail">
+
+    </fragment>
+
+</navigation>

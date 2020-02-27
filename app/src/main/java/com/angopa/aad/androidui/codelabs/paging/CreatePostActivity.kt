@@ -4,7 +4,7 @@ import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
-import com.angopa.aad.androidui.codelabs.paging.viewmodel.PagingViewModel
+import com.angopa.aad.androidui.codelabs.paging.social.PagingViewModel
 import com.angopa.aad.databinding.ActivityCreatePostBinding
 import com.angopa.aad.utilities.InjectorUtils
 

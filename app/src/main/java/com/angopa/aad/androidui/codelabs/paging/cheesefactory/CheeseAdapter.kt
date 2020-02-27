@@ -1,9 +1,8 @@
-package com.angopa.aad.androidui.codelabs.paging.adapter
+package com.angopa.aad.androidui.codelabs.paging.cheesefactory
 
 import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
-import com.angopa.aad.androidui.codelabs.paging.viewholder.CheeseViewHolder
 import com.angopa.aad.data.localdata.Cheese
 
 /**
@@ -22,10 +21,14 @@ import com.angopa.aad.data.localdata.Cheese
  * @see androidx.paging.PagedListAdapter
  * @see androidx.paging.AsyncPagedListDiffer
  */
-class CheeseAdapter : PagedListAdapter<Cheese, CheeseViewHolder>(diffCallback) {
+class CheeseAdapter : PagedListAdapter<Cheese, CheeseViewHolder>(
+    diffCallback
+) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CheeseViewHolder =
-        CheeseViewHolder(parent)
+        CheeseViewHolder(
+            parent
+        )
 
     override fun onBindViewHolder(holder: CheeseViewHolder, position: Int) {
         holder.bindTo(getItem(position))

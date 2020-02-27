@@ -337,6 +337,19 @@
     <string name="label_sports">Sports</string>
     <string name="label_world">World</string>
     <string name="label_finances">Finances</string>
+    <string name="search_hint">Subreddit Name</string>
+    <string name="default_subreddit">androiddev</string>
+    <string name="db_plus_network">db + network</string>
+    <string name="network_only_by_item">network only (by item)</string>
+    <string name="network_only_by_page">network only (by page)</string>
+    <string name="screen_title_paging_dashboard">Paging</string>
+    <string name="social_network_label_btn">Social Network</string>
+    <string name="cheese_factory_label_btn">Cheese Factory</string>
+    <string name="screen_title_cheese_factory">Cheese Factory</string>
+    <string name="screen_title_reddit">Reddit</string>
+    <string name="reddit_label_btn">Reddit</string>
+    <string name="post_subtitle">Submitted by %s</string>
+    <string name="retry">Retry</string>
 
     <!-- Adaptive UI -->
 
@@ -374,9 +387,6 @@
     <string name="losses">Losses</string>
     <string name="losses_amount">03</string>
     <string name="congratulations">Congratulations!</string>
-    <string name="screen_title_paging_dashboard">Paging</string>
-    <string name="social_network_label_btn">Social Network</string>
-    <string name="cheese_factory_label_btn">Cheese Factory</string>
-    <string name="screen_title_cheese_factory">Cheese Factory</string>
+    <string name="nearby_messages_screen_title">Nearby</string>
 
 </resources>

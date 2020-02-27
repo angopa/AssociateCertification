@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.paging.adapter
+package com.angopa.aad.androidui.codelabs.paging.social
 
 import android.content.Context
 import android.view.LayoutInflater

@@ -35,13 +35,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AAD"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity
             android:name=".androidcore.codelabs.toast.ToastActivity"
             android:parentActivityName=".MainActivity" />
@@ -103,6 +97,9 @@
             android:launchMode="singleTask"
             android:taskAffinity="" />
         <activity
+            android:name=".androidcore.codelabs.nearbymessages.NearbyMessagesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".androidui.codelabs.useravatar.UserAvatarFragment"
             android:parentActivityName=".MainActivity" />
         <activity
@@ -145,17 +142,32 @@
             android:name=".androidui.codelabs.paging.PagingDashboardActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".androidui.codelabs.paging.SocialExamplePagingActivity"
+            android:name=".androidui.codelabs.paging.social.SocialExamplePagingActivity"
             android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity" />
         <activity
-            android:name=".androidui.codelabs.paging.CheeseFactoryPagingActivity"
+            android:name=".androidui.codelabs.paging.cheesefactory.CheeseFactoryPagingActivity"
             android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity" />
         <activity
             android:name=".androidui.codelabs.paging.CreatePostActivity"
-            android:parentActivityName=".androidui.codelabs.paging.SocialExamplePagingActivity" />
+            android:parentActivityName=".androidui.codelabs.paging.social.SocialExamplePagingActivity" />
+        <activity
+            android:name=".androidui.codelabs.paging.reddit.StartActivity"
+            android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity" />
+        <activity
+            android:name=".androidui.codelabs.paging.reddit.RedditActivity"
+            android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity" />
         <activity
             android:name=".androidui.codelabs.navigation.NavigationActivity"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".androidui.codelabs.transition.TransitionActivity"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!-- SERVICES -->
         <service
             android:name=".androidcore.codelabs.fundamentals.service.ExampleService"
@@ -202,6 +214,10 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.google.android.nearby.messages.API_KEY"
             android:value="@string/google_maps_key" />
 
         <meta-data

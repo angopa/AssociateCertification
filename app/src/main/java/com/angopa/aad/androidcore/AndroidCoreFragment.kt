@@ -20,6 +20,7 @@ import com.angopa.aad.androidcore.codelabs.fundamentals.service.ServiceActivity
 import com.angopa.aad.androidcore.codelabs.fundamentals.threads.ThreadsActivity
 import com.angopa.aad.androidcore.codelabs.fundamentals.workmanager.WorkManagerActivity
 import com.angopa.aad.androidcore.codelabs.localization.LocalizationActivity
+import com.angopa.aad.androidcore.codelabs.nearbymessages.NearbyMessagesActivity
 import com.angopa.aad.androidcore.codelabs.notification.NotificationCodelabActivity
 import com.angopa.aad.androidcore.codelabs.snackbar.SnackbarActivity
 import com.angopa.aad.androidcore.codelabs.toast.ToastActivity
@@ -82,6 +83,9 @@ class AndroidCoreFragment : Fragment() {
 
                 override fun notificationCodelabTapped() =
                     startNewActivity(NotificationCodelabActivity::class.java)
+
+                override fun nearbyMessagesTapped() =
+                    startNewActivity(NearbyMessagesActivity::class.java)
             }
         }
         return binding.root
@@ -108,5 +112,6 @@ class AndroidCoreFragment : Fragment() {
         fun broadcastCodelabTapped()
         fun contentProvidersCodelabTapped()
         fun notificationCodelabTapped()
+        fun nearbyMessagesTapped()
     }
 }
