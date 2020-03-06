@@ -14,7 +14,7 @@ class RedditViewModel(
     private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
     companion object {
-        const val KEY_SUBREDDIT = " subreedit"
+        const val KEY_SUBREDDIT = " subreddit"
         const val DEFAULT_SUBREDDIT = "androiddev"
     }
 
@@ -24,17 +24,17 @@ class RedditViewModel(
         }
     }
 
-//    private val repoResult = savedStateHandle.getLiveData<String>(KEY_SUBREDDIT).map {
-//        repository.postsOfSubreddit(it, 30)
-//    }
+    private val repoResult = savedStateHandle.getLiveData<String>(KEY_SUBREDDIT).map {
+        repository.postsOfSubreddit(it, 20)
+    }
 
-//    val posts = repoResult.switchMap { it.pagedList }
-//    val networkState = repoResult.switchMap { it.networkState }
-//    val refresState = repoResult.switchMap { it.refreshState }
-//
-//    fun refresh() {
-//        repoResult.value?.refresh?.invoke()
-//    }
+    val posts = repoResult.switchMap { it.pagedList }
+    val networkState = repoResult.switchMap { it.networkState }
+    val refreshState = repoResult.switchMap { it.refreshState }
+
+    fun refresh() {
+        repoResult.value?.refresh?.invoke()
+    }
 
     fun showSubreddit(subreddit: String): Boolean {
         if (savedStateHandle.get<String>(KEY_SUBREDDIT) == subreddit) {
@@ -45,7 +45,6 @@ class RedditViewModel(
     }
 
     fun retry() {
-//        val listing = repoResult.value
-//        listing?.retry?.invoke()
+        repoResult.value?.retry?.invoke()
     }
 }

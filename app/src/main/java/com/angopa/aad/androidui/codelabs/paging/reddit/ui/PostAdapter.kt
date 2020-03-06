@@ -58,11 +58,7 @@ class PostAdapter(
         }
     }
 
-    override fun getItemCount(): Int {
-        return super.getItemCount() + if (hasExtraRow()) 1 else 0
-    }
-
-    fun setNetworkState(newNetworkState: NetworkState?) {
+    fun setNetworkState(newNetworkState: NetworkState) {
         val previousState = this.networkState
         val hadExtraRow = hasExtraRow()
         this.networkState = newNetworkState
@@ -76,6 +72,11 @@ class PostAdapter(
         } else if (hasExtraRow && previousState != newNetworkState) {
             notifyItemChanged(itemCount - 1)
         }
+
+    }
+
+    override fun getItemCount(): Int {
+        return super.getItemCount() + if (hasExtraRow()) 1 else 0
     }
 
     companion object {

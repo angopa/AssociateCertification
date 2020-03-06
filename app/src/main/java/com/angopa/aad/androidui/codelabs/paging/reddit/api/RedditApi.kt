@@ -56,7 +56,7 @@ interface RedditApi {
                 Log.d("API", it)
             })
 
-            logger.level = HttpLoggingInterceptor.Level.BASIC
+            logger.level = HttpLoggingInterceptor.Level.BODY
 
             val client = OkHttpClient.Builder()
                 .addInterceptor(logger)

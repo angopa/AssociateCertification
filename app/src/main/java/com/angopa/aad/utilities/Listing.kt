@@ -2,7 +2,7 @@ package com.angopa.aad.utilities
 
 import androidx.lifecycle.LiveData
 import androidx.paging.PagedList
-import androidx.work.impl.constraints.NetworkState
+import com.angopa.aad.androidui.codelabs.paging.reddit.repository.NetworkState
 
 /**
  *  Created by Andres Gonzalez on 02/19/2020.

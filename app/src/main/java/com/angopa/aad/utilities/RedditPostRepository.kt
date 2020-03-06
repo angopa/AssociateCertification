@@ -10,7 +10,7 @@ import com.angopa.aad.data.localdata.RedditPost
  * network+db, or network-only
  */
 interface RedditPostRepository {
-//    fun postsOfSubreddit(subReddit: String, pageSize: Int): Listing<RedditPost>
+    fun postsOfSubreddit(subReddit: String, pageSize: Int): Listing<RedditPost>
 
     enum class Type {
         IN_MEMORY_BY_ITEM,
