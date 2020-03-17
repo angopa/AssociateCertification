@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.angopa.aad.data.localdata.AppDatabase
-import com.angopa.aad.data.localdata.Link
+import com.angopa.aad.data.localdata.model.Link
 import com.angopa.aad.utilities.LINK_DATA_FILENAME
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken

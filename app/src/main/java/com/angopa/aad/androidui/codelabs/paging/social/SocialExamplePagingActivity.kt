@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
 import com.angopa.aad.androidui.codelabs.paging.CreatePostActivity
-import com.angopa.aad.data.localdata.Post
+import com.angopa.aad.data.localdata.model.Post
 import com.angopa.aad.databinding.ActivityPagingBinding
 import com.angopa.aad.utilities.*
 import timber.log.Timber

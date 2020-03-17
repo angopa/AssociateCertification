@@ -5,7 +5,7 @@ import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import com.angopa.aad.data.localdata.AppDatabase
-import com.angopa.aad.data.localdata.Link
+import com.angopa.aad.data.localdata.model.Link
 import com.angopa.aad.data.localdata.LinkDao
 import com.angopa.aad.utilities.getValue
 import com.angopa.aad.utilities.testLink

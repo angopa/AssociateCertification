@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.angopa.aad.R
-import com.angopa.aad.data.localdata.Cheese
+import com.angopa.aad.data.localdata.model.Cheese
 
 /**
  *  Created by Andres Gonzalez on 02/18/2020.

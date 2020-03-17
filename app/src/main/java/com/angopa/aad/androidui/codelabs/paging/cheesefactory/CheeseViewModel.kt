@@ -5,7 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.Config
 import androidx.paging.toLiveData
-import com.angopa.aad.data.localdata.Cheese
+import com.angopa.aad.data.localdata.model.Cheese
 import com.angopa.aad.data.localdata.CheeseRepository
 import kotlinx.coroutines.launch
 
@@ -56,7 +56,12 @@ class CheeseViewModel(
 
     fun insert(text: CharSequence) {
         viewModelScope.launch {
-            cheeseRepository.insertNewCheese(Cheese(id = 0, name = text.toString()))
+            cheeseRepository.insertNewCheese(
+                Cheese(
+                    id = 0,
+                    name = text.toString()
+                )
+            )
         }
     }
 

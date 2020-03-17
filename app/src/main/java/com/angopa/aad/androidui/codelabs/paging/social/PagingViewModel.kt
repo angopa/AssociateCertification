@@ -8,7 +8,7 @@ import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.angopa.aad.data.localdata.Post
+import com.angopa.aad.data.localdata.model.Post
 import com.angopa.aad.data.localdata.PostRepository
 import com.angopa.aad.utilities.AppConfiguration
 import com.angopa.aad.workers.SeedPostTableWorker
@@ -43,12 +43,14 @@ class PagingViewModel(
 
     fun createNewPost() {
         viewModelScope.launch {
-            postRepository.createNewPost(Post(
-                "1007",
-                System.currentTimeMillis(),
-                "Supper!!",
-                "https://katv.com/resources/media/29b084ec-8472-4a4f-b803-f8536eb0a60e-large16x9_NWALandTrustProperty.jpg",
-                "Yoooooo")
+            postRepository.createNewPost(
+                Post(
+                    "1007",
+                    System.currentTimeMillis(),
+                    "Supper!!",
+                    "https://katv.com/resources/media/29b084ec-8472-4a4f-b803-f8536eb0a60e-large16x9_NWALandTrustProperty.jpg",
+                    "Yoooooo"
+                )
             )
         }
 

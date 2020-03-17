@@ -5,7 +5,7 @@ import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import com.angopa.aad.data.localdata.AppDatabase
-import com.angopa.aad.data.localdata.Tab
+import com.angopa.aad.data.localdata.model.Tab
 import com.angopa.aad.data.localdata.TabDao
 import com.angopa.aad.utilities.getValue
 import kotlinx.coroutines.runBlocking
@@ -21,9 +21,12 @@ import org.junit.runner.RunWith
 class TabDaoTest {
     private lateinit var database: AppDatabase
     private lateinit var tabDao: TabDao
-    private val tabA = Tab("1", "description")
-    private val tabB = Tab("2", "description")
-    private val tabC = Tab("3", "description")
+    private val tabA =
+        Tab("1", "description")
+    private val tabB =
+        Tab("2", "description")
+    private val tabC =
+        Tab("3", "description")
 
     @get:Rule
     val instantTaskExecutionRule = InstantTaskExecutorRule()

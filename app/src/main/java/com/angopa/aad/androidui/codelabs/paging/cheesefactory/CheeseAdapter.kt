@@ -3,7 +3,7 @@ package com.angopa.aad.androidui.codelabs.paging.cheesefactory
 import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
-import com.angopa.aad.data.localdata.Cheese
+import com.angopa.aad.data.localdata.model.Cheese
 
 /**
  *  Created by Andres Gonzalez on 02/18/2020.

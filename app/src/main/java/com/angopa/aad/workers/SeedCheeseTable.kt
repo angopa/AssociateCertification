@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.angopa.aad.data.localdata.AppDatabase
-import com.angopa.aad.data.localdata.Cheese
+import com.angopa.aad.data.localdata.model.Cheese
 import kotlinx.coroutines.coroutineScope
 import timber.log.Timber
 
@@ -18,7 +18,12 @@ class SeedCheeseTable(
     override suspend fun doWork(): Result = coroutineScope {
         try {
             val database = AppDatabase.getInstance(applicationContext)
-            database.cheeseDao().insert(CHEESE_DATA.map { Cheese(id = 0, name = it) })
+            database.cheeseDao().insert(CHEESE_DATA.map {
+                Cheese(
+                    id = 0,
+                    name = it
+                )
+            })
             Result.success()
         } catch (ex: Exception) {
             Timber.e(ex, "Error seeding table Link")

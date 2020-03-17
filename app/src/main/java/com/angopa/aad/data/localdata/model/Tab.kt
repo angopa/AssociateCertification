@@ -1,4 +1,4 @@
-package com.angopa.aad.data.localdata
+package com.angopa.aad.data.localdata.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

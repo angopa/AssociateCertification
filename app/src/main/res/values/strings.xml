@@ -395,5 +395,12 @@
     <string name="nearby_messages_screen_title">Nearby</string>
     <string name="screen_title_transition">Transition</string>
     <string name="label_card_transition">Transition</string>
+    <string name="btn_label_firebase">"Firebase Realtime Database "</string>
+    <string name="label_title_firebase_realtime_database">Firebase Realtime Database</string>
+    <string name="label_firebase_entry_likes">like %s</string>
+    <string name="menu_label_add_user">Add User</string>
+    <string name="btn_label_firebase_paging">Firebase Paging</string>
+    <string name="btn_label_recyler_view">Firebase Recyler View</string>
+    <string name="label_firebase_paging">Paging</string>
 
 </resources>

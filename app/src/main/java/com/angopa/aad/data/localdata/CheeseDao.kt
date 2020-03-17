@@ -5,6 +5,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import com.angopa.aad.data.localdata.model.Cheese
 
 /**
  *  Created by Andres Gonzalez on 02/18/2020.

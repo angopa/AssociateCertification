@@ -1,7 +1,7 @@
 package com.angopa.aad.utilities
 
-import com.angopa.aad.data.localdata.Link
-import com.angopa.aad.data.localdata.Tab
+import com.angopa.aad.data.localdata.model.Link
+import com.angopa.aad.data.localdata.model.Tab
 
 /**
  * [Tab] objects used for testing
@@ -17,4 +17,5 @@ val testTab = testTabs[0]
 /**
  * [Link] object used for test
  */
-val testLink = Link(testTab.tabId, "topic", "link")
+val testLink =
+    Link(testTab.tabId, "topic", "link")

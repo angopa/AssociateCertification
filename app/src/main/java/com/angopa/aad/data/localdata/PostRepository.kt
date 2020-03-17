@@ -1,6 +1,7 @@
 package com.angopa.aad.data.localdata
 
 import androidx.paging.DataSource
+import com.angopa.aad.data.localdata.model.Post
 
 /**
  *  Created by Andres Gonzalez on 02/06/2020.

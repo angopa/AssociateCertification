@@ -66,6 +66,9 @@ dependencies {
     implementation('com.crashlytics.sdk.android:crashlytics:2.10.1') {
         transitive = true
     }
+    implementation "com.google.firebase:firebase-database:$rootProject.firebaseDatabase"
+    implementation 'com.firebaseui:firebase-ui-database:6.2.0'
+
 
     implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlinVersion"

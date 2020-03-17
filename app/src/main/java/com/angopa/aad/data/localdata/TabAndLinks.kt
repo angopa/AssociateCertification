@@ -2,8 +2,8 @@ package com.angopa.aad.data.localdata
 
 import androidx.room.Embedded
 import androidx.room.Relation
-import com.angopa.aad.data.localdata.Link
-import com.angopa.aad.data.localdata.Tab
+import com.angopa.aad.data.localdata.model.Link
+import com.angopa.aad.data.localdata.model.Tab
 
 /**
  * This class capture the relation between a [Tab] and tab's [Link], which

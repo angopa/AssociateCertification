@@ -8,6 +8,10 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import com.angopa.aad.androidui.codelabs.paging.reddit.db.RedditPostDao
+import com.angopa.aad.data.localdata.model.Cheese
+import com.angopa.aad.data.localdata.model.Link
+import com.angopa.aad.data.localdata.model.Post
+import com.angopa.aad.data.localdata.model.Tab
 import com.angopa.aad.utilities.DATABASE_NAME
 import com.angopa.aad.workers.SeedCheeseTable
 import com.angopa.aad.workers.SeedLinkTableWorker

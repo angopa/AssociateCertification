@@ -1,6 +1,7 @@
-package com.angopa.aad.data.localdata
+package com.angopa.aad.data.localdata.model
 
 import androidx.room.*
+import com.angopa.aad.data.localdata.model.Tab
 
 /**
  * [Link] represent the links contained in each [Tab]

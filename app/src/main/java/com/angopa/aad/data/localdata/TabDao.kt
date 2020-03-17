@@ -5,7 +5,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
-import com.angopa.aad.data.localdata.Tab
+import com.angopa.aad.data.localdata.model.Tab
 
 @Dao
 interface TabDao {

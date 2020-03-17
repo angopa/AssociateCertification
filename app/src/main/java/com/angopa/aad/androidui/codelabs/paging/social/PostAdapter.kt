@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.angopa.aad.R
-import com.angopa.aad.data.localdata.Post
+import com.angopa.aad.data.localdata.model.Post
 import com.angopa.aad.utilities.Utils
 import com.bumptech.glide.Glide
 
@@ -34,7 +34,7 @@ class PostAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val post: Post = dataset[position]
         holder.userName.text = post.userName
-        holder.date.text = Utils.formatDateFromMillis(post.date)
+        holder.date.text = post.date?.let { Utils.formatDateFromMillis(it) }
         holder.comment.text = post.caption
 
         Glide.with(context)
@@ -45,7 +45,7 @@ class PostAdapter(
             .into(holder.postImage)
 
         holder.setting.setOnClickListener {
-            listener.settingAction(post.postId)
+            post.postId?.let { it -> listener.settingAction(it) }
         }
     }
 

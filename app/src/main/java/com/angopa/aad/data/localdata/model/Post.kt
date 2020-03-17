@@ -1,4 +1,4 @@
-package com.angopa.aad.data.localdata
+package com.angopa.aad.data.localdata.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -19,11 +19,11 @@ import androidx.room.PrimaryKey
     indices = []
 )
 data class Post(
-    @ColumnInfo(name = "post_id") val postId: String,
-    @ColumnInfo(name = "date") val date: Long,
-    @ColumnInfo(name = "caption") val caption: String,
-    @ColumnInfo(name = "image_url") val imageUrl: String,
-    @ColumnInfo(name = "user_name") val userName: String
+    @ColumnInfo(name = "post_id") val postId: String? = null,
+    @ColumnInfo(name = "date") val date: Long? = null,
+    @ColumnInfo(name = "caption") val caption: String? = null,
+    @ColumnInfo(name = "image_url") val imageUrl: String? = null,
+    @ColumnInfo(name = "user_name") val userName: String? = null
 ) {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")

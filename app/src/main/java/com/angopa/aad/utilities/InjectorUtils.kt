@@ -7,11 +7,14 @@ import com.angopa.aad.androidcore.AndroidCoreViewModelFactory
 import com.angopa.aad.androiddata.AndroidDataManagementViewModelFactory
 import com.angopa.aad.androidui.AndroidUiViewModelFactory
 import com.angopa.aad.androidui.codelabs.paging.cheesefactory.CheeseViewModelFactory
+import com.angopa.aad.androidui.codelabs.paging.firebase.posts.PostViewModelFactory
 import com.angopa.aad.androidui.codelabs.paging.social.PagingViewModelFactory
 import com.angopa.aad.data.localdata.*
 import com.angopa.aad.viewmodel.AndroidDebuggingViewModelFactory
 import com.angopa.aad.viewmodel.AndroidTestViewModelFactory
 import com.angopa.aad.viewmodel.MultiplePurposeActivityViewModelFactory
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 /**
  * Static methods used to inject classes needed for various Activities and Fragments
@@ -37,6 +40,8 @@ object InjectorUtils {
             AppDatabase.getInstance(context.applicationContext).cheeseDao()
         )
 
+    private fun getFirebaseDatabaseReference(): DatabaseReference =
+        FirebaseDatabase.getInstance().reference
 
     fun provideAndroidCoreViewModelFactory(
         context: Context,
@@ -47,7 +52,6 @@ object InjectorUtils {
             getLinkRepository(context),
             tabId
         )
-
 
     fun provideAndroidUiViewModelFactory(
         context: Context,
@@ -69,7 +73,6 @@ object InjectorUtils {
             tabId
         )
 
-
     fun provideAndroidDebuggingViewModelFactory(
         context: Context,
         tabId: String
@@ -79,7 +82,6 @@ object InjectorUtils {
         tabId
     )
 
-
     fun provideAndroidTestViewModelFactory(
         context: Context,
         tabId: String
@@ -88,7 +90,6 @@ object InjectorUtils {
         getLinkRepository(context),
         tabId
     )
-
 
     fun provideMultiplePurposeActivityViewModelFactory(
         context: Context
@@ -109,5 +110,10 @@ object InjectorUtils {
         CheeseViewModelFactory(
             application,
             getCheeseRepository(context)
+        )
+
+    fun provideRealtimeViewModelFactory(): PostViewModelFactory =
+        PostViewModelFactory(
+            getFirebaseDatabaseReference()
         )
 }

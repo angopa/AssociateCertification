@@ -152,23 +152,25 @@
             android:parentActivityName=".androidui.codelabs.paging.social.SocialExamplePagingActivity" />
         <activity
             android:name=".androidui.codelabs.paging.reddit.StartActivity"
-            android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity" />
         <activity
             android:name=".androidui.codelabs.paging.reddit.RedditActivity"
             android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity" />
-
         <activity
             android:name=".androidui.codelabs.navigation.NavigationActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".androidui.codelabs.transition.TransitionActivity"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".androidui.codelabs.paging.firebase.FirebaseDatabaseActivity"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!-- SERVICES -->
         <service
             android:name=".androidcore.codelabs.fundamentals.service.ExampleService"
