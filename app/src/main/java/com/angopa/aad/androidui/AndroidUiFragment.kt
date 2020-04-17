@@ -16,6 +16,7 @@ import com.angopa.aad.androidui.codelabs.adaptiveui.NewsReaderActivity
 import com.angopa.aad.androidui.codelabs.constraintlayout.ConstraintLayoutActivity
 import com.angopa.aad.androidui.codelabs.motion.MotionLayoutActivity
 import com.angopa.aad.androidui.codelabs.navigation.NavigationActivity
+import com.angopa.aad.androidui.codelabs.navigationdrawer.NavigationDrawerActivity
 import com.angopa.aad.androidui.codelabs.paging.PagingDashboardActivity
 import com.angopa.aad.androidui.codelabs.recyclerview.RecyclerViewActivity
 import com.angopa.aad.androidui.codelabs.transition.TransitionActivity
@@ -70,6 +71,10 @@ class AndroidUiFragment : Fragment() {
                 }
 
                 override fun navigationDrawer() {
+                    launchActivity(NavigationDrawerActivity::class.java)
+                }
+
+                override fun navigation() {
                     launchActivity(NavigationActivity::class.java)
                 }
 
@@ -100,6 +105,7 @@ class AndroidUiFragment : Fragment() {
         fun adaptiveUi()
         fun paging()
         fun navigationDrawer()
+        fun navigation()
         fun transition()
     }
 }

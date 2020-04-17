@@ -5,7 +5,7 @@ import androidx.databinding.DataBindingUtil
 import com.angopa.aad.BaseActivity
 import com.angopa.aad.R
 import com.angopa.aad.androidui.codelabs.paging.cheesefactory.CheeseFactoryPagingActivity
-import com.angopa.aad.androidui.codelabs.paging.firebase.posts.PostPagingFragment
+import com.angopa.aad.androidui.codelabs.paging.firebase.FirebaseDatabaseActivity
 import com.angopa.aad.androidui.codelabs.paging.reddit.StartActivity
 import com.angopa.aad.androidui.codelabs.paging.social.SocialExamplePagingActivity
 import com.angopa.aad.databinding.ActivityPagingDashboardBinding
@@ -54,7 +54,7 @@ class PagingDashboardActivity : BaseActivity() {
                 startActivity(
                     Intent(
                         this@PagingDashboardActivity,
-                        PostPagingFragment::class.java
+                        FirebaseDatabaseActivity::class.java
                     )
                 )
             }

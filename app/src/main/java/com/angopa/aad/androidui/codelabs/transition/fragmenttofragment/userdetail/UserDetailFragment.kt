@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.transition.userdetail
+package com.angopa.aad.androidui.codelabs.transition.fragmenttofragment.userdetail
 
 import android.os.Bundle
 import android.transition.TransitionInflater

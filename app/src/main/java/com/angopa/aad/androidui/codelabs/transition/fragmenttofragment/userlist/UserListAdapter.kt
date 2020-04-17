@@ -1,4 +1,4 @@
-package com.angopa.aad.androidui.codelabs.transition.userlist
+package com.angopa.aad.androidui.codelabs.transition.fragmenttofragment.userlist
 
 import android.view.LayoutInflater
 import android.view.View
@@ -36,6 +36,7 @@ class UserListAdapter(
         private val listener: UserListListener,
         private val item: View
     ) : RecyclerView.ViewHolder(item) {
+        val root: View = item.findViewById(R.id.root)
         val profileImage: ImageView = item.findViewById(R.id.profile_image)
         val username: TextView = item.findViewById(R.id.username)
         val userRole: TextView = item.findViewById(R.id.user_role)
@@ -43,12 +44,16 @@ class UserListAdapter(
         init {
 
             item.setOnClickListener {
-                listener.onItemTapped(adapterPosition)
+                listener.onItemTapped(adapterPosition, profileImage, username)
             }
         }
     }
 
     interface UserListListener {
-        fun onItemTapped(adapterPosition: Int)
+        fun onItemTapped(
+            adapterPosition: Int,
+            profileImage: ImageView,
+            userName: TextView
+        )
     }
 }

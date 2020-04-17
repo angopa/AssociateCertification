@@ -1,15 +1,12 @@
 package com.angopa.aad
 
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.angopa.aad.androidcore.AndroidCoreFragment
 import com.angopa.aad.androiddata.AndroidDataManagementFragment
 import com.angopa.aad.androidui.AndroidUiFragment
 import com.angopa.aad.dependencyinjection.DaggerFragment
 import com.angopa.aad.map.MapFragment
-import java.lang.IndexOutOfBoundsException
-
 
 
 const val ANDROID_CORE_PAGE_INDEX = 0

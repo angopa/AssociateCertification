@@ -1,17 +1,18 @@
-package com.a
+package com.angopa.aad.androidui.codelabs.transition.fragmenttofragment.userlist
 
 import android.os.Bundle
 import android.transition.TransitionInflater
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.angopa.aad.R
 import com.angopa.aad.androidui.codelabs.transition.UserData
-import com.angopa.aad.androidui.codelabs.transition.userlist.UserListAdapter
 import com.angopa.aad.databinding.FragmentTransitionUserListBinding
 
 /**
@@ -47,7 +48,11 @@ class UserListFragment : Fragment(), UserListAdapter.UserListListener {
         return binding.root
     }
 
-    override fun onItemTapped(position: Int) {
+    override fun onItemTapped(
+        position: Int,
+        profileImage: ImageView,
+        username: TextView
+    ) {
         val directions = UserListFragmentDirections.actionDisplayUserDetails()
         this.findNavController().navigate(directions)
     }

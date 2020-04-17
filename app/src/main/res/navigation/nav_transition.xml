@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/transition_between_fragments"
-        android:name="com.a.UserListFragment"
+        android:name="com.angopa.aad.androidui.codelabs.transition.fragmenttofragment.userlist.UserListFragment"
         tools:layout="@layout/fragment_transition_user_list">
 
         <action
@@ -37,9 +37,10 @@
 
     <fragment
         android:id="@+id/user_details"
-        android:name="com.angopa.aad.androidui.codelabs.transition.userdetail.UserDetailFragment"
+        android:name="com.angopa.aad.androidui.codelabs.transition.fragmenttofragment.userdetail.UserDetailFragment"
         tools:layout="@layout/fragment_transition_user_detail">
 
     </fragment>
+
 
 </navigation>

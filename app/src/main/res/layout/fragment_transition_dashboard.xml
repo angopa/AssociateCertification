@@ -8,13 +8,75 @@
 
         <Button
             android:id="@+id/transition_between_fragments"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_margin="@dimen/margin_normal"
+            android:stateListAnimator="@animator/animate_scale"
             android:text="Fragment to Fragment"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/transition_between_activities"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="Activity to Activity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/transition_between_fragments" />
+
+        <ImageView
+            android:id="@+id/image_transition"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/animate_image_button"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/transition_between_activities" />
+
+        <ImageView
+            android:id="@+id/image_round_rocket"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@drawable/animate_triangle_to_square"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_transition" />
+
+        <ImageView
+            android:id="@+id/radio_play_image"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@drawable/animator_playing"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_round_rocket" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_morph_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:src="@drawable/ic_map"
+            app:layout_constraintBottom_toTopOf="@id/fab_state_list_animator"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_state_list_animator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@drawable/animate_image_button"
+            android:src="@drawable/ic_add_word"
+            android:stateListAnimator="@animator/animate_scale"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

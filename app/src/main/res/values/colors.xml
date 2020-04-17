@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="indigo50">#e8eaf6</color>
+    <!-- Base palette; do not access these colors directly -->
+
+    <color name="azure">#00b1eb</color>
+    <color name="azure_50">#8000b1eb</color>
+    <color name="cerulean">#009ed3</color>
+    <color name="ocean_blue">#2274ac</color>
+    <color name="pinkish_grey">#bdbdbd</color>
+    <color name="cold_steel">#87979f</color>
+    <color name="fog_grey">#adbabc</color>
+    <color name="cool_grey">#b0b6b8</color>
+    <color name="cooler_grey">#a4afb4</color>
+    <color name="cooler_grey_50">#80a4afb4</color>
+    <color name="coolest_grey">#86979e</color>
+    <color name="duck_egg_blue">#caeefa</color>
+    <color name="light_navy">#15527c</color>
     <color name="white">#ffffff</color>
+    <color name="silver">#e0e5e6</color>
+    <color name="black">#000000</color>
+    <color name="vapor_blue">#662274ac</color>
+    <color name="denim">#0076aa</color>
+    <color name="marine_blue">#003c65</color>
+    <color name="navy">#002641</color>
+    <color name="deep_sea_blue">#055d8b</color>
+    <color name="light_slate_grey">#a0afb1</color>
+    <color name="darker_grey">#323232</color>
+    <color name="pale_grey">#f1f5f6</color>
+    <color name="mine_shaft">#202020</color>
+    <color name="geyser">#d3dbdd</color>
+    <color name="mystic">#e3ebed</color>
+    <color name="black_54">#8a000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_9">#16000000</color>
+    <color name="regent_gray">#87979e</color>
+    <color name="jade_green">#2fb36a</color>
+    <color name="orange_red">#ff3029</color>
+    <color name="seaweed_green">#37b26d</color>
+    <color name="sunflower_yellow">#ffd100</color>
+    <color name="coal_black_26">#42221f1f</color>
+
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574b</color>
+    <color name="colorPrimaryLight">#4cb5a6</color>
+    <color name="colorAccent">#d81b60</color>
+    <color name="colorAccentLight">#ff5c8d</color>
+    <color name="colorAccentDark">#a00037</color>
+    <color name="colorPrimaryText">@color/white</color>
+    <color name="colorAccentText">@color/white</color>
+    <color name="colorWindowBackground">@color/white</color>
+    <color name="colorBackgroundCard">@color/indigo50</color>
+
+    <color name="indigo50">#e8eaf6</color>
 
     <color name="tintImage">#41000000</color>
     <color name="text">@color/white</color>
-    <color name="azure">#49A9DF</color>
     <color name="cerulean_blue">#137AE2</color>
     <color name="brown">#643A07</color>
 

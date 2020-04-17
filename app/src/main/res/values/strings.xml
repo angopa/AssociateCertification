@@ -402,5 +402,7 @@
     <string name="btn_label_firebase_paging">Firebase Paging</string>
     <string name="btn_label_recyler_view">Firebase Recyler View</string>
     <string name="label_firebase_paging">Paging</string>
+    <string name="card_label_navigation">Navigation</string>
+    <string name="label_title_navigation_drawer">Navigation Drawer</string>
 
 </resources>

@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.databinding.DataBindingUtil
 import com.angopa.aad.databinding.ActivityMainBinding
-import com.angopa.aad.utilities.AppConfiguration
-import com.angopa.aad.utilities.DialogFactory
 import com.angopa.aad.utilities.PermissionUtil
 import timber.log.Timber
 
@@ -34,11 +32,7 @@ class MainActivity : AppCompatActivity() {
             if (getLocationPermissionState() == PermissionUtil.PermissionState.DENIED_PERMANENTLY ||
                 getLocationPermissionState() == PermissionUtil.PermissionState.DENIED_TEMPORARILY
             ) {
-                DialogFactory(AppConfiguration.get()).createInformationalDialog(
-                    this,
-                    "Provide an explanation about why do it need this permission.",
-                    "Permission Required"
-                ).show()
+                Timber.d("HEre should be a message requiring permission access")
             } else {
                 ActivityCompat.requestPermissions(
                     this,

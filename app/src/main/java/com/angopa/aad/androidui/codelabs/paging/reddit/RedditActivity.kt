@@ -23,6 +23,7 @@ import com.angopa.aad.androidui.codelabs.paging.reddit.ui.PostAdapter
 import com.angopa.aad.androidui.codelabs.paging.reddit.ui.RedditViewModel
 import com.angopa.aad.databinding.ActivityRedditBinding
 import com.angopa.aad.utilities.RedditPostRepository
+import kotlinx.android.synthetic.main.activity_reddit.*
 
 /**
  *  Created by Andres Gonzalez on 02/19/2020.

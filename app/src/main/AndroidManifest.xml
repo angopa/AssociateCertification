@@ -35,7 +35,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AAD"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".androidcore.codelabs.toast.ToastActivity"
             android:parentActivityName=".MainActivity" />
@@ -157,20 +163,23 @@
             android:name=".androidui.codelabs.paging.reddit.RedditActivity"
             android:parentActivityName=".androidui.codelabs.paging.PagingDashboardActivity" />
         <activity
+            android:name=".androidui.codelabs.navigationdrawer.NavigationDrawerActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".androidui.codelabs.navigation.NavigationActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".androidui.codelabs.transition.TransitionActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".androidui.codelabs.paging.firebase.FirebaseDatabaseActivity"
-            android:parentActivityName=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".androidui.codelabs.transition.activitytoactivity.TransitionStartActivity"
+            android:parentActivityName=".androidui.codelabs.transition.TransitionActivity" />
+        <activity
+            android:name=".androidui.codelabs.transition.activitytoactivity.TransitionEndActivity"
+            android:parentActivityName=".androidui.codelabs.transition.TransitionActivity" />
         <!-- SERVICES -->
         <service
             android:name=".androidcore.codelabs.fundamentals.service.ExampleService"
