@@ -62,4 +62,6 @@
     <color name="motion_final_background">#9999FF</color>
     <color name="motion_tint_image">@color/tintImage</color>
 
+    <color name="colorScreenBackground">#fff3e0</color>
+
 </resources>

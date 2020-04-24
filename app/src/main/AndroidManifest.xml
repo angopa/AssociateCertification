@@ -170,7 +170,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".androidui.codelabs.transition.TransitionActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".androidui.codelabs.paging.firebase.FirebaseDatabaseActivity"
             android:parentActivityName=".MainActivity" />
@@ -180,6 +180,9 @@
         <activity
             android:name=".androidui.codelabs.transition.activitytoactivity.TransitionEndActivity"
             android:parentActivityName=".androidui.codelabs.transition.TransitionActivity" />
+        <activity
+            android:name=".androiddata.codelabs.roomlivedataviewmodel.RoomCodelabActivity"
+            android:parentActivityName=".MainActivity" />
         <!-- SERVICES -->
         <service
             android:name=".androidcore.codelabs.fundamentals.service.ExampleService"

@@ -404,5 +404,9 @@
     <string name="label_firebase_paging">Paging</string>
     <string name="card_label_navigation">Navigation</string>
     <string name="label_title_navigation_drawer">Navigation Drawer</string>
+    <string name="card_label_room_livedata_viewmodel">Room, LiveData, ViewModel</string>
+    <string name="room_livedata_viewmodel_screen_title">Room, LiveData, ViewModel</string>
+
+    <!-- Android Data   -->
 
 </resources>

@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <!-- Base application theme. -->
     <style name="Base.Theme.AAD" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -59,6 +59,19 @@
         <item name="android:background">@drawable/lose_button</item>
         <item name="android:textColor">#FFE2DF</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">
+            @android:style/TextAppearance.Large
+        </item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
     </style>
 
 </resources>
